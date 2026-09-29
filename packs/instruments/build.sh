@@ -275,6 +275,10 @@ fi
   echo "compiled into the plugin) with a zip holding only \`Dexed_01.syx\`: 32 copies of Dexed's own"
   echo "INIT VOICE from its GPL source. The original banks have no per-voice authors or stated"
   echo "terms, so they are not distributed. No code is changed and no patches are applied."
+  echo "On macOS, DISTRHO-Ports' meson build leaves Vitalium's library as"
+  echo "\`Contents/MacOS/vitalium.dylib\` with no Info.plist, which hosts can't load, so"
+  echo "\`recipes/vitalium.sh\` renames it to \`vitalium\`, adds a minimal Info.plist and ad-hoc signs"
+  echo "the bundle (packaging only)."
   echo
   for id in $ids; do
     echo "## $(inst "$id" "['name']")"
