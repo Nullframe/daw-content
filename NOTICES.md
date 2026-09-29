@@ -16,7 +16,7 @@ Copyright notices and full licence texts are in each archive's `licenses/<id>/`,
 
 **Unmodified upstream builds**, with one exception. Dexed compiles its built-in DX7 cartridges (`assets/builtin_pgm.zip`: `Dexed_01` and `SynprezFM_01`–`32`) into the plugin. Those voices have no known per-voice authors and no stated redistribution terms. So before building, `packs/instruments/recipes/dexed.sh` replaces that zip with one holding only `Dexed_01.syx`: 32 copies of Dexed's own INIT VOICE (its `init_voice` table, from its GPL source), packed as a DX7 bulk dump. No code is changed and no patches are applied (`packs/instruments/patches/` is empty).
 
-One packaging step on macOS: DISTRHO-Ports' meson build leaves Vitalium's library as `vitalium.vst3/Contents/MacOS/vitalium.dylib` with no `Info.plist`, which VST3 hosts can't load. `recipes/vitalium.sh` renames it to `vitalium`, adds a minimal `Info.plist` and ad-hoc signs the bundle. The binary itself is as built.
+One packaging step on macOS: DISTRHO-Ports' meson build leaves Vitalium's library as `vitalium.vst3/Contents/MacOS/vitalium.dylib` with no `Info.plist`, which VST3 hosts can't load. `recipes/vitalium.sh` renames it to `vitalium`, adds a minimal `Info.plist` and ad-hoc signs the bundle. The compiled code is unchanged.
 
 "Vital" is a trademark of Matt Tytel. The pack ships DISTRHO's community build, which is already renamed Vitalium and has its own plugin ids.
 
