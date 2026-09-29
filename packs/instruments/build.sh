@@ -164,10 +164,13 @@ build() {
 
 # Licence files from the upstream tree (and its submodules), plus where it came from.
 licenses() {
-  local id="$1" src="$B/src/$1" dest="$stage/licenses/$1"
+  local id="$1" src="$B/src/$1" dest="$stage/licenses/$1" pdir
   mkdir -p "$dest"
+  # A repository of many plugins (DISTRHO-Ports): leave out the other plugins' folders.
+  pdir="$(inst "$id" "['upstream'].get('plugin_dir', '')")"
   (cd "$src" && find . -maxdepth 5 -type f \( -iname 'LICENSE*' -o -iname 'LICENCE*' -o -iname 'COPYING*' -o -iname 'GPL*.txt' \) \
       -not -path './.git/*' | sort) | while IFS= read -r f; do
+    if [[ -n "$pdir" && "$f" == ./ports-* && "$f" != "./$pdir/"* ]]; then continue; fi
     mkdir -p "$dest/$(dirname "$f")"
     cp "$src/$f" "$dest/$f"
   done

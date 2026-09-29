@@ -80,29 +80,38 @@ aliases and preset sources live in [`pack.json`](pack.json), which is compiled i
 
 The build fetches each pinned commit (shallow, with submodules), checks it is that commit,
 applies `patches/<id>/*.patch`, builds the VST3 bundles with each project's own build system,
-collects licences, writes the source offer, converts factory presets, runs the admission check
-and packages a reproducible archive (GNU tar, sorted, fixed times; byte-identical on re-runs).
+collects licences, writes the source offer and `NOTICES.md`, converts factory presets, runs the
+admission check and packages a reproducible archive (GNU tar, sorted, fixed times;
+byte-identical on re-runs) and the source archive.
 
 ```sh
 packs/instruments/build.sh                         # all three
 packs/instruments/build.sh --only vitalium,dexed   # a partial pack, for local testing
 packs/instruments/build.sh --limit-presets 20      # quick: at most 20 presets each
+packs/instruments/build.sh --skip-index            # no daw needed: daw indexes on install (CI)
 daw pack install instruments --from packs/instruments/.build/dist/daw-instruments-<version>-<platform>.tar.gz
 ```
 
 It needs the `daw` CLI (built with `cargo build --release -p daw-cli` if missing) and the
 plugin host worker (`host/README.md`): conversion and the admission check run the real plugins.
+With `--skip-index` it needs neither: the archive then ships the licence-filtered patch files
+as they are (`patch-files/<id>/<path in the upstream tree>`) instead of `presets/` and
+`content.json`, and `daw pack install` runs the same index and admission check on the user's
+machine (`indexed_on_install: true` in its result). That is how the published release is built
+(see [Publishing a release](#publishing-a-release)), because the public build runs where daw's
+source isn't available.
 Everything goes to `packs/instruments/.build/` (gitignored): `src/`, `build/`, `stage/` (the
-unpacked pack, also installable with `--from`), `dist/` (archives, `.sha256` files and
-`artifact-<platform>.json`).
+unpacked pack, also installable with `--from`), `dist/` (archives, `.sha256` files,
+`artifact-<platform>.json` and `source-digest-<platform>.txt`, a per-file hash of the source
+tree used to check that every platform was built from the same source).
 
 ### Linux (Ubuntu 24.04; CI)
 
 ```sh
 sudo apt-get install git cmake ninja-build meson python3 g++ pkg-config \
   libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxext-dev libxcomposite-dev \
-  libxi-dev libfreetype-dev libfontconfig1-dev libasound2-dev libgl-dev libcurl4-openssl-dev \
-  libjack-jackd2-dev
+  libxi-dev libxrender-dev libfreetype-dev libfontconfig1-dev libasound2-dev libgl-dev \
+  libglu1-mesa-dev libcurl4-openssl-dev libjack-jackd2-dev libgtk-3-dev libfftw3-dev
 cmake -S host -B host/build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build host/build
 packs/instruments/build.sh
 ```
@@ -110,15 +119,28 @@ packs/instruments/build.sh
 ### macOS (local run)
 
 ```sh
-xcode-select --install
+xcode-select --install                              # Xcode 16 or later (OB-Xf's C++20)
 brew install cmake ninja meson python gnu-tar      # gnu-tar: a byte-reproducible archive
 cmake -S host -B host/build -G Ninja -DCMAKE_BUILD_TYPE=Release && cmake --build host/build
 packs/instruments/build.sh                          # universal (arm64 + x86_64), macOS 11+
 ```
 
-Bundles are ad-hoc signed by the linker, which is enough for `daw`'s worker to load them. A
-pack downloaded with a browser (rather than by `daw pack install`, which uses curl) gets the
-quarantine attribute: `xattr -dr com.apple.quarantine ~/Music/daw/packs/instruments`.
+Bundles are ad-hoc signed by the linker, which is enough for `daw`'s worker to load them.
+They are not signed with a Developer ID or notarized, so Gatekeeper would refuse them if they
+carried the quarantine attribute, which a browser adds to what it downloads. How `daw` handles
+that:
+
+- `daw pack install` (and `library-sync --pack`) downloads with curl, which doesn't set the
+  attribute.
+- An archive the user downloaded with a browser and passes with `--from` is quarantined, and
+  what is unpacked from it can inherit that. So after `daw` has checked an archive's sha256 (against
+  its `.sha256` file or the pinned manifest) and unpacked it into its own staging folder, it
+  removes `com.apple.quarantine` from everything in that folder (`pack::clear_quarantine`,
+  `xattr -r -d`). It touches only files it just unpacked from a verified archive, and never
+  anything else on disk. An archive with the wrong hash is refused before anything is unpacked.
+- A stage *folder* passed with `--from` isn't hash-checked, so its attributes are left as they
+  are; clear them yourself if you trust it (`xattr -dr com.apple.quarantine <folder>`).
+
 Signing and notarizing with a Developer ID is a release step to add when we distribute
 signed `daw` builds.
 
@@ -126,7 +148,7 @@ signed `daw` builds.
 
 | Recipe | Build | Notes |
 |---|---|---|
-| `vitalium.sh` | `meson setup -Dplugins=vitalium -Dbuild-vst3=true` (+ `-Dlinux-headless=true` / `-Dbuild-universal=true`), `ninja` | Needs meson |
+| `vitalium.sh` | `meson setup -Dplugins=vitalium -Dbuild-juce60-only=true -Dbuild-vst3=true` (+ `-Dbuild-universal=true` on macOS), `ninja` | Needs meson and fftw3. Not `-Dlinux-headless`, which builds LV2 only. On macOS it renames the library to `vitalium` and adds an `Info.plist`, since meson's bundle (`vitalium.dylib`, no plist) doesn't load |
 | `dexed.sh` | CMake target `Dexed_VST3` | First replaces `assets/builtin_pgm.zip` with an init-voice cartridge ([Preset provenance](#preset-provenance)) |
 | `obxf.sh` | CMake target `OB-Xf_VST3` | |
 
@@ -211,11 +233,14 @@ redistributable terms (for example a CC0 or CC-BY bank) recorded in `presets.ban
 - **Archive** `daw-instruments-<version>-<platform>.tar.gz`: `content.json` (what was built:
   plugin names, kinds, versions, aliases, preset counts, rejected presets, settle mode, the
   admission renders and tier), `vst3/`, `presets/index.json` + `presets/vst3/…`,
-  `licenses/`, `SOURCE-OFFER.md`, `source/`.
+  `licenses/`, `SOURCE-OFFER.md`, `NOTICES.md`, `source/`. A release built with
+  `--skip-index` has `patch-files/<id>/…` instead of `content.json` and `presets/`; install
+  makes those.
 - **Install** (`daw pack install`): download `base_url + file` (curl) or take `--from` an
   archive (checked against the `.sha256` next to it, else the manifest) or a stage folder
   (not hash-checked; a warning says so); verify sha256; unpack to a staging folder; check id,
-  platform, bundles, licences and source offer; replace `$DAW_HOME/packs/<id>/`; write
+  platform, bundles, licences and source offer (after clearing macOS quarantine and, for an
+  unindexed archive, indexing it with the local worker); replace `$DAW_HOME/packs/<id>/`; write
   `installed.json` (source, sha256, what it was verified against); scan the pack's `vst3/`.
 - **Registration**: a default `plugin-scan` also searches `$DAW_HOME/packs/*/vst3` (after the
   standard folders, `$DAW_VST3_PATH` and config `plugin_paths`) and lists `.vstpreset` files from
@@ -225,52 +250,34 @@ redistributable terms (for example a CC0 or CC-BY bank) recorded in `presets.ban
 
 ## Publishing a release
 
-The pack is hosted on a **public** Nullframe GitHub release, never on the internal `daw`
-repository (the GPL source offer has to be reachable by everyone who gets the binaries).
-Neither the repository nor the release exists yet; creating them is a founder step.
+The pack is hosted on releases of the **public** repository
+[Nullframe/daw-content](https://github.com/Nullframe/daw-content), never on the internal `daw`
+repository (the GPL source offer has to be reachable by everyone who gets the binaries). Its
+workflow `build-instruments` builds the pack on GitHub's runners (Linux x86_64 and aarch64 on
+Ubuntu 22.04; macOS universal on `macos-14` with Xcode 16) from a copy of this folder
+(`packs/instruments/` there), with `build.sh --skip-index`, and publishes the release
+`instruments-<UTC date>`.
 
-**One config value.** `pack.json` → `release.base_url` is where every archive is fetched
-from (`base_url + file`), and `build.sh` derives the source offer's URLs from it. It is a
-placeholder today:
+**What a release contains** (for `version` 2026.09.0):
 
-```
-https://github.com/Nullframe/daw-content/releases/download/<tag>/
-```
-
-While it contains `<tag>`, `daw` treats the pack as unpublished (`pack_not_published`, with
-the local-build command) even if hashes are filled in. Suggested tag:
-`instruments-<version>`, e.g. `instruments-2026.09.0`.
-
-**What the release must contain** (for `version` 2026.09.0). Each `.sha256` file is one line,
-`<sha256>  <file>`, written by `build.sh`; the platform values also go into `pack.json`.
-
-| File | Built on | sha256 |
-|---|---|---|
-| `daw-instruments-2026.09.0-linux-x86_64.tar.gz` | Linux x86_64 | its `.sha256`; → `pack.json` `artifacts.linux-x86_64.sha256` (+ `bytes`) |
-| `daw-instruments-2026.09.0-linux-aarch64.tar.gz` | Linux aarch64 | its `.sha256`; → `artifacts.linux-aarch64` |
-| `daw-instruments-2026.09.0-macos-universal.tar.gz` | macOS (arm64 + x86_64) | its `.sha256`; → `artifacts.macos-universal` |
-| `daw-instruments-2026.09.0-src.tar.gz` | any one of the above | its `.sha256` (the complete corresponding source) |
-| the four `*.tar.gz.sha256` files | | |
-
-The values are not known until the first real build (the recipes haven't run yet), so
-`pack.json` holds `sha256: null` for now. The source archive holds only sources and scripts;
-build it once and upload that one (every run produces it).
+| File | Built on |
+|---|---|
+| `daw-instruments-2026.09.0-linux-x86_64.tar.gz` (+ `.sha256`) | `ubuntu-22.04` |
+| `daw-instruments-2026.09.0-linux-aarch64.tar.gz` (+ `.sha256`) | `ubuntu-22.04-arm` |
+| `daw-instruments-2026.09.0-macos-universal.tar.gz` (+ `.sha256`) | `macos-14` (arm64 + x86_64, macOS 11+) |
+| `daw-instruments-2026.09.0-src.tar.gz` (+ `.sha256`) | `ubuntu-22.04`: the complete corresponding source; the workflow refuses to publish unless every platform's source digest matches it |
+| `SHA256SUMS`, `artifacts.json` (file, sha256, bytes per platform), `NOTICES.md` | |
 
 **Steps.**
 
-1. Set `release.base_url` to the real tag (and bump `version` and the file names if anything
-   changed), in a PR.
-2. On each platform (see [Building](#building); GNU tar for byte-reproducible archives):
-   `packs/instruments/build.sh`. Output in `packs/instruments/.build/dist/`: the platform
-   archive and its `.sha256`, `artifact-<platform>.json` (`file`, `sha256`, `bytes`), and the
-   source archive and its `.sha256`.
-3. Create the release on the public repository and upload every file in the table.
-4. Copy each `artifact-<platform>.json`'s `sha256` and `bytes` into `pack.json`'s `artifacts`,
-   in a PR. From that `daw` build on, `daw pack install instruments` (and `daw library-sync
-   --pack instruments`) downloads and verifies.
-
-Bump `version` (and the file names) whenever a pin, patch, recipe or preset rule changes;
-archives are immutable once published.
+1. Change `packs/instruments/` here and in daw-content together (a PR in each). Bump `version`
+   (and the file names) whenever a pin, patch, recipe or preset rule changes: archives are
+   immutable once `pack.json` pins them.
+2. Run `build-instruments` in daw-content (Actions → Run workflow; or push a tag
+   `instruments-<date>`). A PR there builds every platform without publishing.
+3. Set `release.base_url` to the release's download URL and copy its `artifacts.json` into
+   `pack.json`'s `artifacts`, in a PR here. From that `daw` build on, `daw pack install
+   instruments` (and `daw library-sync --pack instruments`) downloads, verifies and indexes.
 
 ## Not yet
 
