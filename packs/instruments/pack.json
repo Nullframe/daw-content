@@ -1,0 +1,189 @@
+{
+  "schema": "daw-pack/1",
+  "id": "instruments",
+  "version": "2026.09.0",
+  "description": "Bundled GPL instruments built from source as separate VST3 plugins: Vitalium (a renamed Vital build), Dexed and OB-Xf. They run out of process in daw's plugin worker and are never linked into daw.",
+  "license": "GPL-3.0-or-later (each instrument keeps its own licence; see licenses/ in the pack)",
+  "release": {
+    "base_url": "https://github.com/Nullframe/daw-content/releases/download/<tag>/",
+    "source_archive": "daw-instruments-2026.09.0-src.tar.gz"
+  },
+  "artifacts": {
+    "linux-x86_64": {
+      "file": "daw-instruments-2026.09.0-linux-x86_64.tar.gz",
+      "sha256": null,
+      "bytes": null
+    },
+    "linux-aarch64": {
+      "file": "daw-instruments-2026.09.0-linux-aarch64.tar.gz",
+      "sha256": null,
+      "bytes": null
+    },
+    "macos-universal": {
+      "file": "daw-instruments-2026.09.0-macos-universal.tar.gz",
+      "sha256": null,
+      "bytes": null
+    }
+  },
+  "instruments": [
+    {
+      "id": "vitalium",
+      "name": "Vitalium",
+      "vendor": "DISTRHO",
+      "bundle": "vitalium.vst3",
+      "aliases": [
+        "vitalium",
+        "vital"
+      ],
+      "license": "GPL-3.0-or-later",
+      "upstream": {
+        "repo": "https://github.com/DISTRHO/DISTRHO-Ports",
+        "ref": "master",
+        "commit": "d3b62da2e83c69b0866af5bb2e29ac78dc8014cf",
+        "plugin_dir": "ports-juce6.0/vitalium",
+        "based_on": "https://github.com/mtytel/vital (GPL-3.0; 'Vital' is a trademark of Matt Tytel, so the build is renamed)"
+      },
+      "patch_formats": [
+        "vital"
+      ],
+      "presets": {
+        "format": "none",
+        "provenance": "No factory presets ship: DISTRHO's Vitalium port has none, and Vital's own factory presets are not free. Load your own .vital files with --preset FILE.vital.",
+        "banks": [
+          {
+            "name": "Vital factory presets",
+            "source": "not in the GPL source (distributed by Vital Audio with its own installer)",
+            "authors": [
+              "Vital Audio / Matt Tytel"
+            ],
+            "license": "proprietary; not covered by Vital's GPL-3.0 source licence",
+            "included": false,
+            "reason": "Not free and not part of the source: excluded."
+          }
+        ]
+      },
+      "summary": "Spectral-warping wavetable synth: 3 wavetable oscillators, sample oscillator, 2 filters, drag-and-drop modulation. Patches are JSON (.vital)."
+    },
+    {
+      "id": "dexed",
+      "name": "Dexed",
+      "vendor": "Digital Suburban",
+      "bundle": "Dexed.vst3",
+      "aliases": [
+        "dexed",
+        "dx7"
+      ],
+      "license": "GPL-3.0-or-later",
+      "upstream": {
+        "repo": "https://github.com/asb2m10/dexed",
+        "ref": "v1.0.1",
+        "commit": "bce5deee7c41bf5515b806d0b7de8b5c0bb49467"
+      },
+      "patch_formats": [],
+      "presets": {
+        "format": "none",
+        "provenance": "No DX7 cartridges ship. Dexed's built-in banks (Dexed_01 and SynprezFM_01-32, in assets/builtin_pgm.zip) are compilations of voices from DX7 SysEx archives with no per-voice authors and no stated terms, so the recipe replaces that zip with a Dexed_01.syx of 32 copies of Dexed's own INIT VOICE (from its GPL source) before building; the binary and the source archive carry no third-party voices. Load your own cartridges in Dexed.",
+        "banks": [
+          {
+            "name": "Dexed_01",
+            "source": "assets/builtin_pgm.zip: Dexed_01.syx (32 voices; Dexed's startup cartridge)",
+            "authors": [
+              "unknown (compiled by Jean-Marc Desprez from DX7 voice archives)"
+            ],
+            "license": "none stated; in Dexed's GPL-3.0 repository, but no licence from the voices' authors is known",
+            "included": false,
+            "reason": "Unknown authors and no redistribution terms: excluded, and removed from the Dexed build."
+          },
+          {
+            "name": "SynprezFM_01 to SynprezFM_32",
+            "source": "assets/builtin_pgm.zip: SynprezFM_*.syx (1024 voices)",
+            "authors": [
+              "unknown per voice (selected by Jean-Marc Desprez from about 22,000 patches circulating online; Dexed's README credits the compilation, not the sounds)"
+            ],
+            "license": "none stated",
+            "included": false,
+            "reason": "Unknown authors and no redistribution terms; such archives can include voices from Yamaha or commercial cartridges: excluded, and removed from the Dexed build."
+          },
+          {
+            "name": "Yamaha DX7 ROM and voice cartridges (ROM1A-4B, VRC)",
+            "source": "not in Dexed's source",
+            "authors": [
+              "Yamaha"
+            ],
+            "license": "Yamaha's; no redistribution grant",
+            "included": false,
+            "reason": "Yamaha's property: never shipped."
+          }
+        ]
+      },
+      "summary": "DX7 FM synth (6 operators, 32 algorithms), modelled on the original's envelopes and DAC; loads DX7 SysEx cartridges."
+    },
+    {
+      "id": "obxf",
+      "name": "OB-Xf",
+      "vendor": "Surge Synth Team",
+      "bundle": "OB-Xf.vst3",
+      "aliases": [
+        "obxf",
+        "ob-xf",
+        "obx",
+        "oberheim"
+      ],
+      "license": "GPL-3.0-or-later",
+      "upstream": {
+        "repo": "https://github.com/surge-synthesizer/OB-Xf",
+        "ref": "v1.0.3",
+        "commit": "1223e6f7b209b9affa91331c26f39d4095a4088e"
+      },
+      "patch_formats": [
+        "fxp"
+      ],
+      "presets": {
+        "format": "fxp",
+        "dirs": [
+          "assets/installer/Surge Synth Team/OB-Xf/Patches"
+        ],
+        "require_license": [
+          "CC0",
+          "CC0 / Public Domain"
+        ],
+        "provenance": "OB-Xf's own factory library (.fxp, in its source tree's installer assets; not embedded in the plugin). Each patch declares its author and licence inside it; only patches marked CC0 ship, each with its author recorded in the preset index.",
+        "banks": [
+          {
+            "name": "OB-Xf factory library",
+            "source": "assets/installer/Surge Synth Team/OB-Xf/Patches (487 of 488 .fxp at v1.0.3)",
+            "authors": [
+              "Saif Sameer",
+              "Aleksey Zhehanov",
+              "Black Sided Sun",
+              "Ocean Swift",
+              "Jacky Ligon",
+              "0.5°",
+              "Fedir Tkachov",
+              "Artur Rembe",
+              "Vincent Zauhar",
+              "Pebblestream",
+              "John Valentine",
+              "Den Rize",
+              "EvilDragon"
+            ],
+            "license": "CC0 (each patch declares license=\"CC0\" or \"CC0 / Public Domain\")",
+            "included": true,
+            "reason": "Made for OB-Xf by the named authors (OB-Xd patches are not compatible) and dedicated to the public domain in each file."
+          },
+          {
+            "name": "Bells/Singing Noise",
+            "source": "assets/installer/Surge Synth Team/OB-Xf/Patches/Bells/Singing Noise.fxp",
+            "authors": [
+              "unknown"
+            ],
+            "license": "none declared",
+            "included": false,
+            "reason": "The one patch with no author or licence in it: excluded (the index rejects any patch not marked CC0)."
+          }
+        ]
+      },
+      "summary": "Oberheim OB-X/OB-Xa-style 8-voice analog polysynth (continuation of OB-Xd): 2 oscillators, 2/4-pole filter, voice variation."
+    }
+  ]
+}
