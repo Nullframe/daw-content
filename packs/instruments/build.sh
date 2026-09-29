@@ -221,6 +221,9 @@ for d in p.get("dirs", []):
 PY
 }
 
+for id in $ids; do fetch "$id"; done
+for id in $ids; do build "$id"; licenses "$id"; done
+
 # --- the build scripts themselves, the source offer and the notices ---------------------------
 cp -R "$here/build.sh" "$here/recipes" "$here/patches" "$here/pack.json" "$here/README.md" "$stage/source/"
 scripts_commit="$(git -C "$repo" rev-parse HEAD 2>/dev/null || echo unknown)"
