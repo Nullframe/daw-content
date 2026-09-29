@@ -103,12 +103,14 @@ jobs:
           for b in vitalium.vst3 Dexed.vst3 OB-Xf.vst3; do [[ -d "vst3/$b" ]] || { echo "missing $b"; exit 1; }; done
           if [[ "$RUNNER_OS" == macOS ]]; then
             for b in vst3/*.vst3; do
-              bin="$b/Contents/MacOS/$(basename "$b" .vst3)"
+              find "$b" -maxdepth 3 | sort
+              bin="$(find "$b/Contents/MacOS" -type f | head -n 1)"
               lipo -info "$bin"
               lipo -info "$bin" | grep -q x86_64 && lipo -info "$bin" | grep -q arm64 || { echo "$bin is not universal"; exit 1; }
               codesign -dv "$b" 2>&1 | head -3 || true
             done
           else
+            find vst3 -maxdepth 3 | sort
             file vst3/*.vst3/Contents/*/*.so
           fi
           find patch-files -name '*.fxp' | wc -l
