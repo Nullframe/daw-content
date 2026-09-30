@@ -21,6 +21,9 @@
 # (the release workflow in Nullframe/daw-content sets it to the release being built).
 #
 # Then: daw pack install instruments --from packs/instruments/.build/dist/<archive>.tar.gz
+#
+# Upstream patches (patches/<id>/*.patch) live only in Nullframe/daw-content's copy of this folder
+# (they change GPL code), which builds the published pack; see patches/README.md.
 set -euo pipefail
 
 here="$(cd "$(dirname "$0")" && pwd)"
