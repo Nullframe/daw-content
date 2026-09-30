@@ -32,7 +32,3 @@ Each release lists its exact upstream versions, conversion scripts and checksums
 ## CLAP music model pack
 
 `daw library install clap-music` installs an optional sample quality and character model from a `models-clap-music-<date>` release. The workflow [`build-clap-music`](.github/workflows/build-clap-music.yml) builds it from LAION's CC0 checkpoint at a pinned commit. It exports only the audio tower to ONNX, checks it against PyTorch, and precomputes the text embeddings of a fixed prompt set. No weights are committed. [`packs/clap-music/README.md`](packs/clap-music/README.md) has the details.
-
-## Listening reels
-
-Short renders of daw's own synthesis (CC0), published so they can be heard without building daw: for example `kit-808-synth-2026-09-30`, a classic 808-style beat on `kit/synth808@1`, the synthesized 808 kit. They are rendered by daw on a developer's machine and uploaded by [`publish-reel`](.github/workflows/publish-reel.yml), a manual workflow that takes the file base64-encoded in parts (a dispatch's inputs are capped at 64 KB), joins them and checks the sha256. No audio is committed.
