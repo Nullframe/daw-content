@@ -1,0 +1,58 @@
+Seed OB-Xf's per-voice "slop" and LFO sample-and-hold RNGs from std::rand().
+
+Why: juce::Random's default seed (and getSystemRandom()) mixes in the object's address and
+mach_absolute_time, so two fresh processes render the same notes differently even when the
+host pins the clock and rand(). Seeding from std::rand() (which OB-Xf already uses for its
+noise generators) lets a host reproduce a render by seeding rand(); a host that doesn't gets
+rand()'s own sequence. The amount and character of the variation are unchanged.
+
+Applied by daw-content's packs/instruments/build.sh to OB-Xf v1.0.3 (1223e6f7).
+diff --git a/src/engine/Lfo.h b/src/engine/Lfo.h
+index 3d4c1ec..15685b6 100644
+--- a/src/engine/Lfo.h
++++ b/src/engine/Lfo.h
+@@ -47,7 +47,7 @@ class LFO
+ 
+         float smoothedOutput{0.f};
+ 
+-        juce::Random rng;
++        juce::Random rng{0};
+ 
+         struct Waves
+         {
+@@ -79,7 +79,9 @@ class LFO
+ 
+     LFO()
+     {
+-        state.rng = juce::Random();
++        // Seeded from std::rand() (see Voice()), not juce::Random's address- and clock-based
++        // default seed.
++        state.rng = juce::Random((juce::int64)std::rand());
+         state.wave.samplehold = state.rng.nextFloat() * 2.f - 1.f;
+         state.wave.history = state.wave.samplehold;
+     }
+diff --git a/src/engine/Voice.h b/src/engine/Voice.h
+index d01ee62..12db926 100644
+--- a/src/engine/Voice.h
++++ b/src/engine/Voice.h
+@@ -157,11 +157,15 @@ class Voice
+ 
+     Voice()
+     {
+-        slop.level = juce::Random::getSystemRandom().nextFloat() - 0.5f;
+-        slop.ampEnv = juce::Random::getSystemRandom().nextFloat() - 0.5f;
+-        slop.filterEnv = juce::Random::getSystemRandom().nextFloat() - 0.5f;
+-        slop.cutoff = juce::Random::getSystemRandom().nextFloat() - 0.5f;
+-        slop.portamento = juce::Random::getSystemRandom().nextFloat() - 0.5f;
++        // Seeded from std::rand(), like the noise generators below, rather than from
++        // juce::Random::getSystemRandom(), whose seed mixes in an object address and the
++        // monotonic clock: a host can then reproduce a render by seeding rand().
++        juce::Random slopRng{(juce::int64)std::rand()};
++        slop.level = slopRng.nextFloat() - 0.5f;
++        slop.ampEnv = slopRng.nextFloat() - 0.5f;
++        slop.filterEnv = slopRng.nextFloat() - 0.5f;
++        slop.cutoff = slopRng.nextFloat() - 0.5f;
++        slop.portamento = slopRng.nextFloat() - 0.5f;
+     }
+ 
+     ~Voice() {}
