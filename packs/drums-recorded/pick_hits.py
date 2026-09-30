@@ -6,7 +6,7 @@ pinned below). It records, for every output sample, which upstream files are mix
 (multi-mic libraries: close, overhead, resonant-head mics), at what gain, and each upstream
 file's sha256, so build.py can rebuild the pack byte for byte from the pinned sources.
 
-    python3 select.py --src vcsl=~/src/vcsl --src big-rusty=~/src/karoryfer.big-rusty-drums \
+    python3 pick_hits.py --src vcsl=~/src/vcsl --src big-rusty=~/src/karoryfer.big-rusty-drums \
         --src swirly=~/src/karoryfer.swirly-drums > recipes.json
 
 Curation (what is kept, what is dropped and why, the kits) is in this file and in

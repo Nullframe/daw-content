@@ -38,7 +38,7 @@ session remains the way to close the gap (docs/research/default-library-sourcing
 
 ## What is in it
 
-`select.py` picks the hits from local checkouts and writes `recipes.json`: the loudest one or two
+`pick_hits.py` picks the hits from local checkouts and writes `recipes.json`: the loudest one or two
 velocity layers of each stroke with all their round robins (Big Rusty: close and overhead mics
 at the library's own default mix, close 100 / overhead 70; the kick adds its overhead at 0.5,
 the snare its bottom mic; hats sit closer), VCSL's orchestral percussion (concert bass drums,
