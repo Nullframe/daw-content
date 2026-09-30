@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "note": "Zero-shot character probes for the LAION-CLAP music audio tower. Each axis scores a sound as the mean cosine similarity of its audio embedding to the positive phrasings minus the mean to the negative ones (the 'contrast' used in daw's audio-model baseline). 'center' and 'scale' map the contrast to a 0..1 probability-like value: 1 / (1 + exp(-(contrast - center) / scale)).",
+  "axes": [
+    {"axis": "quality", "pos_word": "pro", "neg_word": "amateur",
+     "pos": ["professional studio one-shot", "a high quality professional recording"],
+     "neg": ["amateur, cheap synthesized", "a low quality amateur sound"]},
+    {"axis": "wet", "pos_word": "wet", "neg_word": "dry",
+     "pos": ["a wet sound with lots of reverb", "a reverberant sound in a large hall"],
+     "neg": ["a dry sound with no reverb", "a close, dry studio sound"]},
+    {"axis": "bright", "pos_word": "bright", "neg_word": "dark",
+     "pos": ["a bright, crisp sound", "a sound with lots of high frequencies"],
+     "neg": ["a dark, muffled sound", "a sound with little high end"]},
+    {"axis": "punchy", "pos_word": "punchy", "neg_word": "soft",
+     "pos": ["a punchy sound with a hard attack", "a tight, punchy hit"],
+     "neg": ["a soft sound with a gentle attack", "a soft, muted hit"]},
+    {"axis": "distorted", "pos_word": "distorted", "neg_word": "clean",
+     "pos": ["a distorted, saturated sound", "an overdriven, gritty sound"],
+     "neg": ["a clean, undistorted sound", "a clean, clear sound"]},
+    {"axis": "lofi", "pos_word": "lofi", "neg_word": "hifi",
+     "pos": ["a lo-fi, bitcrushed sound", "a grainy, low fidelity sound"],
+     "neg": ["a hi-fi, pristine sound", "a clear, high fidelity sound"]}
+  ]
+}

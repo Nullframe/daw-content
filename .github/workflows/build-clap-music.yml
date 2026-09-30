@@ -1,0 +1,83 @@
+# Builds the optional clap-music model pack for daw (LAION's CC0 music CLAP checkpoint: the
+# audio tower as ONNX plus precomputed prompt embeddings) with packs/clap-music/build.py.
+#
+# - Pull request touching packs/clap-music/: build and verify only (ONNX against PyTorch on
+#   test clips); the files are kept as a workflow artifact, no release.
+# - Manual run (workflow_dispatch) or a pushed tag `models-clap-music-*`: build, then create or
+#   update the release (the pushed tag, the `tag` input, or models-clap-music-<UTC date>) with
+#   the ONNX graph, the prompt embeddings, provenance.json, LICENSE, NOTICES.md and SHA256SUMS.
+#
+# Weights live only in releases; the repository holds the recipe.
+name: build-clap-music
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: models-clap-music-<UTC date>)"
+        required: false
+  push:
+    tags: ["models-clap-music-*"]
+  pull_request:
+    paths: ["packs/clap-music/**", ".github/workflows/build-clap-music.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned)
+        run: pip install --extra-index-url https://download.pytorch.org/whl/cpu -r packs/clap-music/requirements.txt
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          else tag="models-clap-music-$(date -u +%Y-%m-%d)"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build and verify
+        run: |
+          python3 packs/clap-music/build.py "$GITHUB_WORKSPACE/out" --cache "$RUNNER_TEMP/cache"
+          cd "$GITHUB_WORKSPACE/out" && sha256sum -c SHA256SUMS && ls -la && cat SHA256SUMS
+          python3 -c "import json; print(json.dumps(json.load(open('provenance.json'))['verification'], indent=1))"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: clap-music
+          path: out/
+          retention-days: 7
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          size=$(stat -c %s out/clap-music-audio.onnx)
+          cat > notes.md <<NOTES
+          Optional model pack for daw: \`daw library install clap-music\`. It is never part of the core install.
+
+          LAION-CLAP music checkpoint \`music_audioset_epoch_15_esc_90.14\` (CC0 1.0), cut down to what daw runs:
+          - \`clap-music-audio.onnx\` (${size} bytes): the audio tower only (HTSAT-base + projection). It is verified against PyTorch on test clips (see \`provenance.json\`).
+          - \`clap-music-prompts.json\`: the text embeddings of a fixed prompt set: quality (professional vs amateur), wet vs dry, bright vs dark, punchy vs soft, distorted vs clean.
+
+          daw uses it to score samples for quality and character in \`daw library-index\` and \`daw sounds find\`. It does not listen to mixes and is not the primary search.
+          Licence: CC0-1.0 (\`LICENSE\`, \`NOTICES.md\`). Upstream: huggingface.co/lukewys/laion_clap @ b3708341862f581175dba5c356a4ebf74a9b6651.
+          Built by .github/workflows/build-clap-music.yml from packs/clap-music at ${GITHUB_SHA}. Checksums: \`SHA256SUMS\` (pinned in daw's content/models/clap-music/model.json).
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Models: clap-music ($TAG)" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets[] | "\(.name) \(.size)"'
+    permissions:
+      contents: write
