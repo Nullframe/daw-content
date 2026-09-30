@@ -1,0 +1,82 @@
+{
+ "version": 1,
+ "note": "Zero-shot character probes for the LAION-CLAP music audio tower. Each axis scores a sound as the mean cosine similarity of its audio embedding to the positive phrasings minus the mean to the negative ones. 'center' and 'scale' map that contrast to 0..1: 1 / (1 + exp(-(contrast - center) / scale)). quality and lofi keep the phrasings written before any result; wet, bright and distorted were chosen on half of daw's CC0 validation set and scored on the other half (daw docs/research/clap-model-pack.md). punchy/soft was dropped: it did not reach AUC 0.8 held out, and daw measures attack and transient directly.",
+ "axes": [
+  {
+   "axis": "quality",
+   "pos_word": "pro",
+   "neg_word": "amateur",
+   "pos": [
+    "professional studio one-shot",
+    "a high quality professional recording"
+   ],
+   "neg": [
+    "amateur, cheap synthesized",
+    "a low quality amateur sound"
+   ],
+   "center": 0.1572,
+   "scale": 0.0464
+  },
+  {
+   "axis": "wet",
+   "pos_word": "wet",
+   "neg_word": "dry",
+   "pos": [
+    "a wet sound with lots of reverb",
+    "a drum hit with a long reverb tail"
+   ],
+   "neg": [
+    "a close-miked sound",
+    "dry"
+   ],
+   "center": 0.1352,
+   "scale": 0.0437
+  },
+  {
+   "axis": "bright",
+   "pos_word": "bright",
+   "neg_word": "dark",
+   "pos": [
+    "a sound with lots of high frequencies",
+    "bright"
+   ],
+   "neg": [
+    "a sound with little high end",
+    "dark"
+   ],
+   "center": -0.0337,
+   "scale": 0.0172
+  },
+  {
+   "axis": "distorted",
+   "pos_word": "distorted",
+   "neg_word": "clean",
+   "pos": [
+    "an overdriven, gritty sound",
+    "a distorted sound"
+   ],
+   "neg": [
+    "a clean, clear sound",
+    "a pure, unprocessed sound"
+   ],
+   "center": 0.0522,
+   "scale": 0.032
+  },
+  {
+   "axis": "lofi",
+   "pos_word": "lofi",
+   "neg_word": "hifi",
+   "pos": [
+    "a lo-fi, bitcrushed sound",
+    "a grainy, low fidelity sound"
+   ],
+   "neg": [
+    "a hi-fi, pristine sound",
+    "a clear, high fidelity sound"
+   ],
+   "center": 0.1164,
+   "scale": 0.0391
+  }
+ ],
+ "calibration": "center: for wet, bright, distorted and lofi, the midpoint between the medians of the transformed and original copies in daw's CC0 validation set; for quality, the median over recorded CC0 and synthesized one-shots (0.5 = a typical sample there). scale: half the standard deviation of the contrast over the validation set. Monotone, so it changes no ranking."
+}

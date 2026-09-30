@@ -10,6 +10,7 @@ daw fetches these files on first use (`daw library-sync`) and checks each one ag
 | OB-Xf presets (487, from 13 named authors) | OB-Xf | CC0-1.0 |
 | Spleeter 4-stem model, converted for daw's runtime | deezer/spleeter | MIT |
 | Basic Pitch model | spotify/basic-pitch | Apache-2.0 |
+| CLAP music model pack (optional; audio tower as ONNX + prompt embeddings), see `packs/clap-music` | LAION-AI/CLAP `music_audioset_epoch_15_esc_90.14` | CC0-1.0 |
 | Real rooms IR pack (34 recorded impulse responses) | OpenAIR (York), Aachen AIR, Detmold SRIR, BBC Maida Vale; see `packs/real-rooms` and each release's `NOTICES.md` | CC-BY-4.0, CC-BY-3.0, MIT |
 
 Each release lists its exact upstream versions, conversion scripts and checksums. The source for every GPL binary is attached to the same release as the binary.
@@ -27,3 +28,7 @@ Each release lists its exact upstream versions, conversion scripts and checksums
 ## Real rooms IR pack
 
 `daw library install real-rooms` installs recorded impulse responses of real spaces from a `real-rooms-<date>` release. Those are built by [`build-real-rooms`](.github/workflows/build-real-rooms.yml) from the upstream sources in [`packs/real-rooms/recipes.json`](packs/real-rooms/recipes.json). No audio is committed. [`packs/real-rooms/README.md`](packs/real-rooms/README.md) has the details.
+
+## CLAP music model pack
+
+`daw library install clap-music` installs an optional sample quality and character model from a `models-clap-music-<date>` release. The workflow [`build-clap-music`](.github/workflows/build-clap-music.yml) builds it from LAION's CC0 checkpoint at a pinned commit. It exports only the audio tower to ONNX, checks it against PyTorch, and precomputes the text embeddings of a fixed prompt set. No weights are committed. [`packs/clap-music/README.md`](packs/clap-music/README.md) has the details.
