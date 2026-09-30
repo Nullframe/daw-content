@@ -5,7 +5,9 @@ pinned upstream checkout before building, and records each patch's sha256 in the
 `licenses/<id>/UPSTREAM.txt` and `SOURCE-OFFER.md`. Patched sources are what the source archive
 ships.
 
-There are none today. The policy (design §8.5, §11.3):
+One today: `obxf/01-seed-rng-from-rand.patch` (from pack 2026.09.1), which seeds OB-Xf's
+voice "slop" and LFO sample-and-hold RNGs from `std::rand()` so the worker's shim makes it
+bit-identical across fresh workers. The policy (design §8.5, §11.3):
 
 - **Determinism**: prefer the worker's clock/RNG shim, which already makes Dexed bit-identical
   across fresh workers with the same seed. Add a seed patch only when the pack's
