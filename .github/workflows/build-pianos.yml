@@ -1,0 +1,85 @@
+# Builds daw's sampled pianos (packs/pianos): one tar of upstream FLAC files per instrument,
+# byte-identical to the sha256 daw pins in content/instruments/<name>/instrument.json.
+#
+# - Pull request touching packs/pianos/: build and check, no release.
+# - Manual run (workflow_dispatch) or a pushed tag `pianos-*`: build, check, then create or
+#   update the release `pianos-<UTC date>` (or the pushed tag / the `tag` input).
+#
+# Audio lives only in releases; the repository holds the scripts.
+name: build-pianos
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: pianos-<UTC date>)"
+        required: false
+  push:
+    tags: ["pianos-*"]
+  pull_request:
+    paths: ["packs/pianos/**", ".github/workflows/build-pianos.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      # daw's pinned archive.sha256 for each instrument.
+      SHA_SALAMANDER_GRAND: 4bd4c02fb450e435aaa5ca775a9512eb567f8025e4eb775755dbeeea1d2758f0
+      SHA_UPRIGHT_KW: 96753aa711116b270355fa0ed20e2744aeb6d3b3b1129d1e2595495248e49a4f
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          else tag="pianos-$(date -u +%Y-%m-%d)"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build
+        run: |
+          set -eu
+          out="$GITHUB_WORKSPACE/out"
+          for name in upright-kw salamander-grand; do
+            sh packs/pianos/package.sh "$name" "$RUNNER_TEMP/work" "$out"
+            rm -rf "$RUNNER_TEMP/work/$name"* 2>/dev/null || true
+          done
+          cp packs/pianos/NOTICES.md "$out/"
+          for name in upright-kw salamander-grand; do
+            cp "content/instruments/$name/instrument.json" "$out/$name-instrument.json"
+          done
+          cd "$out"
+          sha256sum *.tar > SHA256SUMS
+          cat SHA256SUMS
+          grep -q "^$SHA_UPRIGHT_KW  upright-kw-v1.tar$" SHA256SUMS || { echo "upright-kw-v1.tar doesn't match daw's pinned sha256"; exit 1; }
+          grep -q "^$SHA_SALAMANDER_GRAND  salamander-grand-v1.tar$" SHA256SUMS || { echo "salamander-grand-v1.tar doesn't match daw's pinned sha256"; exit 1; }
+          rm -f *.tar.sha256
+          ls -la
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cat > notes.md <<NOTES
+          Sampled pianos for daw's sampler@1: Salamander Grand Piano V3 (Alexander Holm; public domain, originally CC BY 3.0) and Upright Piano KW (FreePats; CC0 1.0). Upstream FLAC files byte for byte, with the upstream readme and licence and a NOTICE.txt in each archive; attribution in NOTICES.md.
+          Built by .github/workflows/build-pianos.yml from packs/pianos at ${GITHUB_SHA}; each archive matches the sha256 daw pins.
+          Install in daw: \`voyager-daw library install salamander-grand\` or \`voyager-daw library install upright-kw\`.
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Pianos $TAG" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets[] | "\(.name) \(.size)"'
