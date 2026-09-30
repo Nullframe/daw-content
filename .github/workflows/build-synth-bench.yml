@@ -1,0 +1,77 @@
+# Builds the synthesis benchmark's CC0 reference sounds (daw's `daw-bench synth`) from the
+# upstream files pinned in packs/synth-bench/recipes.json.
+#
+# - Pull request touching packs/synth-bench/: build and keep the result as a workflow artifact,
+#   no release.
+# - Manual run (workflow_dispatch) or a pushed tag `synth-bench-*`: build, then create or update
+#   the release `synth-bench-<UTC date>` (or the pushed tag / the `tag` input) with every WAV,
+#   SHA256SUMS, targets.json and NOTICES.md.
+#
+# Audio lives only in releases; the repository holds the recipe and the script.
+name: build-synth-bench
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: synth-bench-<UTC date>)"
+        required: false
+  push:
+    tags: ["synth-bench-*"]
+  pull_request:
+    paths: ["packs/synth-bench/**", ".github/workflows/build-synth-bench.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned, so the build is byte-reproducible)
+        run: pip install numpy==2.4.6 scipy==1.17.1 soundfile==0.14.0
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          else tag="synth-bench-$(date -u +%Y-%m-%d)"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cd packs/synth-bench
+          python3 build.py "$GITHUB_WORKSPACE/out" --cache "$RUNNER_TEMP/cache" --tag "$TAG"
+          cd "$GITHUB_WORKSPACE/out" && sha256sum -c --quiet SHA256SUMS && ls | wc -l && du -sh . && cat SHA256SUMS | sha256sum
+      - uses: actions/upload-artifact@v4
+        with:
+          name: synth-bench
+          path: out/
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cat > notes.md <<NOTES
+          Synthesis benchmark reference sounds for daw (\`daw-bench synth\`): $(ls out/*.wav | wc -l) CC0 one-shots and short textures (drums, cinematic, tonal instruments, textures, UI/SFX, oddballs), each with a text description in targets.json.
+          Sources: daw-content's recorded CC0 drums, VCSL, VSCO 2 CE, the Sonic Pi sample set, Kenney, and FSD50K's CC0 clips. Every file is CC0-1.0 (credits in NOTICES.md; per-file upstream and sha256 in targets.json).
+          Built by .github/workflows/build-synth-bench.yml from packs/synth-bench at ${GITHUB_SHA}.
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Synthesis benchmark $TAG" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets | length'
+    permissions:
+      contents: write
