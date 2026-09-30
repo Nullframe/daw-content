@@ -1,0 +1,201 @@
+# Builds daw's optional instruments pack (Vitalium, Dexed, OB-Xf) from their official upstream
+# sources at the commits pinned in packs/instruments/pack.json, and publishes it as a release.
+#
+# - Pull requests touching the pack: build every platform, upload the results as workflow
+#   artifacts, no release.
+# - Manual run (workflow_dispatch) or a pushed tag `instruments-*`: build, then create or update
+#   the release `instruments-<UTC date>` (or the pushed tag / the `tag` input) with every asset.
+#
+# Each platform's archive holds the VST3 bundles, licences, NOTICES.md, SOURCE-OFFER.md, the
+# build scripts and OB-Xf's CC0 patch files; daw converts and checks the patches on install.
+# The complete corresponding source is one archive, built on linux-x86_64; the release job
+# checks every platform built from byte-identical sources before publishing.
+name: build-instruments
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: instruments-<UTC date>)"
+        required: false
+        type: string
+  push:
+    tags: ["instruments-*"]
+  pull_request:
+    paths:
+      - "packs/instruments/**"
+      - ".github/workflows/build-instruments.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-instruments-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  tag:
+    runs-on: ubuntu-22.04
+    outputs:
+      tag: ${{ steps.t.outputs.tag }}
+    steps:
+      - id: t
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          if [[ "$GITHUB_EVENT_NAME" == push ]]; then tag="$GITHUB_REF_NAME"
+          elif [[ -n "$INPUT_TAG" ]]; then tag="$INPUT_TAG"
+          else tag="instruments-$(date -u +%Y-%m-%d)"; fi
+          [[ "$tag" =~ ^instruments-[A-Za-z0-9._-]+$ ]] || { echo "bad tag $tag"; exit 1; }
+          echo "tag=$tag" >>"$GITHUB_OUTPUT"
+          echo "release tag: $tag"
+
+  build:
+    needs: tag
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { os: ubuntu-22.04, platform: linux-x86_64, source: true }
+          - { os: ubuntu-22.04-arm, platform: linux-aarch64, source: false }
+          - { os: macos-14, platform: macos-universal, source: false }
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 150
+    env:
+      DAW_PACK_BASE_URL: https://github.com/${{ github.repository }}/releases/download/${{ needs.tag.outputs.tag }}/
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dependencies (Linux)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            git cmake ninja-build python3 python3-pip g++ pkg-config \
+            libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxext-dev libxcomposite-dev \
+            libxi-dev libxrender-dev libfreetype6-dev libfontconfig1-dev libasound2-dev libgl-dev \
+            libglu1-mesa-dev libcurl4-openssl-dev libjack-jackd2-dev libgtk-3-dev libfftw3-dev
+          pip3 install --user 'meson==1.5.2'
+          echo "$HOME/.local/bin" >>"$GITHUB_PATH"
+
+      - name: Dependencies (macOS)
+        if: runner.os == 'macOS'
+        run: |
+          # OB-Xf needs Xcode 16's libc++ (Xcode 15's lacks what its C++20 code uses).
+          xc="$(ls -d /Applications/Xcode_16*.app | sort -V | tail -n 1)"
+          sudo xcode-select -s "$xc/Contents/Developer"
+          xcodebuild -version
+          brew install ninja meson gnu-tar
+          cmake --version
+
+      - name: Build
+        run: |
+          flags=(--skip-index)
+          [[ "${{ matrix.source }}" == true ]] || flags+=(--no-source-archive)
+          packs/instruments/build.sh "${flags[@]}"
+          [[ -f "packs/instruments/.build/dist/artifact-${{ matrix.platform }}.json" ]] \
+            || { echo "built for another platform than ${{ matrix.platform }}"; exit 1; }
+
+      - name: Check the bundles
+        run: |
+          cd packs/instruments/.build/stage
+          ls vst3
+          for b in vitalium.vst3 Dexed.vst3 OB-Xf.vst3; do [[ -d "vst3/$b" ]] || { echo "missing $b"; exit 1; }; done
+          if [[ "$RUNNER_OS" == macOS ]]; then
+            for b in vst3/*.vst3; do
+              find "$b" -maxdepth 3 | sort
+              bin="$(find "$b/Contents/MacOS" -type f | head -n 1)"
+              lipo -info "$bin"
+              lipo -info "$bin" | grep -q x86_64 && lipo -info "$bin" | grep -q arm64 || { echo "$bin is not universal"; exit 1; }
+              codesign -dv "$b" 2>&1 | head -3 || true
+            done
+          else
+            find vst3 -maxdepth 3 | sort
+            file vst3/*.vst3/Contents/*/*.so
+          fi
+          find patch-files -name '*.fxp' | wc -l
+          cat NOTICES.md
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.platform }}
+          path: packs/instruments/.build/dist/
+          if-no-files-found: error
+          retention-days: 14
+
+  release:
+    needs: [tag, build]
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    env:
+      TAG: ${{ needs.tag.outputs.tag }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dl
+          merge-multiple: true
+
+      - name: Check every platform built from the same source
+        run: |
+          cd dl
+          ls -l
+          ref="$(sha256sum source-digest-linux-x86_64.txt | cut -d' ' -f1)"
+          for f in source-digest-*.txt; do
+            got="$(sha256sum "$f" | cut -d' ' -f1)"
+            echo "$f $got"
+            [[ "$got" == "$ref" ]] || { diff source-digest-linux-x86_64.txt "$f" | head -40; echo "$f differs from linux-x86_64's source"; exit 1; }
+          done
+
+      - name: Assemble release assets
+        run: |
+          mkdir out
+          cp dl/*.tar.gz dl/*.tar.gz.sha256 out/
+          (cd out && sha256sum *.tar.gz >SHA256SUMS)
+          cat out/SHA256SUMS
+          python3 - dl out <<'PY'
+          import glob, json, os, sys
+          dl, out = sys.argv[1:]
+          arts = {}
+          for f in sorted(glob.glob(f"{dl}/artifact-*.json")):
+              arts.update(json.load(open(f)))
+          json.dump(arts, open(f"{out}/artifacts.json", "w"), indent=2)
+          PY
+          cat out/artifacts.json
+          # NOTICES for the release: the linux-x86_64 archive's (identical across platforms apart
+          # from the platform line).
+          tar -xzf out/*-linux-x86_64.tar.gz -C . ./NOTICES.md ./SOURCE-OFFER.md
+          cp NOTICES.md out/NOTICES.md
+
+      - name: Release notes
+        run: |
+          {
+            echo "Optional instruments pack for \`daw\` (\`daw pack install instruments\`): **Vitalium**, **Dexed** and **OB-Xf**, built from their official upstream sources at pinned commits by [this workflow]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID), as separate VST3 plugins. All three are GPL-3.0-or-later; daw hosts them out of process and does not link them."
+            echo
+            echo "Unmodified upstream builds, except Dexed's built-in DX7 cartridges (no known authors or terms), which are replaced by an init-voice cartridge before building. Presets: OB-Xf's CC0 factory patches only (487, 13 named authors). No Dexed or Vitalium presets."
+            echo
+            echo "| File | Bytes | sha256 |"
+            echo "|---|---|---|"
+            for f in out/*.tar.gz; do
+              echo "| \`$(basename "$f")\` | $(wc -c <"$f" | tr -d ' ') | \`$(sha256sum "$f" | cut -d' ' -f1)\` |"
+            done
+            echo
+            echo "The \`-src\` archive is the complete corresponding source for every binary here: each upstream tree at its commit (Dexed's cartridge zip swapped, as described), the sources the builds fetched, and the build scripts. Licence texts are in each archive's \`licenses/\`; see \`NOTICES.md\`."
+            echo
+            sed -n '/^| Instrument/,/^$/p' SOURCE-OFFER.md
+          } >notes.md
+          cat notes.md
+
+      - name: Publish
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Instruments $TAG" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets[] | "\(.name) \(.size)"'
