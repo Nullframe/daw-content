@@ -1,0 +1,676 @@
+{
+ "tag": "sound-lab-2026-09-30",
+ "sample_rate": 48000,
+ "sources": [
+  {
+   "id": "fsd-115916",
+   "file": "src-fsd-115916.flac",
+   "title": "Glass Hits floor, breaks, shatters.wav",
+   "author": "issalcake",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/115916/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "115916",
+    "zip_entry": {
+     "disk": 1,
+     "lho": 1246266954,
+     "csz": 385153,
+     "usz": 682062,
+     "meth": 8,
+     "crc": 1733649256
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-157433",
+   "file": "src-fsd-157433.flac",
+   "title": "Medium Rain.aif",
+   "author": "timgormly",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/157433/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "157433",
+    "zip_entry": {
+     "disk": 1,
+     "lho": 1204905767,
+     "csz": 1558931,
+     "usz": 2179136,
+     "meth": 8,
+     "crc": 614819744
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-208768",
+   "file": "src-fsd-208768.flac",
+   "title": "20131120_Bunch of keys_ZoomH1XY.wav",
+   "author": "Soundscape_Leuphana",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/208768/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "208768",
+    "zip_entry": {
+     "disk": 0,
+     "lho": 3205671009,
+     "csz": 742423,
+     "usz": 1097064,
+     "meth": 8,
+     "crc": 3522867673
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-254871",
+   "file": "src-fsd-254871.flac",
+   "title": "swish whip.wav",
+   "author": "blukotek",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/254871/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "254871",
+    "zip_entry": {
+     "disk": 0,
+     "lho": 2530751306,
+     "csz": 240370,
+     "usz": 471118,
+     "meth": 8,
+     "crc": 3992710045
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-255659",
+   "file": "src-fsd-255659.flac",
+   "title": "Wine Glass Hit Bb4",
+   "author": "spectral9",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/255659/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "255659",
+    "zip_entry": {
+     "disk": 2,
+     "lho": 2705303985,
+     "csz": 196809,
+     "usz": 616662,
+     "meth": 8,
+     "crc": 2446158439
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-277741",
+   "file": "src-fsd-277741.flac",
+   "title": "paper rips.WAV",
+   "author": "stib",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/277741/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "277741",
+    "zip_entry": {
+     "disk": 0,
+     "lho": 3006368943,
+     "csz": 514864,
+     "usz": 1227708,
+     "meth": 8,
+     "crc": 124261522
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-319811",
+   "file": "src-fsd-319811.flac",
+   "title": "Finger snap 2",
+   "author": "zmobie",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/319811/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "319811",
+    "zip_entry": {
+     "disk": 4,
+     "lho": 25203152,
+     "csz": 33060,
+     "usz": 48010,
+     "meth": 8,
+     "crc": 2549142167
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-352421",
+   "file": "src-fsd-352421.flac",
+   "title": "wind_gust.aif",
+   "author": "joseph.larralde",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/352421/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "352421",
+    "zip_entry": {
+     "disk": 0,
+     "lho": 3180871947,
+     "csz": 1092072,
+     "usz": 1604864,
+     "meth": 8,
+     "crc": 1498947349
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-352719",
+   "file": "src-fsd-352719.flac",
+   "title": "Woosh (stick swung in the air)",
+   "author": "Dalesome",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/352719/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "352719",
+    "zip_entry": {
+     "disk": 1,
+     "lho": 218886515,
+     "csz": 32908,
+     "usz": 49546,
+     "meth": 8,
+     "crc": 1638238692
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-372901",
+   "file": "src-fsd-372901.flac",
+   "title": "Reverberant Door Slamming",
+   "author": "FairhavenCollection",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/372901/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "372901",
+    "zip_entry": {
+     "disk": 3,
+     "lho": 2197409922,
+     "csz": 322195,
+     "usz": 774502,
+     "meth": 8,
+     "crc": 4262440031
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-386223",
+   "file": "src-fsd-386223.flac",
+   "title": "Wood - Chopping 1",
+   "author": "ldezem",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/386223/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "386223",
+    "zip_entry": {
+     "disk": 3,
+     "lho": 1416200339,
+     "csz": 74690,
+     "usz": 130530,
+     "meth": 8,
+     "crc": 1093089494
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-386434",
+   "file": "src-fsd-386434.flac",
+   "title": "Water + plastic bottle, sloshing 1",
+   "author": "giddster",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/386434/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "386434",
+    "zip_entry": {
+     "disk": 2,
+     "lho": 535606349,
+     "csz": 574046,
+     "usz": 1260564,
+     "meth": 8,
+     "crc": 3311523139
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-403570",
+   "file": "src-fsd-403570.flac",
+   "title": "Balloon_Pop.wav",
+   "author": "LamaMakesMusic",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/403570/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "403570",
+    "zip_entry": {
+     "disk": 0,
+     "lho": 2109579868,
+     "csz": 53591,
+     "usz": 149674,
+     "meth": 8,
+     "crc": 884879485
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-405138",
+   "file": "src-fsd-405138.flac",
+   "title": "Tiny trickling forest creek (loopable)",
+   "author": "Mjeno",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/405138/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "405138",
+    "zip_entry": {
+     "disk": 3,
+     "lho": 3102620656,
+     "csz": 1060205,
+     "usz": 1476584,
+     "meth": 8,
+     "crc": 3791164083
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-406274",
+   "file": "src-fsd-406274.flac",
+   "title": "hit - wooden 08.wav",
+   "author": "Anthousai",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/406274/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "406274",
+    "zip_entry": {
+     "disk": 5,
+     "lho": 1532914070,
+     "csz": 18703,
+     "usz": 45930,
+     "meth": 8,
+     "crc": 2105902676
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-431657",
+   "file": "src-fsd-431657.flac",
+   "title": "Typing on a cheap numpad, keyboard - Zoom H1",
+   "author": "scenes",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/431657/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "eval",
+    "clip": "431657",
+    "zip_entry": {
+     "disk": 1,
+     "lho": 2492191701,
+     "csz": 268588,
+     "usz": 465998,
+     "meth": 8,
+     "crc": 3469149958
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "fsd-51038",
+   "file": "src-fsd-51038.flac",
+   "title": "Glass Tapped By Fingernail.wav",
+   "author": "RutgerMuller",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "FSD50K (Freesound Datasets, Zenodo record 4060432), CC0 clip",
+   "source_url": "https://freesound.org/s/51038/",
+   "fetch": {
+    "kind": "fsd50k",
+    "set": "dev",
+    "clip": "51038",
+    "zip_entry": {
+     "disk": 4,
+     "lho": 1141687114,
+     "csz": 575019,
+     "usz": 867212,
+     "meth": 8,
+     "crc": 731945268
+    }
+   },
+   "dataset_url": "https://zenodo.org/records/4060432"
+  },
+  {
+   "id": "kenney-click-003",
+   "file": "src-kenney-click-003.flac",
+   "title": "click_003 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/click_003.ogg"
+   }
+  },
+  {
+   "id": "kenney-drop-002",
+   "file": "src-kenney-drop-002.flac",
+   "title": "drop_002 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/drop_002.ogg"
+   }
+  },
+  {
+   "id": "kenney-glass-002",
+   "file": "src-kenney-glass-002.flac",
+   "title": "glass_002 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/glass_002.ogg"
+   }
+  },
+  {
+   "id": "kenney-impactbell-heavy-000",
+   "file": "src-kenney-impactbell-heavy-000.flac",
+   "title": "impactBell_heavy_000 (impact-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney impact-sounds pack",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactBell_heavy_000.ogg"
+   }
+  },
+  {
+   "id": "kenney-impactplate-heavy-002",
+   "file": "src-kenney-impactplate-heavy-002.flac",
+   "title": "impactPlate_heavy_002 (impact-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney impact-sounds pack",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactPlate_heavy_002.ogg"
+   }
+  },
+  {
+   "id": "kenney-impactpunch-heavy-000",
+   "file": "src-kenney-impactpunch-heavy-000.flac",
+   "title": "impactPunch_heavy_000 (impact-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney impact-sounds pack",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactPunch_heavy_000.ogg"
+   }
+  },
+  {
+   "id": "kenney-impactsoft-heavy-001",
+   "file": "src-kenney-impactsoft-heavy-001.flac",
+   "title": "impactSoft_heavy_001 (impact-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney impact-sounds pack",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactSoft_heavy_001.ogg"
+   }
+  },
+  {
+   "id": "kenney-impactwood-heavy-001",
+   "file": "src-kenney-impactwood-heavy-001.flac",
+   "title": "impactWood_heavy_001 (impact-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney impact-sounds pack",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip",
+    "member": "Audio/impactWood_heavy_001.ogg"
+   }
+  },
+  {
+   "id": "kenney-metallatch",
+   "file": "src-kenney-metallatch.flac",
+   "title": "metalLatch (rpg-audio)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney rpg-audio pack",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip",
+    "member": "Audio/metalLatch.ogg"
+   }
+  },
+  {
+   "id": "kenney-pluck-001",
+   "file": "src-kenney-pluck-001.flac",
+   "title": "pluck_001 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/pluck_001.ogg"
+   }
+  },
+  {
+   "id": "kenney-scratch-003",
+   "file": "src-kenney-scratch-003.flac",
+   "title": "scratch_003 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/scratch_003.ogg"
+   }
+  },
+  {
+   "id": "kenney-tick-002",
+   "file": "src-kenney-tick-002.flac",
+   "title": "tick_002 (interface-sounds)",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source": "Kenney interface-sounds pack",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "fetch": {
+    "kind": "zip",
+    "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+    "member": "Audio/tick_002.ogg"
+   }
+  },
+  {
+   "id": "nps-040201lowergeyserbasinwindin-from89s",
+   "file": "src-nps-040201lowergeyserbasinwindin-from89s.flac",
+   "title": "Soundscape - Lower Geyser Basin (Strong Wind) (excerpt from 89 s)",
+   "author": "NPS/Peter Comley",
+   "license": "public-domain",
+   "license_url": "https://www.nps.gov/subjects/sound/gallery.htm",
+   "source": "US National Park Service sound gallery (public domain, work of the US federal government)",
+   "source_url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-040201LowerGeyserBasinWindInTreesBinaural01011.mp3",
+   "excerpt_s": [
+    89,
+    111
+   ],
+   "fetch": {
+    "kind": "url",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-040201LowerGeyserBasinWindInTreesBinaural01011.mp3"
+   }
+  },
+  {
+   "id": "nps-cricket",
+   "file": "src-nps-cricket.flac",
+   "title": "Crickets",
+   "author": "NPS",
+   "license": "public-domain",
+   "license_url": "https://www.nps.gov/subjects/sound/gallery.htm",
+   "source": "US National Park Service sound gallery (public domain, work of the US federal government)",
+   "source_url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/nri/avElement/nri-Cricket.mp3",
+   "fetch": {
+    "kind": "url",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/nri/avElement/nri-Cricket.mp3"
+   }
+  },
+  {
+   "id": "nps-norrisporcelainbasinfumerole-from11s",
+   "file": "src-nps-norrisporcelainbasinfumerole-from11s.flac",
+   "title": "Fumarole (large) (excerpt from 11 s)",
+   "author": "NPS/Jennifer Jerrett",
+   "license": "public-domain",
+   "license_url": "https://www.nps.gov/subjects/sound/gallery.htm",
+   "source": "US National Park Service sound gallery (public domain, work of the US federal government)",
+   "source_url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-NorrisPorcelainBasinFumerole.mp3",
+   "excerpt_s": [
+    11,
+    25
+   ],
+   "fetch": {
+    "kind": "url",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-NorrisPorcelainBasinFumerole.mp3"
+   }
+  },
+  {
+   "id": "nps-oceanolympicnp",
+   "file": "src-nps-oceanolympicnp.flac",
+   "title": "Ocean",
+   "author": "NPS",
+   "license": "public-domain",
+   "license_url": "https://www.nps.gov/subjects/sound/gallery.htm",
+   "source": "US National Park Service sound gallery (public domain, work of the US federal government)",
+   "source_url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/nri/avElement/nri-OceanOlympicNP.mp3",
+   "fetch": {
+    "kind": "url",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/nri/avElement/nri-OceanOlympicNP.mp3"
+   }
+  },
+  {
+   "id": "nps-yellmaplefire20160814t08ms-from20s",
+   "file": "src-nps-yellmaplefire20160814t08ms-from20s.flac",
+   "title": "Maple Fire, 12 pm (excerpt from 20 s)",
+   "author": "NPS/Jennifer Jerrett",
+   "license": "public-domain",
+   "license_url": "https://www.nps.gov/subjects/sound/gallery.htm",
+   "source": "US National Park Service sound gallery (public domain, work of the US federal government)",
+   "source_url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-YELLMapleFire20160814T08ms.mp3",
+   "excerpt_s": [
+    20,
+    42
+   ],
+   "fetch": {
+    "kind": "url",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-YELLMapleFire20160814T08ms.mp3"
+   }
+  }
+ ]
+}
