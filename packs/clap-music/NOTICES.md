@@ -24,5 +24,5 @@ Keyword-to-Caption Augmentation", ICASSP 2023. CC0 asks for nothing; we credit L
   verification results.
 
 **Use in daw.** The pack is optional: `daw library install clap-music`. daw uses it only to
-score samples for quality and character (wet/dry, bright/dark, punchy/soft, distorted/clean).
+score samples for quality and character (wet/dry, bright/dark, distorted/clean, lo-fi/hi-fi).
 It is not used to listen to mixes or as the main search.

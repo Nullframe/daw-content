@@ -66,7 +66,7 @@ jobs:
 
           LAION-CLAP music checkpoint \`music_audioset_epoch_15_esc_90.14\` (CC0 1.0), cut down to what daw runs:
           - \`clap-music-audio.onnx\` (${size} bytes): the audio tower only (HTSAT-base + projection). It is verified against PyTorch on test clips (see \`provenance.json\`).
-          - \`clap-music-prompts.json\`: the text embeddings of a fixed prompt set: quality (professional vs amateur), wet vs dry, bright vs dark, punchy vs soft, distorted vs clean.
+          - \`clap-music-prompts.json\`: the text embeddings of a fixed prompt set: quality (professional vs amateur), wet vs dry, bright vs dark, distorted vs clean, lo-fi vs hi-fi.
 
           daw uses it to score samples for quality and character in \`daw library-index\` and \`daw sounds find\`. It does not listen to mixes and is not the primary search.
           Licence: CC0-1.0 (\`LICENSE\`, \`NOTICES.md\`). Upstream: huggingface.co/lukewys/laion_clap @ b3708341862f581175dba5c356a4ebf74a9b6651.

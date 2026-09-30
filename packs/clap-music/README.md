@@ -43,9 +43,9 @@ pushed `models-clap-music-*` tag), it also publishes the release.
 | `quality` | sounds professionally recorded ("professional studio one-shot") | amateur or cheaply synthesized |
 | `wet` | reverberant | dry |
 | `bright` | bright | dark |
-| `punchy` | hard attack | soft attack |
 | `distorted` | saturated or overdriven | clean |
+| `lofi` | lo-fi, grainy | hi-fi |
 
-Other candidate axes are dropped when they fail validation. daw's
+`punchy`/`soft` was tried and dropped, because it did not reach AUC 0.8 on held-out data; daw measures attack and transient directly. daw's
 `docs/research/clap-model-pack.md` has the validation results (per-class AUC on CC0
 material) and how `center` and `scale` were set.
