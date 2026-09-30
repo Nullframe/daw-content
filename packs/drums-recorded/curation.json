@@ -1,0 +1,309 @@
+{
+ "description": "Recorded drums and percussion from CC0 libraries (Versilian VCSL, Karoryfer Big Rusty Drums and Swirly Drums): big toms, kicks, snares, marching and concert bass drums, timpani, frame drums, cymbals, hats, swells, gongs, hand percussion and metal impacts, trimmed, mixed from the upstream mics, levelled (-1.1 dBTP) and level-matched per round-robin group. 44.1 kHz 24-bit WAV. Three round-robin kits: kit/trailer-recorded@1, kit/orchestral-recorded@1, kit/acoustic-recorded@1. Optional: install with `voyager-daw library install drums-recorded-cc0`.",
+ "drop": {
+  "bass-drum-marching-f-rr4": "daw render-pack: a second hit inside the one-shot (a rattle or a double stroke)",
+  "tom-concert-low-mallet-ff-rr2": "daw render-pack: a second hit inside the one-shot (a rattle or a double stroke)",
+  "tom-tenor-high-fff-rr1": "daw render-pack: a second hit inside the one-shot (a rattle or a double stroke)",
+  "shaker-slap-rr1": "daw render-pack: two hits and a cut tail",
+  "shaker-slap-rr2": "daw render-pack: two hits",
+  "bass-drum-concert-b-f-rr1": "daw render-pack: too tonal for a drum (0.86), 3.7 s tail",
+  "bass-drum-concert-b-ff-rr1": "daw render-pack: too tonal for a drum, overlong tail",
+  "bass-drum-concert-b-mf-rr1": "daw render-pack: too tonal for a drum, overlong tail",
+  "bass-drum-concert-b-mf-rr2": "daw render-pack: too tonal for a drum, overlong tail",
+  "bass-drum-marching-f-rr1": "daw render-pack: too tonal for a drum (the other takes are not)",
+  "bass-drum-marching-f-rr3": "daw render-pack: too tonal for a drum (the other takes are not)",
+  "bass-drum-marching-ff-rr3": "daw render-pack: too tonal for a drum (the other takes are not)",
+  "tom-floor-ff-rr1": "daw render-pack: thin (weak transient) and an overlong tail",
+  "tom-floor-ff-rr2": "daw render-pack: thin (weak transient)",
+  "tom-floor-ff-rr3": "daw render-pack: thin (weak transient)",
+  "tom-floor-ff-rr4": "daw render-pack: overlong tail; the rest of its group is dropped",
+  "frame-drum-small-muted-f-rr1": "daw render-pack: thin (body, crest and transient)",
+  "crash-17in-ff-rr1": "daw render-pack: a whistling partial 31.7 dB over the spectrum (max 30)",
+  "crash-17in-ff-rr3": "daw render-pack: a whistling partial 30.6 dB over the spectrum",
+  "crash-17in-ff-rr4": "daw render-pack: a whistling partial 30.7 dB over the spectrum",
+  "crash-suspended-2-f": "daw render-pack: a whistling partial 30.4 dB over the spectrum",
+  "bass-drum-concert-muted-fff-rr1": "daw render-pack: thin, no sub (20-80 Hz at -17 dB)",
+  "bass-drum-concert-muted-fff-rr2": "daw render-pack: thin, no sub (20-80 Hz at -19 dB)",
+  "tom-15in-stick-ff-rr3": "daw render-pack: a second hit at 1.12 s"
+ },
+ "kits": [
+  {
+   "id": "kit/trailer-recorded@1",
+   "name": "Trailer (recorded)",
+   "description": "Cinematic/trailer percussion from CC0 recordings: marching bass drum on the kick, 22/18/15-inch toms with felt mallets (the closest free thing to taiko), rimshot snare, slapstick crack, claves and woodblock ticks, a large frame drum, clash cymbals, a cymbal swell, low timpani and a concert bass drum. Round robins on every pad.",
+   "tags": [
+    "trailer",
+    "cinematic",
+    "epic",
+    "recorded",
+    "taiko-like",
+    "big"
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "pads": {
+    "kick": {
+     "groups": [
+      "bass-drum-marching-ff"
+     ],
+     "gain_db": 0.0
+    },
+    "snare": {
+     "groups": [
+      "snare-14in-rimshot-ff"
+     ],
+     "gain_db": -2.0
+    },
+    "clap": {
+     "groups": [
+      "slapstick-f"
+     ],
+     "gain_db": -5.0
+    },
+    "rim": {
+     "groups": [
+      "claves-f"
+     ],
+     "gain_db": -8.0
+    },
+    "ch": {
+     "groups": [
+      "woodblock-f"
+     ],
+     "gain_db": -9.0
+    },
+    "ph": {
+     "groups": [
+      "frame-drum-large-f"
+     ],
+     "gain_db": -4.0
+    },
+    "oh": {
+     "groups": [
+      "cymbal-swell-1-2s"
+     ],
+     "gain_db": -9.0
+    },
+    "tom_lo": {
+     "groups": [
+      "tom-22in-mallet-ff"
+     ],
+     "gain_db": -1.0
+    },
+    "tom_mid": {
+     "groups": [
+      "tom-18in-mallet-ff"
+     ],
+     "gain_db": -1.5
+    },
+    "tom_hi": {
+     "groups": [
+      "tom-15in-mallet-ff"
+     ],
+     "gain_db": -2.0
+    },
+    "crash": {
+     "groups": [
+      "crash-clash-2-fff"
+     ],
+     "gain_db": -5.0
+    },
+    "ride": {
+     "groups": [
+      "timpani-a1-ff"
+     ],
+     "gain_db": -3.0
+    },
+    "perc": {
+     "groups": [
+      "bass-drum-concert-a-ff"
+     ],
+     "gain_db": -1.0
+    }
+   }
+  },
+  {
+   "id": "kit/orchestral-recorded@1",
+   "name": "Orchestral percussion (recorded)",
+   "description": "Orchestral percussion from CC0 recordings (VCSL): concert bass drum, concert snare, timpani low/mid/high on the toms, clash cymbals, suspended cymbal, a suspended-cymbal swell, tambourine, triangle, woodblock, slapstick and tam-tam.",
+   "tags": [
+    "orchestral",
+    "cinematic",
+    "concert",
+    "recorded"
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "pads": {
+    "kick": {
+     "groups": [
+      "bass-drum-concert-a-ff"
+     ],
+     "gain_db": 0.0
+    },
+    "snare": {
+     "groups": [
+      "snare-concert-ff"
+     ],
+     "gain_db": -3.0
+    },
+    "clap": {
+     "groups": [
+      "slapstick-f"
+     ],
+     "gain_db": -5.0
+    },
+    "rim": {
+     "groups": [
+      "woodblock-f"
+     ],
+     "gain_db": -8.0
+    },
+    "ch": {
+     "groups": [
+      "tambourine-f"
+     ],
+     "gain_db": -9.0
+    },
+    "ph": {
+     "groups": [
+      "triangle-f"
+     ],
+     "gain_db": -12.0
+    },
+    "oh": {
+     "groups": [
+      "cymbal-swell-2-4s"
+     ],
+     "gain_db": -9.0
+    },
+    "tom_lo": {
+     "groups": [
+      "timpani-a1-ff"
+     ],
+     "gain_db": -1.0
+    },
+    "tom_mid": {
+     "groups": [
+      "timpani-a3-ff"
+     ],
+     "gain_db": -2.0
+    },
+    "tom_hi": {
+     "groups": [
+      "timpani-a5-ff"
+     ],
+     "gain_db": -3.0
+    },
+    "crash": {
+     "groups": [
+      "crash-clash-1-ff"
+     ],
+     "gain_db": -4.0
+    },
+    "ride": {
+     "groups": [
+      "crash-suspended-f"
+     ],
+     "gain_db": -8.0
+    },
+    "perc": {
+     "groups": [
+      "gong-fff"
+     ],
+     "gain_db": -5.0
+    }
+   }
+  },
+  {
+   "id": "kit/acoustic-recorded@1",
+   "name": "Acoustic kit (recorded)",
+   "description": "A full acoustic kit from CC0 recordings (Karoryfer Big Rusty Drums): 24-inch kick, 14-inch snare with side stick, 14-inch hats (closed, pedal, open), 14/15/18-inch toms with sticks, 17-inch crash, 22-inch ride, group claps and tambourine (VCSL). Round robins on every pad.",
+   "tags": [
+    "acoustic",
+    "live",
+    "rock",
+    "pop",
+    "recorded"
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "pads": {
+    "kick": {
+     "groups": [
+      "kick-24in-ff"
+     ]
+    },
+    "snare": {
+     "groups": [
+      "snare-14in-ff"
+     ]
+    },
+    "clap": {
+     "groups": [
+      "clap-group"
+     ]
+    },
+    "rim": {
+     "groups": [
+      "rim-sidestick-f"
+     ]
+    },
+    "ch": {
+     "groups": [
+      "hat-closed-14in-f"
+     ]
+    },
+    "ph": {
+     "groups": [
+      "hat-pedal-14in-f"
+     ]
+    },
+    "oh": {
+     "groups": [
+      "hat-open-14in-f"
+     ]
+    },
+    "tom_lo": {
+     "groups": [
+      "tom-18in-stick-ff"
+     ]
+    },
+    "tom_mid": {
+     "groups": [
+      "tom-15in-stick-ff"
+     ]
+    },
+    "tom_hi": {
+     "groups": [
+      "tom-14in-stick-ff"
+     ]
+    },
+    "crash": {
+     "groups": [
+      "crash-17in-ff",
+      "crash-17in-f"
+     ]
+    },
+    "ride": {
+     "groups": [
+      "ride-22in-f"
+     ]
+    },
+    "perc": {
+     "groups": [
+      "tambourine-f"
+     ]
+    }
+   }
+  }
+ ]
+}
