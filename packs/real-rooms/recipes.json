@@ -1,0 +1,824 @@
+{
+ "pack": "real-rooms",
+ "version": 1,
+ "sample_rate": 48000,
+ "irs": [
+  {
+   "file": "room-booth-small.wav",
+   "url": "https://s3.dualstack.eu-north-1.amazonaws.com/audb-public/air/media/1.4.0/7b7161c1-f34e-749f-dd5f-d094a1266246.zip",
+   "member": "air_binaural_booth_1_3.wav",
+   "space": "room",
+   "size_class": "small",
+   "uses": [
+    "vocals",
+    "dialogue",
+    "foley"
+   ],
+   "tags": [
+    "dry",
+    "tight",
+    "booth"
+   ],
+   "name": "Vocal booth",
+   "description": "Small, damped vocal/speech booth (AIR, far position): barely-there early reflections that make a close, dry source sound recorded.",
+   "license": "MIT",
+   "license_url": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "author": "Institute of Communication Systems (IKS), RWTH Aachen University: Aachen Impulse Response (AIR) database v1.4",
+   "source": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "mirror": "audb public mirror (audEERING), air 1.4.0",
+   "collection": "AIR"
+  },
+  {
+   "file": "room-office-small.wav",
+   "url": "https://s3.dualstack.eu-north-1.amazonaws.com/audb-public/air/media/1.4.0/0481688a-18a1-d6b9-ea88-056d539ce8c3.zip",
+   "member": "air_binaural_office_1_3.wav",
+   "space": "room",
+   "size_class": "small",
+   "uses": [
+    "dialogue",
+    "foley",
+    "perc"
+   ],
+   "tags": [
+    "office",
+    "small",
+    "natural"
+   ],
+   "name": "Small office",
+   "description": "Furnished office (AIR): short, slightly boxy decay. Realism for dialogue, foley and small percussion.",
+   "license": "MIT",
+   "license_url": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "author": "Institute of Communication Systems (IKS), RWTH Aachen University: Aachen Impulse Response (AIR) database v1.4",
+   "source": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "mirror": "audb public mirror (audEERING), air 1.4.0",
+   "collection": "AIR"
+  },
+  {
+   "file": "room-meeting-medium.wav",
+   "url": "https://s3.dualstack.eu-north-1.amazonaws.com/audb-public/air/media/1.4.0/2a3a23d7-5823-c2b3-af4a-302ef54ed2a2.zip",
+   "member": "air_binaural_meeting_1_5.wav",
+   "space": "room",
+   "size_class": "medium",
+   "uses": [
+    "drums",
+    "perc",
+    "hits"
+   ],
+   "tags": [
+    "meeting-room",
+    "medium",
+    "natural"
+   ],
+   "name": "Meeting room",
+   "description": "Medium meeting room (AIR, far position): clear early reflections and a short tail; a neutral 'real room' for drums and hits.",
+   "license": "MIT",
+   "license_url": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "author": "Institute of Communication Systems (IKS), RWTH Aachen University: Aachen Impulse Response (AIR) database v1.4",
+   "source": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "mirror": "audb public mirror (audEERING), air 1.4.0",
+   "collection": "AIR"
+  },
+  {
+   "file": "room-lecture-medium.wav",
+   "url": "https://s3.dualstack.eu-north-1.amazonaws.com/audb-public/air/media/1.4.0/fea12481-d4f3-9868-9a12-73051426e412.zip",
+   "member": "air_binaural_lecture_1_6.wav",
+   "space": "room",
+   "size_class": "medium",
+   "uses": [
+    "drums",
+    "strings",
+    "vocals"
+   ],
+   "tags": [
+    "lecture-hall",
+    "medium",
+    "live"
+   ],
+   "name": "Lecture room",
+   "description": "Lecture room (AIR, far position): a brighter, livelier medium room.",
+   "license": "MIT",
+   "license_url": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "author": "Institute of Communication Systems (IKS), RWTH Aachen University: Aachen Impulse Response (AIR) database v1.4",
+   "source": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "mirror": "audb public mirror (audEERING), air 1.4.0",
+   "collection": "AIR"
+  },
+  {
+   "file": "room-wood-panelled-small.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/elveden-hall-suffolk-england/stereo/18a_smoking_room.wav",
+   "space": "room",
+   "size_class": "small",
+   "uses": [
+    "perc",
+    "vocals",
+    "dialogue"
+   ],
+   "tags": [
+    "wood",
+    "warm",
+    "stately-home"
+   ],
+   "name": "Wood-panelled smoking room",
+   "description": "Elveden Hall smoking room: small, wood-panelled room with a warm, soft decay.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=459",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "studio-live-room-maida-vale.wav",
+   "url": "https://zenodo.org/records/10020866/files/MV5.zip?download=1",
+   "member": "MV5/AS3/AS3/KEMAR/MV5_AS3_KEMAR_R_PA-7B_S_PA-06.wav",
+   "space": "studio",
+   "size_class": "medium",
+   "uses": [
+    "drums",
+    "perc",
+    "strings",
+    "vocals"
+   ],
+   "tags": [
+    "studio",
+    "live-room",
+    "bbc",
+    "scoring"
+   ],
+   "name": "Studio live room (Maida Vale 5)",
+   "description": "BBC Maida Vale Studio 5, a working BBC recording studio (KEMAR dummy head, far position): a controlled, even, short live-room decay. The pack's scoring-room stand-in.",
+   "license": "CC-BY-3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0/",
+   "author": "University of York (G. Kearney, H. Daffern et al.) and BBC R&D: BBC Maida Vale Impulse Response Dataset",
+   "source": "https://zenodo.org/records/10020866",
+   "collection": "MaidaVale"
+  },
+  {
+   "file": "drum-room-kick.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/genesis-6-studio-live-room-drum-set/b-format/kick_ir.wav",
+   "space": "studio",
+   "size_class": "small",
+   "uses": [
+    "drums",
+    "kick",
+    "taiko"
+   ],
+   "tags": [
+    "drum-room",
+    "studio",
+    "tight"
+   ],
+   "name": "Drum room (kick position)",
+   "description": "Genesis 6 studio live room, source at the kick drum position (B-format W): short, punchy room for kicks and low drums.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=483",
+   "collection": "OpenAIR",
+   "channels": [
+    0
+   ]
+  },
+  {
+   "file": "drum-room-snare.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/genesis-6-studio-live-room-drum-set/b-format/snare_ir.wav",
+   "space": "studio",
+   "size_class": "small",
+   "uses": [
+    "drums",
+    "snare",
+    "perc"
+   ],
+   "tags": [
+    "drum-room",
+    "studio",
+    "tight"
+   ],
+   "name": "Drum room (snare position)",
+   "description": "Genesis 6 studio live room, source at the snare position (B-format W): tight room ambience for snares, toms and claps.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=483",
+   "collection": "OpenAIR",
+   "channels": [
+    0
+   ]
+  },
+  {
+   "file": "chamber-stone-small.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/maes-howe/stereo/mh3_000_ortf_48k.wav",
+   "space": "chamber",
+   "size_class": "small",
+   "uses": [
+    "perc",
+    "hits",
+    "vocals"
+   ],
+   "tags": [
+    "stone",
+    "ancient",
+    "chamber"
+   ],
+   "name": "Stone chamber (Maes Howe)",
+   "description": "Maes Howe, a neolithic chambered cairn in Orkney: a small, hard stone chamber with a dense, short decay.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=602",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "cell-stone-tiny.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/falkland-palace-bottle-dungeon/b-format/bottledungeon1_sf_edited.wav",
+   "space": "chamber",
+   "size_class": "small",
+   "uses": [
+    "hits",
+    "perc",
+    "sound-design"
+   ],
+   "tags": [
+    "stone",
+    "dungeon",
+    "resonant"
+   ],
+   "name": "Bottle dungeon",
+   "description": "Falkland Palace bottle dungeon: a tiny, bottle-shaped stone pit with a strongly coloured, resonant decay.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=468",
+   "collection": "OpenAIR",
+   "channels": [
+    0
+   ]
+  },
+  {
+   "file": "hall-wood-club.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/spokane-womans-club/stereo/spokane_womans_club_ir.wav",
+   "space": "hall",
+   "size_class": "medium",
+   "uses": [
+    "strings",
+    "vocals",
+    "piano"
+   ],
+   "tags": [
+    "wood",
+    "hall",
+    "warm"
+   ],
+   "name": "Wood hall (Spokane Woman's Club)",
+   "description": "Spokane Woman's Club: a wood-floored clubhouse hall with a warm, rounded tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=659",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "hall-marble.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/elveden-hall-suffolk-england/stereo/1a_marble_hall.wav",
+   "space": "hall",
+   "size_class": "large",
+   "uses": [
+    "strings",
+    "choir",
+    "hits"
+   ],
+   "tags": [
+    "marble",
+    "ornate",
+    "bright"
+   ],
+   "name": "Marble hall (Elveden)",
+   "description": "Elveden Hall marble hall: a large, ornate stone-and-plaster hall with a long, bright tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=459",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "hall-concert-usina.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/usina-del-arte-symphony-hall/stereo/usina_main_s1_p1.wav",
+   "space": "hall",
+   "size_class": "large",
+   "uses": [
+    "strings",
+    "orchestral",
+    "taiko",
+    "hits"
+   ],
+   "tags": [
+    "concert-hall",
+    "symphony",
+    "modern"
+   ],
+   "name": "Concert hall (Usina del Arte)",
+   "description": "Usina del Arte symphony hall, Buenos Aires: a modern concert hall with a clear, balanced tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=770",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "hall-concert-jack-lyons.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/jack-lyons-concert-hall-university-york/b-format/rir_jack_lyons_lp1_96k.wav",
+   "space": "hall",
+   "size_class": "large",
+   "uses": [
+    "strings",
+    "piano",
+    "orchestral"
+   ],
+   "tags": [
+    "concert-hall",
+    "wood",
+    "recital"
+   ],
+   "name": "Concert hall (Jack Lyons)",
+   "description": "Jack Lyons concert hall, University of York (B-format W): a mid-size concert hall with a smooth tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=571",
+   "collection": "OpenAIR",
+   "channels": [
+    0
+   ]
+  },
+  {
+   "file": "hall-concert-detmold.wav",
+   "url": "https://zenodo.org/records/4116247/files/DetmoldSRIR_v01.zip?download=1",
+   "member": "SetC_DenseKH_LSOrchestra/Data/DummyHead/S1R10.wav",
+   "space": "hall",
+   "size_class": "large",
+   "uses": [
+    "orchestral",
+    "strings",
+    "taiko",
+    "hits"
+   ],
+   "tags": [
+    "concert-hall",
+    "detmold",
+    "stage"
+   ],
+   "name": "Concert hall (Detmold Konzerthaus)",
+   "description": "Detmold Konzerthaus (about 600 seats), dummy head in the audience with the source on stage: a real orchestral hall.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Authors of the Open Database of Spatial Room Impulse Responses at Detmold University of Music (Zenodo 4116247)",
+   "source": "https://zenodo.org/records/4116247",
+   "collection": "DetmoldSRIR"
+  },
+  {
+   "file": "hall-chamber-brahmssaal.wav",
+   "url": "https://zenodo.org/records/4116247/files/DetmoldSRIR_v01.zip?download=1",
+   "member": "SetA_SingleSources/Data/Brahmssaal/DummyHead/C1S1R2.wav",
+   "space": "hall",
+   "size_class": "medium",
+   "uses": [
+    "strings",
+    "piano",
+    "vocals"
+   ],
+   "tags": [
+    "chamber-hall",
+    "recital",
+    "intimate"
+   ],
+   "name": "Chamber hall (Brahmssaal)",
+   "description": "Detmold Brahmssaal, a ~100-seat chamber music hall (dummy head): intimate, clear, short concert tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Authors of the Open Database of Spatial Room Impulse Responses at Detmold University of Music (Zenodo 4116247)",
+   "source": "https://zenodo.org/records/4116247",
+   "collection": "DetmoldSRIR"
+  },
+  {
+   "file": "theatre-sommertheater.wav",
+   "url": "https://zenodo.org/records/4116247/files/DetmoldSRIR_v01.zip?download=1",
+   "member": "SetA_SingleSources/Data/SommerTheater/DummyHead/C1S1R2.wav",
+   "space": "theatre",
+   "size_class": "medium",
+   "uses": [
+    "dialogue",
+    "vocals",
+    "perc"
+   ],
+   "tags": [
+    "theatre",
+    "stage",
+    "dry"
+   ],
+   "name": "Theatre (Detmold Sommertheater)",
+   "description": "Detmold Sommertheater (~300 seats, dummy head): a drier theatre sound for dialogue and stage percussion.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "Authors of the Open Database of Spatial Room Impulse Responses at Detmold University of Music (Zenodo 4116247)",
+   "source": "https://zenodo.org/records/4116247",
+   "collection": "DetmoldSRIR"
+  },
+  {
+   "file": "court-tennis-large.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/falkland-palace-royal-tennis-court/stereo/falkland_tennis_court_ortf.wav",
+   "space": "hall",
+   "size_class": "large",
+   "uses": [
+    "hits",
+    "taiko",
+    "sound-design"
+   ],
+   "tags": [
+    "stone",
+    "court",
+    "very-long"
+   ],
+   "name": "Real-tennis court (Falkland)",
+   "description": "Falkland Palace royal (real) tennis court: a long, hard-walled 16th-century court; bright, slappy walls over a mid-length tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=476",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "cathedral-york-minster.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/york-minster/stereo/minster1_000_ortf_48k.wav",
+   "space": "cathedral",
+   "size_class": "huge",
+   "uses": [
+    "choir",
+    "strings",
+    "hits",
+    "taiko"
+   ],
+   "tags": [
+    "cathedral",
+    "gothic",
+    "very-long"
+   ],
+   "name": "Cathedral (York Minster)",
+   "description": "York Minster, a large Gothic cathedral: a vast, dark, very long tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=797",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "cathedral-chapel-st-albans.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/lady-chapel-st-albans-cathedral/stereo/stalbans_a_ortf.wav",
+   "space": "church",
+   "size_class": "large",
+   "uses": [
+    "choir",
+    "vocals",
+    "strings"
+   ],
+   "tags": [
+    "cathedral",
+    "chapel",
+    "stone"
+   ],
+   "name": "Cathedral chapel (St Albans)",
+   "description": "Lady Chapel, St Albans Cathedral: a stone chapel with a choral tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=595",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "church-nashville.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/1st-baptist-nashville/stereo/1st_baptist_nashville_far_wide.wav",
+   "space": "church",
+   "size_class": "large",
+   "uses": [
+    "vocals",
+    "choir",
+    "piano"
+   ],
+   "tags": [
+    "church",
+    "warm",
+    "wide"
+   ],
+   "name": "Church (1st Baptist, Nashville)",
+   "description": "First Baptist Church, Nashville (far, wide pair): a large, warm church sound.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=406",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "church-small-st-andrews.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/st-andrews-church/stereo/lyd3_000_ortf_48k.wav",
+   "space": "church",
+   "size_class": "medium",
+   "uses": [
+    "vocals",
+    "strings",
+    "perc"
+   ],
+   "tags": [
+    "church",
+    "small",
+    "village"
+   ],
+   "name": "Small church (St Andrew's)",
+   "description": "St Andrew's Church: a small stone church with a short, clear tail.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=683",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "mausoleum-huge.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/hamilton-mausoleum/stereo/hm2_000_ortf_48k.wav",
+   "space": "chamber",
+   "size_class": "huge",
+   "uses": [
+    "hits",
+    "drones",
+    "sound-design"
+   ],
+   "tags": [
+    "stone",
+    "dome",
+    "extreme"
+   ],
+   "name": "Mausoleum (Hamilton)",
+   "description": "Hamilton Mausoleum: a domed stone mausoleum with an extremely long echo (the IR is cut at 10 s, the device limit).",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=502",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "stairwell-concrete.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/stairway-university-york/stereo/stairwell_ortf.wav",
+   "space": "stairwell",
+   "size_class": "medium",
+   "uses": [
+    "drums",
+    "snare",
+    "vocals",
+    "hits"
+   ],
+   "tags": [
+    "stairwell",
+    "concrete",
+    "flutter"
+   ],
+   "name": "Stairwell (York)",
+   "description": "University of York stairwell: hard concrete stairwell with a bright, fluttery ~1.2 s decay; the classic drum-in-the-stairwell sound.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=678",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "stairwell-aachen.wav",
+   "url": "https://s3.dualstack.eu-north-1.amazonaws.com/audb-public/air/media/1.4.0/ad69a404-ce64-6e82-5b78-6ebfdeb569ad.zip",
+   "member": "air_binaural_stairway_1_1_90.wav",
+   "space": "stairwell",
+   "size_class": "medium",
+   "uses": [
+    "drums",
+    "snare",
+    "perc"
+   ],
+   "tags": [
+    "stairwell",
+    "concrete",
+    "bright"
+   ],
+   "name": "Stairwell (Aachen)",
+   "description": "Stairwell at RWTH Aachen (AIR): a brighter, tighter stairwell.",
+   "license": "MIT",
+   "license_url": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "author": "Institute of Communication Systems (IKS), RWTH Aachen University: Aachen Impulse Response (AIR) database v1.4",
+   "source": "https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/",
+   "mirror": "audb public mirror (audEERING), air 1.4.0",
+   "collection": "AIR"
+  },
+  {
+   "file": "warehouse-factory-huge.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/terrys-factory-warehouse/stereo/terrys_warehouse_stereo.wav",
+   "space": "warehouse",
+   "size_class": "huge",
+   "uses": [
+    "hits",
+    "taiko",
+    "sound-design",
+    "drones"
+   ],
+   "tags": [
+    "industrial",
+    "concrete",
+    "very-long"
+   ],
+   "name": "Factory warehouse (Terry's)",
+   "description": "Terry's Factory Warehouse, York: a huge, empty industrial warehouse with a very long tail (cut at 10 s). The pack's garage/industrial space.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=735",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "concrete-hall-reactor.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/r1-nuclear-reactor-hall/stereo/r1_ortf-48k.wav",
+   "space": "warehouse",
+   "size_class": "huge",
+   "uses": [
+    "hits",
+    "sound-design",
+    "drones"
+   ],
+   "tags": [
+    "concrete",
+    "underground",
+    "industrial"
+   ],
+   "name": "Concrete reactor hall (R1)",
+   "description": "R1 nuclear reactor hall (KTH, Stockholm, decommissioned): a large concrete hall with a long, hard tail (cut at 10 s); the closest to a concrete parking-garage sound.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=626",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "tunnel-railway.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/innocent-railway-tunnel/mono/middle_tunnel_1way_mono.wav",
+   "space": "tunnel",
+   "size_class": "large",
+   "uses": [
+    "hits",
+    "perc",
+    "sound-design"
+   ],
+   "tags": [
+    "tunnel",
+    "stone",
+    "long"
+   ],
+   "name": "Railway tunnel (Innocent Railway)",
+   "description": "Innocent Railway tunnel, Edinburgh (middle of the tunnel, 10 m source-receiver): a disused stone rail tunnel with a tube-like decay.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=525",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "outdoor-gorge.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/trollers-gill/mono/dales_site1_1way_mono.wav",
+   "space": "outdoor",
+   "size_class": "large",
+   "uses": [
+    "hits",
+    "taiko",
+    "perc"
+   ],
+   "tags": [
+    "outdoor",
+    "gorge",
+    "rock",
+    "short"
+   ],
+   "name": "Limestone gorge (Troller's Gill)",
+   "description": "Troller's Gill limestone gorge: open air between rock walls; a short, diffuse outdoor scatter with no enclosed tail. Exterior realism for hits and percussion.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=745",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "outdoor-forest-summer.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/koli-national-park-summer/mono/koli_summer_site1_1way_mono.wav",
+   "space": "outdoor",
+   "size_class": "large",
+   "uses": [
+    "hits",
+    "perc",
+    "dialogue"
+   ],
+   "tags": [
+    "outdoor",
+    "forest",
+    "open"
+   ],
+   "name": "Forest, summer (Koli)",
+   "description": "Koli National Park, Finland, summer forest: open-air diffuse scattering from trees; exterior realism.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=577",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "outdoor-forest-snow.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/koli-national-park-winter/mono/koli_snow_site1_1way_mono.wav",
+   "space": "outdoor",
+   "size_class": "large",
+   "uses": [
+    "hits",
+    "perc",
+    "dialogue"
+   ],
+   "tags": [
+    "outdoor",
+    "forest",
+    "snow",
+    "dead"
+   ],
+   "name": "Forest, snow (Koli)",
+   "description": "Koli National Park, winter forest in snow: a very dead, absorbed exterior.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=584",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "outdoor-slap-monument.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/tyndall-bruce-monument/stereo/tyndall_bruce_ortf.wav",
+   "space": "outdoor",
+   "size_class": "medium",
+   "uses": [
+    "hits",
+    "perc"
+   ],
+   "tags": [
+    "outdoor",
+    "slapback",
+    "echoes",
+    "hilltop"
+   ],
+   "name": "Outdoor slapback (Tyndall Bruce Monument)",
+   "description": "Tyndall Bruce Monument, Falkland: open hilltop with discrete slapback echoes (about 40, 125 and 275 ms) off the stone monument and terrain. The pack's outdoor slap/canyon space.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=764",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "cave-creswell.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/creswell-crags/examples/1_s_mainlevel_r_mainlevel_0.wav",
+   "space": "cave",
+   "size_class": "medium",
+   "uses": [
+    "hits",
+    "perc",
+    "sound-design"
+   ],
+   "tags": [
+    "cave",
+    "limestone",
+    "dark"
+   ],
+   "name": "Cave (Creswell Crags)",
+   "description": "Creswell Crags limestone cave: an irregular rock cave with a dark, uneven decay.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=441",
+   "collection": "OpenAIR"
+  },
+  {
+   "file": "spring-slinky.wav",
+   "url": "https://webfiles.york.ac.uk/OPENAIR/IRs/slinky-ir/mono/slinky_ir.wav",
+   "space": "spring",
+   "size_class": "small",
+   "uses": [
+    "guitar",
+    "perc",
+    "sound-design"
+   ],
+   "tags": [
+    "spring",
+    "metallic",
+    "lo-fi"
+   ],
+   "name": "Spring (Slinky)",
+   "description": "A metal toy Slinky recorded as a spring reverb: dispersive, boingy, spring-tank character with a long metallic ring.",
+   "license": "CC-BY-4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0/",
+   "author": "OpenAIR, AudioLab, University of York",
+   "source": "https://www.openair.hosted.york.ac.uk/?page_id=652",
+   "collection": "OpenAIR"
+  }
+ ]
+}
