@@ -176,7 +176,7 @@ jobs:
           {
             echo "Optional instruments pack for \`daw\` (\`daw pack install instruments\`): **Vitalium**, **Dexed** and **OB-Xf**, built from their official upstream sources at pinned commits by [this workflow]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID), as separate VST3 plugins. All three are GPL-3.0-or-later; daw hosts them out of process and does not link them."
             echo
-            echo "Unmodified upstream builds, except Dexed's built-in DX7 cartridges (no known authors or terms), which are replaced by an init-voice cartridge before building. Presets: OB-Xf's CC0 factory patches only (487, 13 named authors). No Dexed or Vitalium presets."
+            echo "Unmodified upstream builds, except Dexed's built-in DX7 cartridges (no known authors or terms), which are replaced by an init-voice cartridge before building, and OB-Xf, whose voice-drift and LFO RNGs are seeded from rand() so it renders deterministically (patches/obxf/). Presets: OB-Xf's CC0 factory patches only (487, 13 named authors). No Dexed or Vitalium presets."
             echo
             echo "| File | Bytes | sha256 |"
             echo "|---|---|---|"

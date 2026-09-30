@@ -23,7 +23,7 @@ get it (the install command, or the local build while no release is published).
 **Founder decision (2026-09-29): ship, cautiously.** Only presets whose authorship and licence
 are clear ship (see [Preset provenance](#preset-provenance)), and the archives are hosted on a
 **public** Nullframe release, never the internal `daw` repository: [Nullframe/daw-content
-`instruments-2026-09-30`](https://github.com/Nullframe/daw-content/releases/tag/instruments-2026-09-30)
+`instruments-2026.09.1`](https://github.com/Nullframe/daw-content/releases/tag/instruments-2026.09.1)
 (see [Publishing a release](#publishing-a-release)).
 
 **Status (2026-09-30): published.** GitHub Actions in Nullframe/daw-content built the pack
@@ -31,9 +31,11 @@ from the pinned upstream commits for Linux x86_64 and aarch64 and macOS universa
 it with its source archive. `pack.json` pins that release's sha256 values, so `daw pack install
 instruments` downloads, verifies, clears macOS quarantine and indexes it. That was checked end to
 end on macOS (arm64) from the real release: all three plugins scan and load, and all 487 OB-Xf
-presets are taken (none rejected). Vitalium and Dexed are tier A; **OB-Xf is tier C**, see
-[Determinism](#determinism-tier-a). The Linux archives are built and hash-pinned but have not
-been installed on a Linux machine yet.
+presets are taken (none rejected). Vitalium and Dexed are tier A. OB-Xf was tier C in that
+first release (2026.09.0); **2026.09.1** adds a seed patch (`patches/obxf/`, daw-content only)
+and OB-Xf is tier A, see [Determinism](#determinism-tier-a). The Linux archives are built and
+hash-pinned; the published release has not been installed on a real Linux machine yet (a local
+Linux x86_64 build of OB-Xf was).
 
 ## What's in it
 
@@ -172,12 +174,18 @@ isn't tier A (`--allow-tier-c` for a local test build); the fix is a seed patch
 and install doesn't refuse: an instrument that fails is installed as tier C (usable, not
 bit-exact) and `content.json` records the differing renders.
 
-**Measured on the first release (macOS, arm64):** Vitalium and Dexed are tier A. **OB-Xf is
-tier C**: its init patch and all three presets render differently in two fresh workers with the
-same seed, so something in it (probably the per-voice "voice variation" drift) draws randomness
-the worker's shim doesn't pin. A seed patch in `patches/obxf/` is the follow-up; it would make
-OB-Xf no longer an unmodified upstream build, so it needs a new pack version and a note in
-daw-content's NOTICES. After install, `daw plugin-scan` still double-renders each plugin, and a
+**Measured on the first release (macOS, arm64):** Vitalium and Dexed are tier A; OB-Xf was
+tier C: its init patch and all three presets rendered differently in two fresh workers with the
+same seed. The cause was `juce::Random`'s default seed (it mixes in an object address and the
+clock) for the per-voice "slop" and the LFO sample-and-hold, which the shim can't pin. From
+pack **2026.09.1**, `patches/obxf/01-seed-rng-from-rand.patch` seeds both from `std::rand()`,
+which the shim does pin, and OB-Xf is tier A (init and three presets, each pair bit-identical,
+on Linux x86_64). The patch is GPL, so it lives only in daw-content's copy of this folder;
+daw-content's NOTICES records it. The same fix exposed that OB-Xf's `.fxp` chunks are its
+*program* state, which its plugin state wraps in a `<program>` element: daw now wraps them
+(`vstpreset::program_to_plugin_state`), and the indexer renders once after resetting to the
+init patch, because OB-Xf defers a patch load while changes are still queued for its audio
+thread. Before that, the randomness hid that the presets weren't loading. After install, `daw plugin-scan` still double-renders each plugin, and a
 pack plugin is marked tier A only when its pack's admission passed and the scan agrees
 (`plugin-list`, `plugin-info`, `doctor`).
 
@@ -267,14 +275,14 @@ Ubuntu 22.04; macOS universal on `macos-14` with Xcode 16) from a copy of this f
 (`packs/instruments/` there), with `build.sh --skip-index`, and publishes the release
 `instruments-<UTC date>`.
 
-**What a release contains** (for `version` 2026.09.0):
+**What a release contains** (for `version` 2026.09.1):
 
 | File | Built on |
 |---|---|
-| `daw-instruments-2026.09.0-linux-x86_64.tar.gz` (+ `.sha256`) | `ubuntu-22.04` |
-| `daw-instruments-2026.09.0-linux-aarch64.tar.gz` (+ `.sha256`) | `ubuntu-22.04-arm` |
-| `daw-instruments-2026.09.0-macos-universal.tar.gz` (+ `.sha256`) | `macos-14` (arm64 + x86_64, macOS 11+) |
-| `daw-instruments-2026.09.0-src.tar.gz` (+ `.sha256`) | `ubuntu-22.04`: the complete corresponding source; the workflow refuses to publish unless every platform's source digest matches it |
+| `daw-instruments-2026.09.1-linux-x86_64.tar.gz` (+ `.sha256`) | `ubuntu-22.04` |
+| `daw-instruments-2026.09.1-linux-aarch64.tar.gz` (+ `.sha256`) | `ubuntu-22.04-arm` |
+| `daw-instruments-2026.09.1-macos-universal.tar.gz` (+ `.sha256`) | `macos-14` (arm64 + x86_64, macOS 11+) |
+| `daw-instruments-2026.09.1-src.tar.gz` (+ `.sha256`) | `ubuntu-22.04`: the complete corresponding source; the workflow refuses to publish unless every platform's source digest matches it |
 | `SHA256SUMS`, `artifacts.json` (file, sha256, bytes per platform), `NOTICES.md` | |
 
 **Steps.**
