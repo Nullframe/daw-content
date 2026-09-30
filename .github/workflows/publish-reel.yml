@@ -74,6 +74,7 @@ jobs:
           mkdir out
           printf '%s' "$DATA" | base64 -d > "out/$FILE.part-$(printf %02d "$PART")"
           ls -l out
+          sha256sum out/*
       - name: Create the release if needed and upload the part
         run: |
           if ! gh release view "$TAG" >/dev/null 2>&1; then
