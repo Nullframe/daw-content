@@ -1,0 +1,79 @@
+# Builds the sound-lab sources (CC0 / public-domain recordings that daw's sound-lab pack
+# resamples) from the upstreams pinned in packs/sound-lab/sources.json.
+#
+# - Pull request touching packs/sound-lab/: build and keep the result as a workflow artifact,
+#   no release.
+# - Manual run (workflow_dispatch) or a pushed tag `sound-lab-*`: build, then create or update the
+#   release (the pushed tag, the `tag` input, or the tag in sources.json) with every src-*.flac,
+#   SHA256SUMS, NOTICES.md and provenance.json.
+#
+# The recipes in daw pin each file's sha256, so the build must reproduce the same bytes: numpy,
+# scipy and soundfile are pinned. Audio lives only in releases; the repository holds the recipe.
+name: build-sound-lab
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: the tag in packs/sound-lab/sources.json)"
+        required: false
+  push:
+    tags: ["sound-lab-*"]
+  pull_request:
+    paths: ["packs/sound-lab/**", ".github/workflows/build-sound-lab.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned, so the conditioning is byte-reproducible)
+        run: pip install numpy==2.4.6 scipy==1.17.1 soundfile==0.14.0
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          else tag="$(python3 -c 'import json;print(json.load(open("packs/sound-lab/sources.json"))["tag"])')"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build
+        run: |
+          python3 packs/sound-lab/build.py "$GITHUB_WORKSPACE/out" --cache "$RUNNER_TEMP/cache"
+          cd "$GITHUB_WORKSPACE/out" && sha256sum -c SHA256SUMS && ls -la
+      - name: Check against the pins in sources.json
+        run: python3 packs/sound-lab/check.py "$GITHUB_WORKSPACE/out"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sound-lab
+          path: out/
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cp packs/sound-lab/reel.json out/reel.json
+          cat > notes.md <<NOTES
+          Sources for daw's sound-lab pack: $(ls out/src-*.flac | wc -l) CC0 / public-domain recordings (FSD50K CC0 clips, Kenney, US National Park Service), 48 kHz / 24-bit FLAC, fetched from their upstreams and conditioned by packs/sound-lab/build.py at ${GITHUB_SHA}.
+          Title, author, licence and upstream URL per file: provenance.json and NOTICES.md. The pack's recipes fetch each file by URL and sha256.
+          Render the pack in daw: \`daw library render-pack sound-lab\` (optional tier).
+          The highlight reel (sound-lab-reel.mp3, rendered by daw from these sources and our own synthesis; index in reel.json) is added to this release separately.
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "sound-lab $TAG: resampling sources (+ reel)" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets[] | "\(.name) \(.size)"'
+    permissions:
+      contents: write

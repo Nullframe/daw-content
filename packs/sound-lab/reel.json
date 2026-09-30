@@ -1,0 +1,589 @@
+{
+ "duration_s": 166.3,
+ "items": [
+  {
+   "start_s": 0.0,
+   "category": "pad",
+   "name": "pad-stretch-sglass",
+   "chain": "trim start=0.00s len=4s | stretch 8x window=500ms | lowpass hz=5000 | highpass hz=60 | reverb ir=hall-large mix=0.35 | fade in=1.5s out=3s | length 16s | fade out=2.5s | normalize",
+   "sources": [
+    {
+     "title": "daw render: glass",
+     "author": "daw contributors",
+     "license": "CC0-1.0",
+     "url": "https://github.com/Nullframe/daw"
+    }
+   ]
+  },
+  {
+   "start_s": 6.6,
+   "category": "pad",
+   "name": "pad-freeze-kimpactbell-heavy",
+   "chain": "freeze at=15% len=12s window=250ms | lowpass hz=4000 | highpass hz=60 | reverb ir=cathedral mix=0.4 | fade in=2s out=3s | length 16s | fade out=2.5s | normalize",
+   "sources": [
+    {
+     "title": "impactBell_heavy_000 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 13.2,
+   "category": "pad",
+   "name": "pad-cloud-sbell",
+   "chain": "trim start=0.00s len=4s | stretch 4x window=300ms | granular preset=cloud-smooth mix=1 | reverb ir=hall-large mix=0.5 | highpass hz=60 | fade in=1s out=3s | normalize",
+   "sources": [
+    {
+     "title": "daw render: bell",
+     "author": "daw contributors",
+     "license": "CC0-1.0",
+     "url": "https://github.com/Nullframe/daw"
+    }
+   ]
+  },
+  {
+   "start_s": 20.6,
+   "category": "atmos",
+   "name": "atmos-darkbed-nyellmaplefire2016",
+   "chain": "trim start=0.20s len=20s | lowpass hz=2200 slope=24 | highpass hz=40 | blur amount=150ms mix=0.35 | fade in=2s out=2s | normalize lufs=-28",
+   "sources": [
+    {
+     "title": "Maple Fire, 12 pm (excerpt from 20 s)",
+     "author": "NPS/Jennifer Jerrett",
+     "license": "public-domain",
+     "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-YELLMapleFire20160814T08ms.mp3"
+    }
+   ]
+  },
+  {
+   "start_s": 27.2,
+   "category": "atmos",
+   "name": "atmos-roomtone-f157433",
+   "chain": "trim start=7.41s len=12s | blur amount=1s | lowpass hz=900 slope=24 | highpass hz=35 | fade in=2s out=2s | normalize lufs=-30",
+   "sources": [
+    {
+     "title": "Medium Rain.aif",
+     "author": "timgormly",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/157433/"
+    }
+   ]
+  },
+  {
+   "start_s": 33.8,
+   "category": "atmos",
+   "name": "atmos-darkbed-n040201lowergeyser",
+   "chain": "trim start=0.93s len=20s | lowpass hz=2200 slope=24 | highpass hz=40 | blur amount=150ms mix=0.35 | fade in=2s out=2s | normalize lufs=-28",
+   "sources": [
+    {
+     "title": "Soundscape - Lower Geyser Basin (Strong Wind) (excerpt from 89 s)",
+     "author": "NPS/Peter Comley",
+     "license": "public-domain",
+     "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-040201LowerGeyserBasinWindInTreesBinaural01011.mp3"
+    }
+   ]
+  },
+  {
+   "start_s": 41.2,
+   "category": "shimmer",
+   "name": "shimmer-upfreeze-sglass",
+   "chain": "trim start=0.00s len=4s | pitch 12 | freeze at=10% len=8s window=150ms | reverb ir=hall-large mix=0.5 | highpass hz=400 | lowpass hz=9000 | fade in=1s out=3s | normalize",
+   "sources": [
+    {
+     "title": "daw render: glass",
+     "author": "daw contributors",
+     "license": "CC0-1.0",
+     "url": "https://github.com/Nullframe/daw"
+    }
+   ]
+  },
+  {
+   "start_s": 46.8,
+   "category": "shimmer",
+   "name": "shimmer-octgrain-f255659",
+   "chain": "trim start=0.00s len=4s | granular preset=cloud-octave-shimmer mix=1 | stretch 3x window=250ms | reverb ir=cathedral mix=0.5 | highpass hz=300 | fade in=500ms out=2s | length 12s | fade out=2.5s | normalize",
+   "sources": [
+    {
+     "title": "Wine Glass Hit Bb4",
+     "author": "spectral9",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/255659/"
+    }
+   ]
+  },
+  {
+   "start_s": 52.4,
+   "category": "shimmer",
+   "name": "shimmer-octgrain-sbell",
+   "chain": "trim start=0.00s len=4s | granular preset=cloud-octave-shimmer mix=1 | stretch 3x window=250ms | reverb ir=cathedral mix=0.5 | highpass hz=300 | fade in=500ms out=2s | normalize",
+   "sources": [
+    {
+     "title": "daw render: bell",
+     "author": "daw contributors",
+     "license": "CC0-1.0",
+     "url": "https://github.com/Nullframe/daw"
+    }
+   ]
+  },
+  {
+   "start_s": 58.8,
+   "category": "texture",
+   "name": "texture-spray-nyellmaplefire2016",
+   "chain": "trim start=0.20s len=6s | granular preset=glitch-spray mix=1 | lowpass hz=6000 | highpass hz=80 | fade in=300ms out=1s | length 10s | fade out=2.5s | normalize lufs=-24",
+   "sources": [
+    {
+     "title": "Maple Fire, 12 pm (excerpt from 20 s)",
+     "author": "NPS/Jennifer Jerrett",
+     "license": "public-domain",
+     "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/imr/avElement/yell-YELLMapleFire20160814T08ms.mp3"
+    }
+   ]
+  },
+  {
+   "start_s": 64.4,
+   "category": "texture",
+   "name": "texture-scatter-f431657",
+   "chain": "granular preset=cloud-scatter mix=1 | blur amount=100ms mix=0.4 | lowpass hz=5000 | highpass hz=80 | fade in=300ms out=1s | normalize lufs=-24",
+   "sources": [
+    {
+     "title": "Typing on a cheap numpad, keyboard - Zoom H1",
+     "author": "scenes",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/431657/"
+    }
+   ]
+  },
+  {
+   "start_s": 70.0,
+   "category": "texture",
+   "name": "texture-spray-f386434",
+   "chain": "trim start=4.29s len=6s | granular preset=glitch-spray mix=1 | lowpass hz=6000 | highpass hz=80 | fade in=300ms out=1s | length 10s | fade out=2.5s | normalize lufs=-24",
+   "sources": [
+    {
+     "title": "Water + plastic bottle, sloshing 1",
+     "author": "giddster",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/386434/"
+    }
+   ]
+  },
+  {
+   "start_s": 76.4,
+   "category": "riser",
+   "name": "riser-revverb-sbell",
+   "chain": "trim | reverb ir=cathedral mix=1 | reverse | trim | fade in=300ms out=20ms | normalize",
+   "sources": [
+    {
+     "title": "daw render: bell",
+     "author": "daw contributors",
+     "license": "CC0-1.0",
+     "url": "https://github.com/Nullframe/daw"
+    }
+   ]
+  },
+  {
+   "start_s": 82.11,
+   "category": "riser",
+   "name": "riser-revverb-kimpactplate-heavy",
+   "chain": "trim | reverb ir=cathedral mix=1 | reverse | trim | fade in=300ms out=20ms | normalize",
+   "sources": [
+    {
+     "title": "impactPlate_heavy_002 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 87.63,
+   "category": "riser",
+   "name": "riser-revstretch-f352421",
+   "chain": "trim start=5.46s len=2s | stretch 3x window=250ms | reverse | sweep from=150 to=4500 type=lp q=1.2 | fade in=1.5s curve=exp out=20ms | normalize",
+   "sources": [
+    {
+     "title": "wind_gust.aif",
+     "author": "joseph.larralde",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/352421/"
+    }
+   ]
+  },
+  {
+   "start_s": 95.03,
+   "category": "downlifter",
+   "name": "downlifter-noisefall-noise-pink",
+   "chain": "sweep from=4000 to=100 type=lp q=2 slope=24 | reverb ir=hall-large mix=0.2 | fade in=10ms out=2.5s | normalize",
+   "sources": [
+    {
+     "title": "noise:pink:4s",
+     "license": "CC0-1.0"
+    }
+   ]
+  },
+  {
+   "start_s": 100.63,
+   "category": "downlifter",
+   "name": "downlifter-dropverb-f406274",
+   "chain": "trim | reverb ir=hall-large mix=0.8 | pitch -12 | sweep from=5000 to=150 type=lp q=1 | fade out=1s | normalize",
+   "sources": [
+    {
+     "title": "hit - wooden 08.wav",
+     "author": "Anthousai",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/406274/"
+    }
+   ]
+  },
+  {
+   "start_s": 107.03,
+   "category": "whoosh",
+   "name": "whoosh-revswish-noceanolympicnp",
+   "chain": "trim start=1.98s len=1.5s | trim | reverse | reverb ir=room-medium mix=0.3 | sweep from=300 to=2500 type=lp shape=arc q=1 | fade in=20% out=30% | normalize",
+   "sources": [
+    {
+     "title": "Ocean",
+     "author": "NPS",
+     "license": "public-domain",
+     "url": "https://www.nps.gov/nps-audiovideo/legacy/mp3/nri/avElement/nri-OceanOlympicNP.mp3"
+    }
+   ]
+  },
+  {
+   "start_s": 109.88,
+   "category": "whoosh",
+   "name": "whoosh-organic-f352719",
+   "chain": "trim | stretch 2x window=60ms | sweep from=200 to=3000 type=bp q=1.5 shape=arc | fade in=30% out=40% | normalize",
+   "sources": [
+    {
+     "title": "Woosh (stick swung in the air)",
+     "author": "Dalesome",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/352719/"
+    }
+   ]
+  },
+  {
+   "start_s": 111.37,
+   "category": "whoosh",
+   "name": "whoosh-organic-f254871",
+   "chain": "trim start=1.60s len=1.5s | trim | stretch 2x window=60ms | sweep from=200 to=3000 type=bp q=1.5 shape=arc | fade in=30% out=40% | normalize",
+   "sources": [
+    {
+     "title": "swish whip.wav",
+     "author": "blukotek",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/254871/"
+    }
+   ]
+  },
+  {
+   "start_s": 114.11,
+   "category": "whoosh",
+   "name": "whoosh-noisearc-noise-brown-3p0s-q3",
+   "chain": "sweep from=100 to=1500 type=bp q=3 shape=arc peak=65% slope=24 | fade in=35% out=30% | reverb ir=room-medium mix=0.15 | normalize",
+   "sources": [
+    {
+     "title": "noise:brown:3.0s",
+     "license": "CC0-1.0"
+    }
+   ]
+  },
+  {
+   "start_s": 118.99,
+   "category": "boom",
+   "name": "boom-subhit-kimpactpunch-heavy",
+   "chain": "trim | pitch -12 | layer with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-syn-sub.flac#sha256=93723d359a829dd1d769be8244d365742ba5a44fdd2c201999c48cc5b499ff79 gain=-4 | lowpass hz=2500 | reverb ir=hall-large mix=0.15 | trim | saturate mode=2 drive=12 auto_gain=0 | fade out=1s | normalize",
+   "sources": [
+    {
+     "title": "impactPunch_heavy_000 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 122.37,
+   "category": "boom",
+   "name": "boom-twooct-kimpactplate-heavy",
+   "chain": "trim | pitch -24 | lowpass hz=1200 | saturate drive=9 | reverb ir=cathedral mix=0.2 | trim | fade out=1.5s | normalize",
+   "sources": [
+    {
+     "title": "impactPlate_heavy_002 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 127.39,
+   "category": "boom",
+   "name": "boom-subhit-kimpactwood-heavy",
+   "chain": "trim | pitch -12 | layer with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-syn-sub.flac#sha256=93723d359a829dd1d769be8244d365742ba5a44fdd2c201999c48cc5b499ff79 gain=-4 | lowpass hz=2500 | reverb ir=hall-large mix=0.15 | trim | saturate mode=2 drive=12 auto_gain=0 | fade out=1s | normalize",
+   "sources": [
+    {
+     "title": "impactWood_heavy_001 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 131.46,
+   "category": "impact",
+   "name": "impact-sublayer-kimpactwood-heavy",
+   "chain": "trim | layer with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-syn-sub.flac#sha256=93723d359a829dd1d769be8244d365742ba5a44fdd2c201999c48cc5b499ff79 gain=-6 | reverb ir=hall-large mix=0.2 | trim | saturate mode=2 drive=9 auto_gain=0 | normalize",
+   "sources": [
+    {
+     "title": "impactWood_heavy_001 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 135.01,
+   "category": "impact",
+   "name": "impact-sublayer-kimpactpunch-heavy",
+   "chain": "trim | layer with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-syn-sub.flac#sha256=93723d359a829dd1d769be8244d365742ba5a44fdd2c201999c48cc5b499ff79 gain=-6 | reverb ir=hall-large mix=0.2 | trim | saturate mode=2 drive=9 auto_gain=0 | normalize",
+   "sources": [
+    {
+     "title": "impactPunch_heavy_000 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 138.49,
+   "category": "impact",
+   "name": "impact-sublayer-kimpactplate-heavy",
+   "chain": "trim | layer with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-syn-sub.flac#sha256=93723d359a829dd1d769be8244d365742ba5a44fdd2c201999c48cc5b499ff79 gain=-6 | reverb ir=hall-large mix=0.2 | trim | saturate mode=2 drive=9 auto_gain=0 | normalize",
+   "sources": [
+    {
+     "title": "impactPlate_heavy_002 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 142.66,
+   "category": "hit",
+   "name": "hit-glassconv-kimpactwood-heavy",
+   "chain": "trim | convolve with=https://github.com/Nullframe/daw-content/releases/download/sound-lab-2026-09-30/src-kenney-glass-002.flac#sha256=a7941bb741a37886a71a6d7c62869b4e36bc6d16f35fa520c7e3a1f4dea95f1e mix=0.5 | trim below=-50 | normalize",
+   "sources": [
+    {
+     "title": "impactWood_heavy_001 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 143.67,
+   "category": "hit",
+   "name": "hit-ott-kimpactsoft-heavy",
+   "chain": "trim | ott | saturate drive=6 | reverb ir=room-medium mix=0.15 | trim below=-50 | fade out=150ms | normalize",
+   "sources": [
+    {
+     "title": "impactSoft_heavy_001 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 144.91,
+   "category": "hit",
+   "name": "hit-ott-f406274",
+   "chain": "trim | ott | saturate drive=6 | reverb ir=room-medium mix=0.15 | trim below=-50 | fade out=150ms | normalize",
+   "sources": [
+    {
+     "title": "hit - wooden 08.wav",
+     "author": "Anthousai",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/406274/"
+    }
+   ]
+  },
+  {
+   "start_s": 145.98,
+   "category": "hit",
+   "name": "hit-ott-kimpactplate-heavy",
+   "chain": "trim | ott | saturate drive=6 | reverb ir=room-medium mix=0.15 | trim below=-50 | fade out=150ms | normalize",
+   "sources": [
+    {
+     "title": "impactPlate_heavy_002 (impact-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/impact-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 148.0,
+   "category": "pluck",
+   "name": "pluck-modal-ktick-002-glock",
+   "chain": "trim | length 350ms | fade out=60ms | modal preset=ensemble-glock tune=E5 decay_s=1.5 mix=0.8 | trim below=-60 | fade out=200ms | normalize",
+   "sources": [
+    {
+     "title": "tick_002 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 149.77,
+   "category": "pluck",
+   "name": "pluck-modal-kdrop-002-chime",
+   "chain": "trim | length 350ms | fade out=60ms | modal preset=ensemble-chime tune=D5 decay_s=1.5 mix=0.8 | trim below=-60 | fade out=200ms | normalize",
+   "sources": [
+    {
+     "title": "drop_002 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 151.7,
+   "category": "pluck",
+   "name": "pluck-modal-kpluck-001-plate",
+   "chain": "trim | length 350ms | fade out=60ms | modal preset=bell-plate tune=G3 decay_s=1.5 mix=0.8 | trim below=-60 | fade out=200ms | normalize",
+   "sources": [
+    {
+     "title": "pluck_001 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 153.28,
+   "category": "pluck",
+   "name": "pluck-modal-kglass-002-glock",
+   "chain": "trim | length 350ms | fade out=60ms | modal preset=ensemble-glock tune=E5 decay_s=1.5 mix=0.8 | trim below=-60 | fade out=200ms | normalize",
+   "sources": [
+    {
+     "title": "glass_002 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 154.81,
+   "category": "pluck",
+   "name": "pluck-modal-kclick-003-marimba",
+   "chain": "trim | length 350ms | fade out=60ms | modal preset=ensemble-marimba tune=A3 decay_s=1.5 mix=0.8 | trim below=-60 | fade out=200ms | normalize",
+   "sources": [
+    {
+     "title": "click_003 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 157.29,
+   "category": "glitch",
+   "name": "glitch-stutter-f277741-stutter",
+   "chain": "trim start=4.18s len=2s | fx glitch@1 preset=stutter-16ths | trim len=1.5s | fx redux@1 preset=vintage-sampler | fade out=50ms | normalize",
+   "sources": [
+    {
+     "title": "paper rips.WAV",
+     "author": "stib",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/277741/"
+    }
+   ]
+  },
+  {
+   "start_s": 159.42,
+   "category": "glitch",
+   "name": "glitch-stutter-f431657-stutter",
+   "chain": "trim start=1.58s len=2s | fx glitch@1 preset=stutter-16ths | trim len=1.5s | fx redux@1 preset=vintage-sampler | fade out=50ms | normalize",
+   "sources": [
+    {
+     "title": "Typing on a cheap numpad, keyboard - Zoom H1",
+     "author": "scenes",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/431657/"
+    }
+   ]
+  },
+  {
+   "start_s": 162.36,
+   "category": "ui",
+   "name": "ui-crushed-kdrop-002",
+   "chain": "trim | pitch 7 | fx redux@1 preset=8bit-console | highpass hz=300 | trim below=-50 | fade out=40ms | normalize",
+   "sources": [
+    {
+     "title": "drop_002 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 163.04,
+   "category": "ui",
+   "name": "ui-crushed-f319811",
+   "chain": "trim | pitch 7 | fx redux@1 preset=8bit-console | highpass hz=300 | trim below=-50 | fade out=40ms | normalize",
+   "sources": [
+    {
+     "title": "Finger snap 2",
+     "author": "zmobie",
+     "license": "CC0-1.0",
+     "url": "https://freesound.org/s/319811/"
+    }
+   ]
+  },
+  {
+   "start_s": 163.98,
+   "category": "ui",
+   "name": "ui-glock-kclick-003",
+   "chain": "trim | length 150ms | fade out=30ms | modal preset=ensemble-glock tune=C6 decay_s=0.35 mix=0.6 | trim below=-50 | fade out=80ms | normalize",
+   "sources": [
+    {
+     "title": "click_003 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  },
+  {
+   "start_s": 164.74,
+   "category": "ui",
+   "name": "ui-glock-kpluck-001",
+   "chain": "trim | length 150ms | fade out=30ms | modal preset=ensemble-glock tune=C6 decay_s=0.35 mix=0.6 | trim below=-50 | fade out=80ms | normalize",
+   "sources": [
+    {
+     "title": "pluck_001 (interface-sounds)",
+     "author": "Kenney (www.kenney.nl)",
+     "license": "CC0-1.0",
+     "url": "https://kenney.nl/assets/interface-sounds"
+    }
+   ]
+  }
+ ]
+}
