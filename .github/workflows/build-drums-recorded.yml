@@ -1,0 +1,78 @@
+# Builds the recorded CC0 drum pack (one-shots and round-robin kits for daw) from the upstream
+# recordings pinned in packs/drums-recorded/recipes.json.
+#
+# - Pull request touching packs/drums-recorded/: build and keep the result as a workflow
+#   artifact, no release.
+# - Manual run (workflow_dispatch) or a pushed tag `drums-recorded-*`: build, then create or
+#   update the release `drums-recorded-cc0-<UTC date>` (or the pushed tag / the `tag` input)
+#   with every WAV, SHA256SUMS, NOTICES.md, provenance.json and the daw manifest.
+#
+# Audio lives only in releases; the repository holds the recipe and scripts.
+name: build-drums-recorded
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: drums-recorded-cc0-<UTC date>)"
+        required: false
+  push:
+    tags: ["drums-recorded-*"]
+  pull_request:
+    paths: ["packs/drums-recorded/**", ".github/workflows/build-drums-recorded.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned, so the build is byte-reproducible)
+        run: pip install numpy==2.4.6 scipy==1.17.1 soundfile==0.14.0
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          else tag="drums-recorded-cc0-$(date -u +%Y-%m-%d)"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cd packs/drums-recorded
+          python3 build.py "$GITHUB_WORKSPACE/out" --cache "$RUNNER_TEMP/cache" --tag "$TAG"
+          cd "$GITHUB_WORKSPACE/out" && sha256sum -c --quiet SHA256SUMS && ls | wc -l && du -sh . && cat SHA256SUMS | sha256sum
+      - uses: actions/upload-artifact@v4
+        with:
+          name: drums-recorded
+          path: out/
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cat > notes.md <<NOTES
+          Recorded drums (CC0) for daw: $(ls out/*.wav | wc -l) one-shots (44.1 kHz, 24-bit WAV) of big toms, kicks, snares, marching and concert bass drums, timpani, frame drums, cymbals, hats, swells, gong, hand percussion and metal impacts, and three round-robin kits (kit/trailer-recorded@1, kit/orchestral-recorded@1, kit/acoustic-recorded@1).
+          Sources: Versilian Community Sample Library (VCSL), Karoryfer Big Rusty Drums and Swirly Drums, all CC0-1.0. The pack is CC0-1.0 (credits in NOTICES.md; per-file upstream files, sha256s and processing in provenance.json).
+          Built by .github/workflows/build-drums-recorded.yml from packs/drums-recorded at ${GITHUB_SHA}.
+          Install in daw: \`voyager-daw library install drums-recorded-cc0\` (downloads and verifies every file against the sha256s pinned in daw).
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Recorded drums (CC0) $TAG" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets | length'
+    permissions:
+      contents: write

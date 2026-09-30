@@ -11,6 +11,7 @@ daw fetches these files on first use (`daw library-sync`) and checks each one ag
 | Spleeter 4-stem model, converted for daw's runtime | deezer/spleeter | MIT |
 | Basic Pitch model | spotify/basic-pitch | Apache-2.0 |
 | CLAP music model pack (optional; audio tower as ONNX + prompt embeddings), see `packs/clap-music` | LAION-AI/CLAP `music_audioset_epoch_15_esc_90.14` | CC0-1.0 |
+| Recorded drums (CC0): 264 drum and percussion one-shots and three round-robin kits, see `packs/drums-recorded` | Versilian VCSL; Karoryfer Big Rusty Drums and Swirly Drums | CC0-1.0 |
 | Real rooms IR pack (34 recorded impulse responses) | OpenAIR (York), Aachen AIR, Detmold SRIR, BBC Maida Vale; see `packs/real-rooms` and each release's `NOTICES.md` | CC-BY-4.0, CC-BY-3.0, MIT |
 
 Each release lists its exact upstream versions, conversion scripts and checksums. The source for every GPL binary is attached to the same release as the binary.
@@ -32,3 +33,11 @@ Each release lists its exact upstream versions, conversion scripts and checksums
 ## CLAP music model pack
 
 `daw library install clap-music` installs an optional sample quality and character model from a `models-clap-music-<date>` release. The workflow [`build-clap-music`](.github/workflows/build-clap-music.yml) builds it from LAION's CC0 checkpoint at a pinned commit. It exports only the audio tower to ONNX, checks it against PyTorch, and precomputes the text embeddings of a fixed prompt set. No weights are committed. [`packs/clap-music/README.md`](packs/clap-music/README.md) has the details.
+
+## Recorded drums (CC0)
+
+`voyager-daw library install drums-recorded-cc0` installs recorded drum and percussion one-shots and three round-robin kits (`kit/trailer-recorded@1`, `kit/orchestral-recorded@1`, `kit/acoustic-recorded@1`) from a `drums-recorded-cc0-<date>` release. The workflow [`build-drums-recorded`](.github/workflows/build-drums-recorded.yml) builds them from CC0 recordings pinned in [`packs/drums-recorded/recipes.json`](packs/drums-recorded/recipes.json). No audio is committed. [`packs/drums-recorded/README.md`](packs/drums-recorded/README.md) has the details.
+
+## Listening reels
+
+Short renders by daw (of CC0 material and daw's own synthesis), published so they can be heard without building daw, as assets of the release they belong to (for example the drum comparison reel on `drums-recorded-cc0-2026-09-30`). They are rendered by daw on a developer's machine and uploaded by [`publish-reel`](.github/workflows/publish-reel.yml), a manual workflow that takes the file base64-encoded in parts (a dispatch's inputs are capped at 64 KB), joins them and checks the sha256. No audio is committed.

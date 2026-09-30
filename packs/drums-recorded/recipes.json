@@ -1,0 +1,8006 @@
+{
+ "sources": {
+  "vcsl": {
+   "repo": "sgossner/VCSL",
+   "commit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+   "name": "Versilian Community Sample Library (VCSL)",
+   "author": "Versilian Studios LLC (Sam Gossner) and contributors",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sgossner/VCSL/blob/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/LICENSE",
+   "page": "https://versilian-studios.com/vcsl/"
+  },
+  "big-rusty": {
+   "repo": "sfzinstruments/karoryfer.big-rusty-drums",
+   "commit": "f07ce00df34a46b6b08375be56fe116cf15782bc",
+   "name": "Big Rusty Drums",
+   "author": "Karoryfer Samples",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sfzinstruments/karoryfer.big-rusty-drums/blob/f07ce00df34a46b6b08375be56fe116cf15782bc/LICENSE",
+   "page": "https://shop.karoryfer.com/pages/free-samples"
+  },
+  "swirly": {
+   "repo": "sfzinstruments/karoryfer.swirly-drums",
+   "commit": "c40dafe0011cb2e54c0c220ff0fa308a11fc60f5",
+   "name": "Swirly Drums",
+   "author": "Karoryfer Samples",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sfzinstruments/karoryfer.swirly-drums/blob/c40dafe0011cb2e54c0c220ff0fa308a11fc60f5/license",
+   "page": "https://shop.karoryfer.com/pages/free-samples"
+  }
+ },
+ "samples": [
+  {
+   "name": "tom-22in-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl7_rr1.flac",
+     "sha256": "edddeeabd1e588ef5edea7eaf1955164eb02e8e69166cdad4cc2ed293592d166",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl7_rr1.flac",
+     "sha256": "82a3852cde9c8f9e85c89a810cc9ed152ee99d77e7a9daaa35e4956b5914b990",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl7_rr2.flac",
+     "sha256": "d469d4bc82c52a44d4792dd1c8601bec20737a936f6335277e3d9611e822db1d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl7_rr2.flac",
+     "sha256": "513261d5fdd06c54aa2f4de6ec9e47b1744da12274ba5386f54cac83d9769783",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-ff-rr3",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl7_rr3.flac",
+     "sha256": "916ce11c381abccfc098aca846f08d3a6e91f239ad5dd528b7351f031e8fb6b4",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl7_rr3.flac",
+     "sha256": "95de2269d4e32b3f40b1a1851b3a5e3bf78620d993700bdf2c19bde45444ca78",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-ff-rr4",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl7_rr4.flac",
+     "sha256": "19e05cf88b27f2c16f8441674227070ffae504c290d261e0629345ba8ca61eca",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl7_rr4.flac",
+     "sha256": "052854d03c0b37b3d48706025b3a05264da6b643287bad43730def85fcdee6ce",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-mf-rr1",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl5_rr1.flac",
+     "sha256": "7ad8c22df5a911709561df4bca514bf80e4557d559555cad1c7a67f9466d23a7",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl5_rr1.flac",
+     "sha256": "d1cd5b343741f024e782b68a0b7b40918e6b1d658ca27d224d3b1cc5e599ee9f",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-mf-rr2",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl5_rr2.flac",
+     "sha256": "adac2f160291c0ad28d1c036b392498c04ebed7aa4522a16c91c2c559793c827",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl5_rr2.flac",
+     "sha256": "7b8b8308c408da1358461757f63a1d1fb0a6ce9735d38a9ddb750271ae8537c8",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-mf-rr3",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl5_rr3.flac",
+     "sha256": "54124e71671c49e59d7ed0f10674547751cb6e9889e73b971367026c56adce74",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl5_rr3.flac",
+     "sha256": "0e11ec961ed29175f66b31d6fef3f206e5760e21855d7a34d5e981a47598fe84",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-mallet-mf-rr4",
+   "category": "tom",
+   "instrument": "22-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/cl/t22_m_vl5_rr4.flac",
+     "sha256": "db831c86714a9b42cf92fb64fe136ee4e3752451c0e2afb4b140ce6ab5d4d2f5",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/mallet/oh/t22_m_vl5_rr4.flac",
+     "sha256": "35ed8bd8903e555fd2207f62560bec90a51b07c27f1e5446b9e3887b4c9eec8c",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-22in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl7_rr1.flac",
+     "sha256": "e15cb02d98e8ac7b9eb4fe4df6ff7cf81ccadbd2c5f517c5e621324a2916e32d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl7_rr1.flac",
+     "sha256": "66b51fbd82548ec332e33c21e7bd18f156a9a3b4c95ec325a689f02ec49ec009",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl7_rr2.flac",
+     "sha256": "867ffdd44781752b4d4ba1c699140dafdd263bf13d9b868daa631a46a56267af",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl7_rr2.flac",
+     "sha256": "855573c6d0d9b5b79492cc23d9dfba8ad96c1716d9caaf8bd8f836cba0594e19",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-ff-rr3",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl7_rr3.flac",
+     "sha256": "00a45414affe19b5b9ccf89b5fb308d82cbf00761b489fdb730a3bc5d502857c",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl7_rr3.flac",
+     "sha256": "1de65b2a67030034731a04af56939e8f04267a507f3e6eeca0c93ac00fcb4b71",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-ff-rr4",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl7_rr4.flac",
+     "sha256": "395f1d98ddb219905d1ad241f56b8ff905cb65497b6920af53ecc794296d8879",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl7_rr4.flac",
+     "sha256": "e22c3944002fca280b35c12755ce24680e7a1989226eeab1ae109592b8e8f606",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-mf-rr1",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl5_rr1.flac",
+     "sha256": "5830dbe5893b4332703477dd02e7e4a374cf1ba08f1fd2033f1f6fa490e9fb79",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl5_rr1.flac",
+     "sha256": "6318f209db4dc14d794a5c76e0282ab04d2504be891749f3691bf2e04bd53092",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-mf-rr2",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl5_rr2.flac",
+     "sha256": "ad950a33aaeccbde743d9d7942e6954586952032336aa34565ce6640f9f4bf28",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl5_rr2.flac",
+     "sha256": "f4c3f1d7148ee7bf5c6432a34c3bd0cd8950b57726a82308fa1562ea37a1e268",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-mf-rr3",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl5_rr3.flac",
+     "sha256": "34b7615a59e66508b0a1eb8526a89f35324fb554d2bb231910c049c58f6d6f20",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl5_rr3.flac",
+     "sha256": "d94019d283abbf27dfb493bc4ab65b6eb9ca53895318f039f2364de2b8cb9363",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-18in-mallet-mf-rr4",
+   "category": "tom",
+   "instrument": "18-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/cl/t18_m_vl5_rr4.flac",
+     "sha256": "64e6573c361303df533748d7f2c25af8398deaa6c0551f609672f1a826b68316",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/mallet/oh/t18_m_vl5_rr4.flac",
+     "sha256": "cd1fe0cb9ac5fb8c4867d6f4463d6353c108e73d2035745c4cd17c2ec23b461f",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "taiko-like"
+   ],
+   "group": "tom-18in-mallet-mf",
+   "dynamic": "mf",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-15in-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "15-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/cl/t15_m_vl7_rr1.flac",
+     "sha256": "76ae45e0c3b10418ffa310e766bc0d16d9f509cce17e56df90dbf5b621056a9c",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/oh/t15_m_vl7_rr1.flac",
+     "sha256": "01e5332f99665b8e46a57cd1ee6f42b8b9e23b7e7bd488f5b5c5449af6ab457a",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-15in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-15in-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "15-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/cl/t15_m_vl7_rr2.flac",
+     "sha256": "d670175a65724c6663202ef5c2ee745e326abb93ecd555160f7a655d6111a658",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/oh/t15_m_vl7_rr2.flac",
+     "sha256": "c70e7e6c9dd866df3a11fe160e95e4f6192bf2679c8bac9b110cd1254c61b054",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-15in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-15in-mallet-ff-rr3",
+   "category": "tom",
+   "instrument": "15-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/cl/t15_m_vl7_rr3.flac",
+     "sha256": "b5b2344c14cb31528880b299443630294d3bf6c1061b0a0831f9bb0cdc809216",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/oh/t15_m_vl7_rr3.flac",
+     "sha256": "1ca14936f55a0bbe2a091ad26939ed635c9c10a46fa1d11087a64837bc68a909",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-15in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-15in-mallet-ff-rr4",
+   "category": "tom",
+   "instrument": "15-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/cl/t15_m_vl7_rr4.flac",
+     "sha256": "4add38c0f083b87d6ceb6e058b35fb50d9204cbc78492fb31b3ada3132d86c70",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/mallet/oh/t15_m_vl7_rr4.flac",
+     "sha256": "56794fd1671b5d6d6495ac2cbfe16dfc9d262d2fa7c92a0861fe260710f250ff",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-15in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-14in-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "14-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/cl/t14_m_vl7_rr1.flac",
+     "sha256": "f2e4e1f2a9d546399f3c24d52968c9684f7f72d175ff3ee19a1fd2d700b06d6d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/oh/t14_m_vl7_rr1.flac",
+     "sha256": "c392e50c1f715af3ebb2837da6814624f28b959ad3a1ea940030991655614592",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-14in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-14in-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "14-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/cl/t14_m_vl7_rr2.flac",
+     "sha256": "4668cea9209d52353eafc2f892748db2708fe7423e789d1691f625ed8149d8a7",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/oh/t14_m_vl7_rr2.flac",
+     "sha256": "1fed66ded4683a0cb44b91b98646ee5b1386852817dec94fe951ab470091cbfa",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-14in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-14in-mallet-ff-rr3",
+   "category": "tom",
+   "instrument": "14-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/cl/t14_m_vl7_rr3.flac",
+     "sha256": "7cdd8bf932e30a4db66241f628e713f14032da2a6ffef6289990fb993e793029",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/oh/t14_m_vl7_rr3.flac",
+     "sha256": "1bac4fb2a978121ed35221e07b6f1dcfea5a940421b99bd2633195af9bc9c53b",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-14in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-14in-mallet-ff-rr4",
+   "category": "tom",
+   "instrument": "14-inch tom, felt mallets",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/cl/t14_m_vl7_rr4.flac",
+     "sha256": "c04ae3a07f10da0703f0e4fc6b740061b6bf143bee3daa2f942eb26511433cab",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/mallet/oh/t14_m_vl7_rr4.flac",
+     "sha256": "1205139c05314d799dac575cf6fecc10540cb190bf39e5f385feba7e0e87e620",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "big",
+    "tom",
+    "mallet",
+    "tom"
+   ],
+   "group": "tom-14in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-22in-stick-ff-rr1",
+   "category": "tom",
+   "instrument": "22-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/cl/t22_vl7_rr1.flac",
+     "sha256": "f6d79d3308ddcc994c17fe520dca9e2bba73838753bdb84c83bcc6e5d2613786",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/oh/t22_vl7_rr1.flac",
+     "sha256": "a68204ae67921ffd85c3c6ba50023e73c6c43d1cf173c56db4252905fbae2195",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-22in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-22in-stick-ff-rr2",
+   "category": "tom",
+   "instrument": "22-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/cl/t22_vl7_rr2.flac",
+     "sha256": "39c42be3cd3e57c4d2f233a33f5b7c8305d1e8a23a2a4c4053f7c3fc77e882d6",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/oh/t22_vl7_rr2.flac",
+     "sha256": "f17b524438728002de5d65905419d907f4e54c1b3385416e80c59c5f4a990b3a",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-22in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-22in-stick-ff-rr3",
+   "category": "tom",
+   "instrument": "22-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/cl/t22_vl7_rr3.flac",
+     "sha256": "a39dba84ef1c1567f9b51a7598e232e2657954d02b902e5e83519cb067251ec9",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/oh/t22_vl7_rr3.flac",
+     "sha256": "c13c8edef0aa6e99ece18948cca9e052a2eba57c866b09e481086d0fa29cc5c1",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-22in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-22in-stick-ff-rr4",
+   "category": "tom",
+   "instrument": "22-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/cl/t22_vl7_rr4.flac",
+     "sha256": "1c154d26d0e600a23f22777f42997e8ed07431e09013788f0285e2ac581df1a5",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_22/center/oh/t22_vl7_rr4.flac",
+     "sha256": "a2d4e659520646e0159639e103e7eb1c9db6e795496a5b10275cb3c5ca3e389e",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-22in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-18in-stick-ff-rr1",
+   "category": "tom",
+   "instrument": "18-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/cl/t18_vl8_rr1.flac",
+     "sha256": "5ea672c055632d3aa3f7b9100477db64d95653960fd63985083b236b3e22ef18",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/oh/t18_vl8_rr1.flac",
+     "sha256": "92b6d9bacfda8cea78f0c7d6f05174cb8edcc98fb5533b85e950d725b4385785",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-18in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-18in-stick-ff-rr2",
+   "category": "tom",
+   "instrument": "18-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/cl/t18_vl8_rr2.flac",
+     "sha256": "88211caa8377c292fb4a3899d26c22ae71f9eb889d4dd520b81e26edb30ceaaf",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/oh/t18_vl8_rr2.flac",
+     "sha256": "f6f13203be77439de9068f0a6f49a8d3489c0b4be40e609e0c975c0640ce1dad",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-18in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-18in-stick-ff-rr3",
+   "category": "tom",
+   "instrument": "18-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/cl/t18_vl8_rr3.flac",
+     "sha256": "8695044d6d7428f9eb2a028afe982cfa88cc3a49797c3d40be41c4fa73232418",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/oh/t18_vl8_rr3.flac",
+     "sha256": "62b9c3ff0d563e94f3baab812eb3316b49ec35e1a9bd1d842d8f501223e94ed7",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-18in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-18in-stick-ff-rr4",
+   "category": "tom",
+   "instrument": "18-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/cl/t18_vl8_rr4.flac",
+     "sha256": "bc757d732b6477bae25a65817dba5236c38244e0f25798a3d7be003053a9df2d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_18/center/oh/t18_vl8_rr4.flac",
+     "sha256": "0682ccb410ce3d67a9c15356c9916f88fc9f36a6e6cc560c08bbd47cf382d9d2",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-18in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-15in-stick-ff-rr1",
+   "category": "tom",
+   "instrument": "15-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/cl/t15_vl7_rr1.flac",
+     "sha256": "abb1d7d04d4d1641eb0839ea908ee0bccfbdf77c62e0239bdc47ab21d83ad463",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/oh/t15_vl7_rr1.flac",
+     "sha256": "a93e21e635dfce1ed5166ab31fa1dd905e52221a49f73f97a1f24bed618b2486",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-15in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-15in-stick-ff-rr2",
+   "category": "tom",
+   "instrument": "15-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/cl/t15_vl7_rr2.flac",
+     "sha256": "339558c2d2c9ec8f688dc3e5b6aefcb58d83d1765d865b4f081d973a2ac4a7b9",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/oh/t15_vl7_rr2.flac",
+     "sha256": "29582bab4b9e4fc7810803352438654cb110ff378ee1b4f88d0bd163e0240d10",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-15in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-15in-stick-ff-rr3",
+   "category": "tom",
+   "instrument": "15-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/cl/t15_vl7_rr3.flac",
+     "sha256": "d73f0e34123722138ca5a6d3fe2b96fda197b276966e8350f839bb1962b2a4c7",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/oh/t15_vl7_rr3.flac",
+     "sha256": "0f796f7fa1caa08fe35c0b98f39904b6ce4b68d6cfd88e12895fe0e36984acb7",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-15in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-15in-stick-ff-rr4",
+   "category": "tom",
+   "instrument": "15-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/cl/t15_vl7_rr4.flac",
+     "sha256": "77cd57a1fb0e906c98b6a81802860db0c8bed9418a25d2d7d083f540cc7d7ef0",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_15/center/oh/t15_vl7_rr4.flac",
+     "sha256": "fec6c10c2eaa595a71724372baddcd1947d43523d256d69b438c197227fab56b",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-15in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-14in-stick-ff-rr1",
+   "category": "tom",
+   "instrument": "14-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/cl/t14_vl6_rr1.flac",
+     "sha256": "eaf3adf05ee8a9d6bfc307608a59f13cd4991413bc18176517d6e9a00697d853",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/oh/t14_vl6_rr1.flac",
+     "sha256": "ee95f890c47e6af89b18faeb1b381ca49a5418d0d3dd32dc3c49288663857993",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-14in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-14in-stick-ff-rr2",
+   "category": "tom",
+   "instrument": "14-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/cl/t14_vl6_rr2.flac",
+     "sha256": "8b2a8767bbb6a3390e921f652cbf5a0393f3bc47d9c9ff31c6b8d8f90b648fb2",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/oh/t14_vl6_rr2.flac",
+     "sha256": "6bc1773b0ae80d8686029cdca2ab39770d878e0a18bb19507afee6119e7f6d8e",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-14in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-14in-stick-ff-rr3",
+   "category": "tom",
+   "instrument": "14-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/cl/t14_vl6_rr3.flac",
+     "sha256": "ab3f4dc5f1b812ee43750883b0ac169ae0373ccf7f5e4a66d81fa7bfeecb7230",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/oh/t14_vl6_rr3.flac",
+     "sha256": "42b80d16925365325b68c04fd7406fc3c4a94ac4febe8fb540242edf3cc6a8fc",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-14in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "tom-14in-stick-ff-rr4",
+   "category": "tom",
+   "instrument": "14-inch tom, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/cl/t14_vl6_rr4.flac",
+     "sha256": "3b4470bff75c93ff3a1df5dc432732f6ef2fe83e10a838d832a107f42078a2c3",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/tom_14/center/oh/t14_vl6_rr4.flac",
+     "sha256": "92de6a494040d771fc439782286df70a03f86f3c4fa94d08a38668185b70acd6",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "tom",
+    "stick"
+   ],
+   "group": "tom-14in-stick-ff",
+   "dynamic": "ff",
+   "articulation": "stick"
+  },
+  {
+   "name": "kick-24in-ff-rr1",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl14_rr1.flac",
+     "sha256": "3b2a6a82ab1faa9ef97f87fbc4f9dcbace81ea18149f6d7c1438da8b64f20ec3",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl14_rr1.flac",
+     "sha256": "b0bf6e73594b9fab70c744fc12d5195b1850ae0fb8d3b6458dba550dd23dafdd",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "kick-24in-ff-rr2",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl14_rr2.flac",
+     "sha256": "1515faafb66ff9be22a9726d0a754cc7d5d68e6cc6928f941b726795ad5585ce",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl14_rr2.flac",
+     "sha256": "30b27e53cce02829def0c915c7fc5122699ca33b2f7546f1c4443a7bab00f471",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "kick-24in-ff-rr3",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl14_rr3.flac",
+     "sha256": "c2956fe4b4ae8930f75af4531d49ff0f63cf22e2d4a1bfd12e67786b294ed0f9",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl14_rr3.flac",
+     "sha256": "715776fb725c3479636a7867dcadbff11b4483d8d9f99f2d1c4081a9f89401a7",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "kick-24in-ff-rr4",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl14_rr4.flac",
+     "sha256": "c313f4a309b1173fc49138dd7b0ed57f7cb1305c9fb96d9037aaede650dfe803",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl14_rr4.flac",
+     "sha256": "4caaabb4a42cb7e3d89520e72bcaf9bdfe55ed51be031d9031f376269e0ef7f8",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "kick-24in-mf-rr1",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl10_rr1.flac",
+     "sha256": "a43a2124efb24f21f62a79f2fa1eab99dbae800aae111e9da124830703b06720",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl10_rr1.flac",
+     "sha256": "db91ba65763968a404863d391d5252d74aa98d893125aa4be0aa6a4c261eab63",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "kick-24in-mf-rr2",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl10_rr2.flac",
+     "sha256": "edb66f938549d86924ccc2506b8a987f5535b8ae3d77539160e71e5ad7d798c3",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl10_rr2.flac",
+     "sha256": "c30f441e75033c89aa343ecdda70777400c31568e6a324a56fef2b67012032ed",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "kick-24in-mf-rr3",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl10_rr3.flac",
+     "sha256": "60e33c9eeb8a6d5e6f0d5f13c82d0d61ebdd1849946199950d75e972db5d9682",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl10_rr3.flac",
+     "sha256": "974f2f120964fa704bb93a4ae7aeb96eec250a1a787a2d01c19bbe6bf4c2f481",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "kick-24in-mf-rr4",
+   "category": "kick",
+   "instrument": "24-inch kick, felt beater, damped",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/kick/k_vl10_rr4.flac",
+     "sha256": "53864e340e73635f52775c7f3ce7405a67c68c4efa2da09c0f1ef54b1ca399d7",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24/kick/oh/k_vl10_rr4.flac",
+     "sha256": "69734ebcb2d43d462cf537a593832f2d01377415a5ae20e6c66a6e8380ae9075",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "acoustic"
+   ],
+   "group": "kick-24in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "kick-24in-open-ff-rr1",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl6_rr1.flac",
+     "sha256": "21122d6b46cff06e7507ee6e93302fbbc98066824e905a60c118bef07f4892f5",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl6_rr1.flac",
+     "sha256": "8bc8ee1c952b26b7cbde65cf6b96b3a6c31d6368ab4fe6c5caf728267ef8b2e4",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-ff",
+   "dynamic": "ff",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-ff-rr2",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl6_rr2.flac",
+     "sha256": "fe06abb2be9fc0dd70aa2aaa6438a0013f7920743df8d653d70965c43336f0a0",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl6_rr2.flac",
+     "sha256": "0c637e531e066eb43a4b06ba8c48963b97a9e8231b704d07f4cb486f2d48c554",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-ff",
+   "dynamic": "ff",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-ff-rr3",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl6_rr3.flac",
+     "sha256": "01b802166d8007bc20d37a7b75eb248f050b4d3019471b08a749eeb11a43d2f5",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl6_rr3.flac",
+     "sha256": "6594cca6222e41ef406c77f554c7b26e02ade65998578587567862282ae1758a",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-ff",
+   "dynamic": "ff",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-ff-rr4",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl6_rr4.flac",
+     "sha256": "df8a99de07193fc7e95cbb4d7cd51e0b4a880f987a184ceb8c7f5874e85764c9",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl6_rr4.flac",
+     "sha256": "cd47704aa6a7b55565cecf3e74e0b8dea112da789a58e79195f8f9f5201abff0",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-ff",
+   "dynamic": "ff",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-mf-rr1",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl4_rr1.flac",
+     "sha256": "8c2b81a358e0d44b966485ea07536d57cf81f4d9e2084fd07b1bceb1bc272a70",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl4_rr1.flac",
+     "sha256": "9d598308fb569a99962aa67c5f698761f8cc1870050a330be0fbd72ff88e161b",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-mf",
+   "dynamic": "mf",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-mf-rr2",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl4_rr2.flac",
+     "sha256": "c24363f52b59a110928146586e9079b787bde7c2362a3b4f57ae98f0c15f117c",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl4_rr2.flac",
+     "sha256": "c337a25885c47ae85c80f44fb91fd807a15b19aaa1d726739709ba6937306f34",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-mf",
+   "dynamic": "mf",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-mf-rr3",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl4_rr3.flac",
+     "sha256": "edcf1d9bbc1b4bed526cc02baaca3c86a9296e5ce757a345b620569b8a5b9c44",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl4_rr3.flac",
+     "sha256": "62475969dd771002969eb7a4216e5fecf66cadf56be59f637e24ee80655a9225",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-mf",
+   "dynamic": "mf",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "kick-24in-open-mf-rr4",
+   "category": "kick",
+   "instrument": "24-inch kick, undamped (open, boomy)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/kick/k_nodamp_vl4_rr4.flac",
+     "sha256": "6b451fc4215ff103fd7f257b4f571555ab1bfc6f77630178e129b911a1577b22",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/kick_24_nodamp/kick/oh/k_nodamp_vl4_rr4.flac",
+     "sha256": "73bb3caee988961f2d362646928544e7da612fd72fce28f2630da87bf8d2f89a",
+     "gain": 0.5
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "kick",
+    "open",
+    "boomy"
+   ],
+   "group": "kick-24in-open-mf",
+   "dynamic": "mf",
+   "max_len_s": 2.5
+  },
+  {
+   "name": "snare-14in-ff-rr1",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl10_rr1.flac",
+     "sha256": "9b13c55f8804ec5d14a6a84c4f9fb47aaee2a83a546ae5b1914a8fdd858e05f5",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl10_rr1.flac",
+     "sha256": "d6e9b2276a5c06513fccfc22f8584c910979077792edd191ef467c6ae1ef41f5",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl10_rr1.flac",
+     "sha256": "1ab31b465245225e0ec16bacedecd34f1bed1a57b2360dd0666fbefafb361525",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-14in-ff-rr2",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl10_rr2.flac",
+     "sha256": "23f971376ef0ddad37b42ac829be11e293aa89db5514873816da124f283f780a",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl10_rr2.flac",
+     "sha256": "391a0b6400aeaa79703154a137baa6b205b2cb8a24c1b2ba0f7dbe1f9d53f125",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl10_rr2.flac",
+     "sha256": "eb1de60287ab00056529d0d1d0a26b9eccc97a5910c6710c5aa89b950297fc91",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-14in-ff-rr3",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl10_rr3.flac",
+     "sha256": "b7c2af14aa3d546b131fcf8264cb3b86888b2dc61f3f4b91e874f09a1f7b8d79",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl10_rr3.flac",
+     "sha256": "6614e97267b3d34103989a867a72052243e844f2ff312abe710eb1b827f75301",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl10_rr3.flac",
+     "sha256": "61ed9e6e87ca31189f0466c68168bd8338b7241ab4f8a89a82404bd585743c01",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-14in-ff-rr4",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl10_rr4.flac",
+     "sha256": "7e8e360835047270c115bcb8c087e44f69d219af16868ca972518e4046c6b41d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl10_rr4.flac",
+     "sha256": "b8f4ac4206367c71cafdd487fb4ff4dc02dedcab9a0cf37d7bc06aa7cc6cb540",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl10_rr4.flac",
+     "sha256": "8866a52eb20cab45b9619d07c7f91787ad6b9c821a24d2fbdb05a6d9a51edf71",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-14in-mf-rr1",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl7_rr1.flac",
+     "sha256": "41346b0b273de7ac90e20775bba06d1863e74108802afa09ea550a517c1a4825",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl7_rr1.flac",
+     "sha256": "f9995dc595d746fb519d07922b0a5923a44718297d5c55b1cd1a9022402d9c85",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl7_rr1.flac",
+     "sha256": "43743840bc5b3302d898b466a142ad12465cf073448863db9a83a588a2f61937",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "snare-14in-mf-rr2",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl7_rr2.flac",
+     "sha256": "0fe0619e196eaecddd6482ab503b15f8357a03459be3b401f9468b9db5f5372c",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl7_rr2.flac",
+     "sha256": "35b030bfa3ec9d5e17e789edd5c3421693df6e425c5e3a343b6bef4a11217712",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl7_rr2.flac",
+     "sha256": "ff0b743b01b0467dfe4567bfba342c7dacbe594e62cf42d7965038c30d2a31b3",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "snare-14in-mf-rr3",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl7_rr3.flac",
+     "sha256": "e3c62a310b015346f69bda18c9c142855e5231616fd0375d3bd4d44b27be4a70",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl7_rr3.flac",
+     "sha256": "8231111ecea4b59d3978dcd5b256c4277f951ac9c0fdad1893fca137764fb83c",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl7_rr3.flac",
+     "sha256": "1cd37035dddccc679f84ae374e67e72d26011530b72c75235820934c9d75a3b4",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "snare-14in-mf-rr4",
+   "category": "snare",
+   "instrument": "14-inch snare, centre hits",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/top/sn_center_vl7_rr4.flac",
+     "sha256": "fdb9032c32d1c96adfe97c130d97aa45747a1c4f7835aebf092f1475ac45e4c7",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/btm/sn_center_vl7_rr4.flac",
+     "sha256": "693e438aaf6270ba9170712859b298b4b693fef134fe338d0359ac123d45a8f2",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/center/oh/sn_center_vl7_rr4.flac",
+     "sha256": "d1864faf1518ffa3f02da5b06e71c6b8b9ec71607b35ede8b4a2bd97bca0dfda",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "snare"
+   ],
+   "group": "snare-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "snare-14in-rimshot-ff-rr1",
+   "category": "snare",
+   "instrument": "14-inch snare, rimshots",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/top/sn_rims_vl6_rr1.flac",
+     "sha256": "8e6bc770239c31e4c0545ae6147abf2cf396923283ff5ebeecaf02318cf3c1c8",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/btm/sn_rims_vl6_rr1.flac",
+     "sha256": "9117129d56a6e7b0746f282faf47fe97fe516c0cde1093a67d571f703a1c7bdb",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/oh/sn_rims_vl6_rr1.flac",
+     "sha256": "c69206fa16183379091fd55751692a6ad405dd9cbed8034f54eb24a8c5997cd1",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "snare",
+    "rimshot",
+    "crack"
+   ],
+   "group": "snare-14in-rimshot-ff",
+   "dynamic": "ff",
+   "articulation": "rimshot"
+  },
+  {
+   "name": "snare-14in-rimshot-ff-rr2",
+   "category": "snare",
+   "instrument": "14-inch snare, rimshots",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/top/sn_rims_vl6_rr2.flac",
+     "sha256": "2d5aac175ff581aba367455261c23401a63af32a397fcceecd013b797c6ad9b6",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/btm/sn_rims_vl6_rr2.flac",
+     "sha256": "1f2eb4e4f4d286c8f8d44212b7ad2c823da4829e46a5f4b33cfefff0c3787455",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/oh/sn_rims_vl6_rr2.flac",
+     "sha256": "e64fa16331a4ed9930c37d9be0bac8e04feb897cbcf4f1446bf42e15a0836605",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "snare",
+    "rimshot",
+    "crack"
+   ],
+   "group": "snare-14in-rimshot-ff",
+   "dynamic": "ff",
+   "articulation": "rimshot"
+  },
+  {
+   "name": "snare-14in-rimshot-ff-rr3",
+   "category": "snare",
+   "instrument": "14-inch snare, rimshots",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/top/sn_rims_vl6_rr3.flac",
+     "sha256": "7f6b2a29daa88265280720373a413388cabf9663fe3893d3d02c033c8ea29af1",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/btm/sn_rims_vl6_rr3.flac",
+     "sha256": "3bdbf7c032d82ba9b54ef4e049e0139bfe80e1911afca82f8c23c0ca46e116f3",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/oh/sn_rims_vl6_rr3.flac",
+     "sha256": "c9498c7a86fda23fea210ad42f6c4bf363010db47e9008c28612d62da219d9bb",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "snare",
+    "rimshot",
+    "crack"
+   ],
+   "group": "snare-14in-rimshot-ff",
+   "dynamic": "ff",
+   "articulation": "rimshot"
+  },
+  {
+   "name": "snare-14in-rimshot-ff-rr4",
+   "category": "snare",
+   "instrument": "14-inch snare, rimshots",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/top/sn_rims_vl6_rr4.flac",
+     "sha256": "0680640736d0f89ecc54fd82a0c17a522cb4e265c1c6e3f5af55944a78aa1f2d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/btm/sn_rims_vl6_rr4.flac",
+     "sha256": "4ddbe82721fc3303ee0ed449c8778466120dfc1f5cd9bc85abf437cdcb2a7317",
+     "gain": 0.45
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/rimshot/oh/sn_rims_vl6_rr4.flac",
+     "sha256": "d5ee82211135e853b7e143e8b39a88e3c1a0b468235ac1263a91282af1d4fce2",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "snare",
+    "rimshot",
+    "crack"
+   ],
+   "group": "snare-14in-rimshot-ff",
+   "dynamic": "ff",
+   "articulation": "rimshot"
+  },
+  {
+   "name": "rim-sidestick-f-rr1",
+   "category": "rim",
+   "instrument": "14-inch snare, side stick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/top/sn_ss_vl4_rr1.flac",
+     "sha256": "b81e2102701952ed73eb8fcdb08d9e3ad5c055b822bd360e8b345f181436ad73",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/oh/sn_ss_vl4_rr1.flac",
+     "sha256": "63519f4759e8712583e6cdd93936eac8fdaf6ef9f2dbd0ddb63f3d4627b3e5ae",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "rim",
+    "sidestick"
+   ],
+   "group": "rim-sidestick-f",
+   "dynamic": "f",
+   "articulation": "sidestick"
+  },
+  {
+   "name": "rim-sidestick-f-rr2",
+   "category": "rim",
+   "instrument": "14-inch snare, side stick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/top/sn_ss_vl4_rr2.flac",
+     "sha256": "62ad3ecf9b7bf75eac20814a3d56daae4d62b92b349d04d6dc091983f82a38e8",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/oh/sn_ss_vl4_rr2.flac",
+     "sha256": "9bfcc8a59e1e7a279ff6454e5fa79d407a2919a3551c7e612ed7588c5c2b8e6b",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "rim",
+    "sidestick"
+   ],
+   "group": "rim-sidestick-f",
+   "dynamic": "f",
+   "articulation": "sidestick"
+  },
+  {
+   "name": "rim-sidestick-f-rr3",
+   "category": "rim",
+   "instrument": "14-inch snare, side stick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/top/sn_ss_vl4_rr3.flac",
+     "sha256": "b220751828e34ec712e34e39b936c7a7546b06a50ed30b9ec9ee2ae3b8ab307a",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/oh/sn_ss_vl4_rr3.flac",
+     "sha256": "b396413f12b57e479889ff9b2e9408f5891658e31c1a96f8a2d22a1b25344513",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "rim",
+    "sidestick"
+   ],
+   "group": "rim-sidestick-f",
+   "dynamic": "f",
+   "articulation": "sidestick"
+  },
+  {
+   "name": "rim-sidestick-f-rr4",
+   "category": "rim",
+   "instrument": "14-inch snare, side stick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/top/sn_ss_vl4_rr4.flac",
+     "sha256": "98dbffd8c6d6a707f36d6e3581ca8863a01f6627ca9e898586a954bc7f940a57",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/snare_14/sidestick/oh/sn_ss_vl4_rr4.flac",
+     "sha256": "59e7d08f4ba9b097c859c60bc60b688136e73029b542f2cf5836017cc65c6a77",
+     "gain": 0.7
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "rim",
+    "sidestick"
+   ],
+   "group": "rim-sidestick-f",
+   "dynamic": "f",
+   "articulation": "sidestick"
+  },
+  {
+   "name": "crash-17in-ff-rr1",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl5_rr1.flac",
+     "sha256": "b9205bc10e508eec7c38f031b666bda00268ea7b68fcbc5b8a584de44ec3a1d3",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl5_rr1.flac",
+     "sha256": "511907df68befff63a39df0693868ca8026f46bbd5d0c8e4d1b9cdfedea65504",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-ff",
+   "dynamic": "ff",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-ff-rr2",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl5_rr2.flac",
+     "sha256": "a3aa2e5c2d1cbf5665ad15e95d191ce857154d673ea12278cd389b3cc070287a",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl5_rr2.flac",
+     "sha256": "cdf24a74429f440e349dad04cdba58067906e6230da28c4b9e4338e74ceb012e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-ff",
+   "dynamic": "ff",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-ff-rr3",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl5_rr3.flac",
+     "sha256": "975f01d13f360f6d82b7319cec33eeb5bece495833fbf87b4cdef34a3c83a872",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl5_rr3.flac",
+     "sha256": "8ff1f48e433e0a3355758adf73faae035aa9e573c7eb02d04599e34cc9e07280",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-ff",
+   "dynamic": "ff",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-ff-rr4",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl5_rr4.flac",
+     "sha256": "d491b2300b66ef00f7d397058be7e65c916d826dbf52a69f3979521f8ef43233",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl5_rr4.flac",
+     "sha256": "7c2da4c74f5f8b7286fd58a3dfcb04b2617cf622cbcb4d6a1c45fc3be622ddc9",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-ff",
+   "dynamic": "ff",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-f-rr1",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl4_rr1.flac",
+     "sha256": "79afe7dc4a68a733d89207184f2e64e9815fb45ce82901a8c7e883562e584a9d",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl4_rr1.flac",
+     "sha256": "84150bf1f6842d3cb7738c579ac06bdfb5319a5ab180a4b7663e8058fd0a0e46",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-f-rr2",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl4_rr2.flac",
+     "sha256": "434168a1ad2b94c145d190a1734da6360f41dd5ddf07bf52123e0b33622075c9",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl4_rr2.flac",
+     "sha256": "24e1d0b6ee0e87de85637f0e1591bda6ec1cb528713b276ffaf285a2801cc843",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-f-rr3",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl4_rr3.flac",
+     "sha256": "d2c36e97785757c09f039dddca14ebaeacc08c650ee5e9fe2d598b355f307b8a",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl4_rr3.flac",
+     "sha256": "2677d4ed21351ff411dab1baeac52d96e120791a8efc598389c6e11e4b3ade4f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-f-rr4",
+   "category": "crash",
+   "instrument": "17-inch crash, sticks",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/cl/cr_vl4_rr4.flac",
+     "sha256": "513138d6c33680af05488cfef44799d73c0f49df99bea6228e1c8145d6c2ac41",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/cr/oh/cr_vl4_rr4.flac",
+     "sha256": "844d0aec4f2dd9b1f7f01237c0f5e427fc6cec32dd8b60b727f526c404123088",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "crash"
+   ],
+   "group": "crash-17in-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-mallet-ff-rr1",
+   "category": "crash",
+   "instrument": "17-inch crash, mallets (a soft-attack swell hit)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/cl/cr_m_vl4_rr1.flac",
+     "sha256": "66857ca3395f1ea17b0ecc526b6aff615481f934f3d7906955d5c7213bd30072",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/oh/cr_m_vl4_rr1.flac",
+     "sha256": "6d19d15adadf10b4c01d7a2ab68b83119f82cf784b2afeedf36e80a593ed50d8",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "crash",
+    "mallet",
+    "swell"
+   ],
+   "group": "crash-17in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-mallet-ff-rr2",
+   "category": "crash",
+   "instrument": "17-inch crash, mallets (a soft-attack swell hit)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/cl/cr_m_vl4_rr2.flac",
+     "sha256": "5201771896fb4956810429b538a53153f0a79230849c0b7749a5adbb3af72ed0",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/oh/cr_m_vl4_rr2.flac",
+     "sha256": "a3377d73f216e8b44616671d54dfdbae9184a5956e923da4d383dfc35675c8c8",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "crash",
+    "mallet",
+    "swell"
+   ],
+   "group": "crash-17in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-mallet-ff-rr3",
+   "category": "crash",
+   "instrument": "17-inch crash, mallets (a soft-attack swell hit)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/cl/cr_m_vl4_rr3.flac",
+     "sha256": "8ed5f7640433e6447780975046b0d577eff2b3380b5f55ce56924ad7ae8d089a",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/oh/cr_m_vl4_rr3.flac",
+     "sha256": "0c0a18899a8b48038eabcfcd20875b19fadd8604dc32f73303f222d9c5f7bf88",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "crash",
+    "mallet",
+    "swell"
+   ],
+   "group": "crash-17in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "crash-17in-mallet-ff-rr4",
+   "category": "crash",
+   "instrument": "17-inch crash, mallets (a soft-attack swell hit)",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/cl/cr_m_vl4_rr4.flac",
+     "sha256": "67356029f6ba9d20959dc484e94c3dfe48456f9c5ce1e538cb9f47c6fe9e92f7",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/crash_17/mallet/oh/cr_m_vl4_rr4.flac",
+     "sha256": "283796007522d7785137b4e7ae8f423a429dcc0f5edc895a48107bab9bbe6b68",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "crash",
+    "mallet",
+    "swell"
+   ],
+   "group": "crash-17in-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "ride-22in-f-rr1",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl10_rr1.flac",
+     "sha256": "97be6f1be45f92919a9c932f6eed0800dc5c7e195df4b59e2e453a5cf2ed27bd",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl10_rr1.flac",
+     "sha256": "c28a73b15b39db04b0d229064a6eb9a97e1bcbc0d6869fd0e11845a17e9ba0c5",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-f",
+   "dynamic": "f",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "ride-22in-f-rr2",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl10_rr2.flac",
+     "sha256": "fa311598fae9669c53986d0d5ce10c569f6ee426bbf67d608359e49c3997c78c",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl10_rr2.flac",
+     "sha256": "f1eab8ecf244f0615b801c5bc0ab7e11ba878c6bf0c9a0c226157922ecd3e13e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-f",
+   "dynamic": "f",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "ride-22in-f-rr3",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl10_rr3.flac",
+     "sha256": "cb07dc17c3dd9c5c38d6e540a0682fc8c836cb1650cd90596aba59facf599bf1",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl10_rr3.flac",
+     "sha256": "5c50ec2f6a0a6a5f6d52114ad3532fa93017b22d0b04cb8b8365241cceabf9f7",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-f",
+   "dynamic": "f",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "ride-22in-mf-rr1",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl7_rr1.flac",
+     "sha256": "dabedc20c2464c50b26729d42714eecaf85a6658e29c98504070568b954bec1b",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl7_rr1.flac",
+     "sha256": "11b78424297ab0a3f9cf49d301ea009ef0d8975b0391a9d9ac36da2d5327cd6a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-mf",
+   "dynamic": "mf",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "ride-22in-mf-rr2",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl7_rr2.flac",
+     "sha256": "90e3627953ab6e16f2cde881a1fbf785a37595d51e9095fb2d3226227810db26",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl7_rr2.flac",
+     "sha256": "2305a170d489230a3a31d88b77c3c743b3119a6ec02d3281abcbfbd3086f3e51",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-mf",
+   "dynamic": "mf",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "ride-22in-mf-rr3",
+   "category": "ride",
+   "instrument": "22-inch ride, bow",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/cl/rd_vl7_rr3.flac",
+     "sha256": "70612128e889eea46f87e1d9e96a24c60f9427e872755cac6a56dd65522a68c6",
+     "gain": 0.8
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/ride_22/rd/oh/rd_vl7_rr3.flac",
+     "sha256": "964f35997191521772bf05c7755c979ce8fe5f4171e212613c830cb1380cef5a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "ride"
+   ],
+   "group": "ride-22in-mf",
+   "dynamic": "mf",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "hat-closed-14in-f-rr1",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl6_rr1.flac",
+     "sha256": "c51da9e592588bf5402627d9939521a69d5a178cd4d9dbbcc4d53e8195c60c30",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl6_rr1.flac",
+     "sha256": "fa0599a70e95cdcd4fff5e2f18636253eb673a0116ee3f7b347e85a272051f06",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-closed-14in-f-rr2",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl6_rr2.flac",
+     "sha256": "8ddcb7b8a13309f75acc85982ad74f953d21629e4fc028028bfb5b6074f825b6",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl6_rr2.flac",
+     "sha256": "31ec7348ebb7cb0e1b94e4ad3d53e2b0f8d8f1ba1d916c0d5b2e91bb89438fa5",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-closed-14in-f-rr3",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl6_rr3.flac",
+     "sha256": "50276e80230b7c2543845bb25134217c002bad232708d655dec6a17c6af0c8f4",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl6_rr3.flac",
+     "sha256": "1979fcb61046cf6efd8a6f775f8bfc5b91a662f2729a7b1ba78b27f0575f38b0",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-closed-14in-f-rr4",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl6_rr4.flac",
+     "sha256": "be64fe63e829e504cba8c14e951fa61a44eeb27e1116d9d85c41e18f379d4d3f",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl6_rr4.flac",
+     "sha256": "ec406849aa655a100891236dbe67c515d7dbfc4e7b18250f000d2c08c836aaa1",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-closed-14in-mf-rr1",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl4_rr1.flac",
+     "sha256": "df0456e6586c2cea26d16ee3dd28eaa0fd4b0d95901c2fbf00111deebf51f123",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl4_rr1.flac",
+     "sha256": "b74820cef0d6c58259a0cb4af2a3fc36116e9f50941b5b0becc58b36319ed585",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "hat-closed-14in-mf-rr2",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl4_rr2.flac",
+     "sha256": "b7ebb7ffa88db92c702239ec62f57d30e47c8b9c307c0aab52f14ccafd04ef9d",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl4_rr2.flac",
+     "sha256": "d32da9b09fd0b12067aca1476c3fffc5fea05afbbe655b363c1698b15cf3c19a",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "hat-closed-14in-mf-rr3",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl4_rr3.flac",
+     "sha256": "7e74365fb8d1404c2b6da37939e4a43217048064e3a5fbdaee838571c950943e",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl4_rr3.flac",
+     "sha256": "264e12e39d6906b628a2a4b816bf6ac902522906b3fd5237f65d91168a3f62bd",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "hat-closed-14in-mf-rr4",
+   "category": "hat-closed",
+   "instrument": "14-inch hi-hat, closed",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/cl/ht_cl_vl4_rr4.flac",
+     "sha256": "ce0de3c0f32c3065055051470ad5a75431fdf71017683c3968fea0736bb32c5b",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/cl/oh/ht_cl_vl4_rr4.flac",
+     "sha256": "64e9699bee49996c2fcc5ff398162d12357f9d46908181e61ad633219a1836aa",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-14in-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "hat-open-14in-f-rr1",
+   "category": "hat-open",
+   "instrument": "14-inch hi-hat, open",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/cl/ht_ho_vl4_rr1.flac",
+     "sha256": "c1b0c3661f816d8c5ef66728474a18e0df956e05320c184b3751fca2d2fb015f",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/oh/ht_ho_vl4_rr1.flac",
+     "sha256": "962f76612651ce83ede600aa50418c966a8b1b05e4a78adbc31c491dbd64578e",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-14in-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-open-14in-f-rr2",
+   "category": "hat-open",
+   "instrument": "14-inch hi-hat, open",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/cl/ht_ho_vl4_rr2.flac",
+     "sha256": "5025a328c15f395ce01326c6c277d10dadb5babe734d50364e95177eb3c2e856",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/oh/ht_ho_vl4_rr2.flac",
+     "sha256": "9f8caeaa1abd31027b89759d3390422eab7ef44bf118dae6c533539232900d0f",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-14in-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-open-14in-f-rr3",
+   "category": "hat-open",
+   "instrument": "14-inch hi-hat, open",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/cl/ht_ho_vl4_rr3.flac",
+     "sha256": "90cfcb3e342502ee9617bdc91ef493e18775e9396dcd84b780d8d127e7dce647",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/oh/ht_ho_vl4_rr3.flac",
+     "sha256": "c2de8a50b87bdb9e1834259dce2a0d1446dcf6be9a3980d1b7a7379ce65e4528",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-14in-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-open-14in-f-rr4",
+   "category": "hat-open",
+   "instrument": "14-inch hi-hat, open",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/cl/ht_ho_vl4_rr4.flac",
+     "sha256": "b02513c989f823fa68b468cf028663521231620bb1f5473b882b24534084f60a",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/ho/oh/ht_ho_vl4_rr4.flac",
+     "sha256": "129e37a56545f0759e36438bc1e9d2c5ed82609eae292660d4401493a60894b9",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-14in-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-pedal-14in-f-rr1",
+   "category": "hat-pedal",
+   "instrument": "14-inch hi-hat, foot chick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/cl/ht_chik_vl5_rr1.flac",
+     "sha256": "392467ae61eb072360cd357d3aad5b37a61d8875ee5eefa5b8318b6d3a1453be",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/oh/ht_chik_vl5_rr1.flac",
+     "sha256": "2948bdd436c396780c955aae7340516b1be73a28942d0ccf72cff28f9085a139",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-pedal-14in-f-rr2",
+   "category": "hat-pedal",
+   "instrument": "14-inch hi-hat, foot chick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/cl/ht_chik_vl5_rr2.flac",
+     "sha256": "ed351b08de8af6563c2809f2af111f3db4783625249edc9ad9b4d7453728ba1b",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/oh/ht_chik_vl5_rr2.flac",
+     "sha256": "739bc1ec853587001593a8718ab600501879c71efdeeb3545408ee7e86fd6a83",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-pedal-14in-f-rr3",
+   "category": "hat-pedal",
+   "instrument": "14-inch hi-hat, foot chick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/cl/ht_chik_vl5_rr3.flac",
+     "sha256": "253440e001e8cfcc42ee8ecfe2a162aba20cb02ed21a682dd25116e1e24ea862",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/oh/ht_chik_vl5_rr3.flac",
+     "sha256": "65b37474ff72ee2bbeee1832570c3b581d06e4820c8be9a378950c1c81127c8c",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-pedal-14in-f-rr4",
+   "category": "hat-pedal",
+   "instrument": "14-inch hi-hat, foot chick",
+   "sources": [
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/cl/ht_chik_vl5_rr4.flac",
+     "sha256": "c02762737e0a6760f0903ad50d9c63f4e1a0edaceb20caeb77b7b9adac5e1571",
+     "gain": 1.0
+    },
+    {
+     "lib": "big-rusty",
+     "path": "Samples/hihat_14/chik/oh/ht_chik_vl5_rr4.flac",
+     "sha256": "6a11b9e666ac1bea29bfb5b3672219c17e222b6e1feb71c8f3ea5e79d62faec3",
+     "gain": 0.45
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-14in-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-marching-ff-rr1",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr1_beater.wav",
+     "sha256": "208338a699124461d24d8aad5e12b4d5f3e8ff29f68db868cb51569e9eca11d6",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr1_reso.wav",
+     "sha256": "38e2a299ad0103b5e9464286d8f9282f013cdd29f620ab83706afa4825814e68",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-marching-ff-rr2",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr2_beater.wav",
+     "sha256": "a22d9a5041fe26c9c30a4cfd719f6e8029dc73e1115ef804b8ef3c12f78abd55",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr2_reso.wav",
+     "sha256": "a6189a5b47dbc073e8e03cafac193d3aaf5623117ec92218cf0019cbc320637c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-marching-ff-rr3",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr3_beater.wav",
+     "sha256": "ba02071d8cc4b336e3ba64a8529b8bff32dbd6c04ef444d7e70d10a49beab9fb",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr3_reso.wav",
+     "sha256": "426c882fb21bf9dc5adfe75db1ec277b348046fef33fe492900c15eac85205e8",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-marching-ff-rr4",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr4_beater.wav",
+     "sha256": "3a63450943a582e683243dca2a599cd0c9aa8a766a3fa78928a7ae7cfdce75d0",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl22_rr4_reso.wav",
+     "sha256": "968c2f2916cba2bfcbcd0fba04409bb001eb4c3406da344edf42f82ddaebad32",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-marching-f-rr1",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr1_beater.wav",
+     "sha256": "1ae6718e1c9319399d76a0096d9d5820a560e8311892d268816eb1c8b643c237",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr1_reso.wav",
+     "sha256": "033354b3310aa897c0f6f11b36f7dd4d0a1c590d84e73ca4174454aa430cfaac",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-marching-f-rr2",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr2_beater.wav",
+     "sha256": "d7502d5c48b08fa2a968f3f99e5d77e96f6c15cdeb5215488b6e0d07123ddb39",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr2_reso.wav",
+     "sha256": "a18c0ff39eec1564ac7e5f319d7f34c7010ffc026d5eb2344d98713b8d076b27",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-marching-f-rr3",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr3_beater.wav",
+     "sha256": "d7aa6dcf8592aeedf8de1fcf16b54f7990174e48ef89b10f77d5149d8d235c39",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr3_reso.wav",
+     "sha256": "41a7e949532dc730f8b46734a6ffc8dc676be4d3c809ef1cf393ae2e78837e5e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-marching-f-rr4",
+   "category": "bass-drum",
+   "instrument": "marching bass drum",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr4_beater.wav",
+     "sha256": "b1cb47a8805c606f9ee44b5cc8a2884fcfc9387c037bbf300d15fd63e5f2fd4d",
+     "gain": 1.0
+    },
+    {
+     "lib": "swirly",
+     "path": "Samples/marching_kick/marching_kick_vl18_rr4_reso.wav",
+     "sha256": "b25d972fcbfcd1b3bfe8c6e9a2db5f1d2a5f99c02168974749db7cbfa537cf17",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "bass-drum",
+    "marching",
+    "big"
+   ],
+   "group": "bass-drum-marching-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "tom-floor-ff-rr1",
+   "category": "tom",
+   "instrument": "floor tom, sticks",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/tom_floor/tom_floor_vl12_rr1.wav",
+     "sha256": "985338d799820488e044b90eee5cd364126009d8fe723b31e242d8f9597d84ea",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "tom",
+    "floor"
+   ],
+   "group": "tom-floor-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "tom-floor-ff-rr2",
+   "category": "tom",
+   "instrument": "floor tom, sticks",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/tom_floor/tom_floor_vl12_rr2.wav",
+     "sha256": "6260a53185393eed8f999285f31ea1542dd8a4344b6e0ccdfc8d038b7565ea95",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "tom",
+    "floor"
+   ],
+   "group": "tom-floor-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "tom-floor-ff-rr3",
+   "category": "tom",
+   "instrument": "floor tom, sticks",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/tom_floor/tom_floor_vl12_rr3.wav",
+     "sha256": "bdf1f35e78962a9f09c39d8d3e54afec2bfc435725319a86f40ce70a2bd2b72f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "tom",
+    "floor"
+   ],
+   "group": "tom-floor-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "tom-floor-ff-rr4",
+   "category": "tom",
+   "instrument": "floor tom, sticks",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/tom_floor/tom_floor_vl12_rr4.wav",
+     "sha256": "d2d41b54d099151f9527f80185fc2a951e7c8245caede74a881e8b29fb949d3f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "tom",
+    "floor"
+   ],
+   "group": "tom-floor-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "djembe-ff-rr1",
+   "category": "perc",
+   "instrument": "djembe",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/djembe/djembe_vl12_rr1.wav",
+     "sha256": "2ad1af94f007beffc6c46377027e1114720bcc39018534351e389e9a546abf32",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "djembe",
+    "world"
+   ],
+   "group": "djembe-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "djembe-ff-rr2",
+   "category": "perc",
+   "instrument": "djembe",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/djembe/djembe_vl12_rr2.wav",
+     "sha256": "c20b22ef0432daf9e0668ae5610d062ecfa54c3b8a1e3fe58bcc6236f02b363c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "djembe",
+    "world"
+   ],
+   "group": "djembe-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "djembe-ff-rr3",
+   "category": "perc",
+   "instrument": "djembe",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/djembe/djembe_vl12_rr3.wav",
+     "sha256": "b1f410aeea8c6831e62defc3a1c5cc550f2b6c09e861cdf09fa1efb653b8cb53",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "djembe",
+    "world"
+   ],
+   "group": "djembe-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "djembe-ff-rr4",
+   "category": "perc",
+   "instrument": "djembe",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/djembe/djembe_vl12_rr4.wav",
+     "sha256": "8c2c98d25d99b7e60351b244238e121b40b7466239a2754c693ada7af08a53a2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "djembe",
+    "world"
+   ],
+   "group": "djembe-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "darbouka-ff-rr1",
+   "category": "perc",
+   "instrument": "darbouka (doumbek)",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/darbouka/darbouka_vl12_rr1.wav",
+     "sha256": "6f24d6aa9f6846199746a5df4369b594e7e957cc3e83c93512309d2b2a369cbb",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "darbuka",
+    "world"
+   ],
+   "group": "darbouka-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "darbouka-ff-rr2",
+   "category": "perc",
+   "instrument": "darbouka (doumbek)",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/darbouka/darbouka_vl12_rr2.wav",
+     "sha256": "9c6440cf9c84fa0c892d02a7d9d75ea9d685b5b2f1d093bf3588d42f40f1acb7",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "darbuka",
+    "world"
+   ],
+   "group": "darbouka-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "darbouka-ff-rr3",
+   "category": "perc",
+   "instrument": "darbouka (doumbek)",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/darbouka/darbouka_vl12_rr3.wav",
+     "sha256": "2515a7e6eecc26228fa94c5ec0f5b12806ff79526a2f79fe848f2123389e130a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "darbuka",
+    "world"
+   ],
+   "group": "darbouka-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "darbouka-ff-rr4",
+   "category": "perc",
+   "instrument": "darbouka (doumbek)",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/darbouka/darbouka_vl12_rr4.wav",
+     "sha256": "75042e4a0d03f704d7a006502f4231aa0fe2d47dc1464d116cc904ca3df4e61a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "darbuka",
+    "world"
+   ],
+   "group": "darbouka-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-low-ff-rr1",
+   "category": "perc",
+   "instrument": "bongo, low",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/lbongo/lbongo_vl10_rr1.wav",
+     "sha256": "7fca0e4157ccd52e0cdbf4372578b436948608f2550bef3e9bb36e7bae33b9d4",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-low-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-low-ff-rr2",
+   "category": "perc",
+   "instrument": "bongo, low",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/lbongo/lbongo_vl10_rr2.wav",
+     "sha256": "9c4a9d98a94befe125bd5849d2497af2403a99d8cb25de16d7661435d1f7ab45",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-low-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-low-ff-rr3",
+   "category": "perc",
+   "instrument": "bongo, low",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/lbongo/lbongo_vl10_rr3.wav",
+     "sha256": "b6fe2cc29d31c93f487bda6082e3ec567bf1ac6c43d3711f34cf7585b2178fae",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-low-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-low-ff-rr4",
+   "category": "perc",
+   "instrument": "bongo, low",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/lbongo/lbongo_vl10_rr4.wav",
+     "sha256": "10ffcf3f2c27e05f79bacae18fb68eaf39fc318c930a9f54ab064ed445abe2ca",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-low-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-high-ff-rr1",
+   "category": "perc",
+   "instrument": "bongo, high",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/hbongo/hbongo_vl10_rr1.wav",
+     "sha256": "51d9d0ae7fd5bd3b4d3c74ed531a32320bd18f3c5de2325c40eb2c2990150211",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-high-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-high-ff-rr2",
+   "category": "perc",
+   "instrument": "bongo, high",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/hbongo/hbongo_vl10_rr2.wav",
+     "sha256": "6f5a820da89a51ca84109f0da5668dd9726cb003d9db731296b43e07d4cf2be2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-high-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-high-ff-rr3",
+   "category": "perc",
+   "instrument": "bongo, high",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/hbongo/hbongo_vl10_rr3.wav",
+     "sha256": "b4c28bf995dd4752c4ef9dc851caa3be8c376f401f8e63bfd975e34e418c389e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-high-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bongo-high-ff-rr4",
+   "category": "perc",
+   "instrument": "bongo, high",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/hbongo/hbongo_vl10_rr4.wav",
+     "sha256": "05e903be99d867da45b40c1ca53c805c509a69eaedefb6389cb96c7121a00410",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "hand-drum",
+    "bongo"
+   ],
+   "group": "bongo-high-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "cowbell-f-rr1",
+   "category": "perc",
+   "instrument": "cowbell",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/cowbell/cowbell_vl9_rr1.wav",
+     "sha256": "4be71bff6a8d9031d6a9ae02f51fb37b9ed6d987c46dbc01559bed1ca16c30e8",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cowbell",
+    "metal"
+   ],
+   "group": "cowbell-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "cowbell-f-rr2",
+   "category": "perc",
+   "instrument": "cowbell",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/cowbell/cowbell_vl9_rr2.wav",
+     "sha256": "3299e37574dd0a090fedbe8cdade53d2227461f7e3831062907437b47013ed31",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cowbell",
+    "metal"
+   ],
+   "group": "cowbell-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "cowbell-f-rr3",
+   "category": "perc",
+   "instrument": "cowbell",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/cowbell/cowbell_vl9_rr3.wav",
+     "sha256": "0f2290956a30128d87db06bb2c57fd8f549816b582891147cbd0da38e33c4c04",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cowbell",
+    "metal"
+   ],
+   "group": "cowbell-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "cowbell-f-rr4",
+   "category": "perc",
+   "instrument": "cowbell",
+   "sources": [
+    {
+     "lib": "swirly",
+     "path": "Samples/cowbell/cowbell_vl9_rr4.wav",
+     "sha256": "9d6ddb8a191bc5f62a40fff2f53412a52ed92368a1f5791cef1f4d6b803eca5c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cowbell",
+    "metal"
+   ],
+   "group": "cowbell-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-concert-a-ff-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (A)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 1/BDrumNew_hit_v7_rr1_Sum.wav",
+     "sha256": "7024054e68261d2cca0ee58fdf9d6f23b54370792d04aa2c1ccf41acc090bd2b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-a-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-concert-a-ff-rr2",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (A)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 1/BDrumNew_hit_v7_rr2_Sum.wav",
+     "sha256": "fa4374b9ffdc3b9a3c85331ce96c447cf13e46d956cce9cfd9ba02801f71276f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-a-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-concert-a-f-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (A)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 1/BDrumNew_hit_v5_rr1_Sum.wav",
+     "sha256": "642aaf3375eaff1307973f7de3ccbf74d18e71fb3cf9412e021b08fc3bf1981c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-a-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-concert-a-f-rr2",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (A)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 1/BDrumNew_hit_v5_rr2_Sum.wav",
+     "sha256": "a83943f8125ae39469ef5dab1d0be2fe3145c6842c0621b27be5d86aa44b325d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-a-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-concert-b-ff-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (B)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_ff.wav",
+     "sha256": "d0ce17649553655127ee27dff312ece64c9ac698a9b66a470c3b51f244892c7b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-b-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-concert-b-f-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (B)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_f.wav",
+     "sha256": "e2f909d4986e2502b0653858c47bd10b0914c5893da770eae3034a9431e31439",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-b-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "bass-drum-concert-b-mf-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (B)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_mf1.wav",
+     "sha256": "9cfa91a11fad6c843e001ad6365949200e2d5b4237cf1193a1493310f0f6c3c1",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-b-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "bass-drum-concert-b-mf-rr2",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (B)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_hit_mf2.wav",
+     "sha256": "cd6b4e0c68c6b99466f1f62ab4cd4dad43de559306a123406433f13907495bd2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-b-mf",
+   "dynamic": "mf"
+  },
+  {
+   "name": "bass-drum-concert-c-fff-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (C)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum_fff_rr1.wav",
+     "sha256": "b4b563c46d784d5a136db30d0ecd7d70dbb977f3cd80ad0eb72414afbf481095",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-c-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "bass-drum-concert-c-fff-rr2",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (C)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum_fff_rr2.wav",
+     "sha256": "c3913ee030e74ca42a010054fe404ad851585cfa009339e2cb0c6ad61d6b2e24",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-c-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "bass-drum-concert-c-ff-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (C)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum_ff_rr1.wav",
+     "sha256": "549c1190c3da0a8a8f252f427f7ed03e22efc2e1f62ae86b01f6c3d27eca9bf0",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-c-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "bass-drum-concert-c-fff-rr3",
+   "category": "bass-drum",
+   "instrument": "concert bass drum (C)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum3_fff_rr1.wav",
+     "sha256": "d4707c2858ab6fdc814815c7f8d9e0beab09c3a3a88f2a337720444291352ba4",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "big"
+   ],
+   "group": "bass-drum-concert-c-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "bass-drum-concert-muted-fff-rr1",
+   "category": "bass-drum",
+   "instrument": "concert bass drum, muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum_muted_fff_rr1.wav",
+     "sha256": "cfc222225c940e3450a3d59031e2de3329fe3ecee9ddcf07f8f064a69dbe3484",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "muted",
+    "tight"
+   ],
+   "group": "bass-drum-concert-muted-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "bass-drum-concert-muted-fff-rr2",
+   "category": "bass-drum",
+   "instrument": "concert bass drum, muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 3 - Legacy/bdrum_muted_fff_rr2.wav",
+     "sha256": "11fa78b8273f871df970ad256395067e55c66afd73e399b1b6f0dfaf279ca50b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "bass-drum",
+    "concert",
+    "muted",
+    "tight"
+   ],
+   "group": "bass-drum-concert-muted-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "roll-bass-drum-cresc-short",
+   "category": "roll",
+   "instrument": "concert bass drum, crescendo roll",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_cresc_short.wav",
+     "sha256": "0ab359be2a8f4ae9ceda83b935060bf63a93197fbf2246d0ee7fca5dc958c7e9",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "swell",
+    "bass-drum"
+   ],
+   "group": "roll-bass-drum-cresc-short",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "roll-bass-drum-cresc-med",
+   "category": "roll",
+   "instrument": "concert bass drum, crescendo roll",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Bass Drum 2/bassdrum_cresc_med.wav",
+     "sha256": "805ef45b878fadfa769f52688c3d07bde91e77af7408a00bc5a2116abcd9e3c5",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "swell",
+    "bass-drum"
+   ],
+   "group": "roll-bass-drum-cresc-med",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "timpani-a1-ff-rr1",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 1",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani1_Hit_v4_rr1_Sum.wav",
+     "sha256": "b51d81444425e1ba0c09d94dbdc384a8cd4b4681c42959cc8676ccaf6d6ea793",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a1-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a1-ff-rr2",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 1",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani1_Hit_v4_rr2_Sum.wav",
+     "sha256": "0c965885fc0d1545d89fd70e93e35b53b6e64cc5c07fe174c092c7fe36ddb5a4",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a1-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a2-ff-rr1",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 2",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani2_Hit_v4_rr1_Sum.wav",
+     "sha256": "b737b4bde0c2f54f57866ea7cdce79bc2e67162e37906a6820614fbc57324940",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a2-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a2-ff-rr2",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 2",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani2_Hit_v4_rr2_Sum.wav",
+     "sha256": "d2a6e02a97f484147ab52e779477398e9a91a408fe455df7ff203996dd3adc81",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a2-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a3-ff-rr1",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 3",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani3_Hit_v4_rr1_Sum.wav",
+     "sha256": "59a58eb828dc109e3cc7b7744a0f84e47182cadf2cf548a0c0b94ae5581cdc60",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a3-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a3-ff-rr2",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 3",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani3_Hit_v4_rr2_Sum.wav",
+     "sha256": "cd85951fa4e74ce9128bc10c58365538b041d71dd28de21ac21048ab7a8f37dd",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a3-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a4-ff-rr1",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 4",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani4_Hit_v4_rr1_Sum.wav",
+     "sha256": "71161169062458913095b6d87d0eacb1bc344622e28832fef9458c7f142c8860",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a4-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a4-ff-rr2",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 4",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani4_Hit_v4_rr2_Sum.wav",
+     "sha256": "fa78ee249f1011bf5a66522bfa8387eb0cc952a637701fc924ed98e0a9b51600",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a4-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a5-ff-rr1",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 5",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani5_Hit_v4_rr1_Sum.wav",
+     "sha256": "520bcf3b2f5d974076d0eb0eb3ba5201de0be5098860e9d752c6deaa295ae3ba",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a5-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-a5-ff-rr2",
+   "category": "timpani",
+   "instrument": "timpani (set 1), drum 5",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Hit/Timpani5_Hit_v4_rr2_Sum.wav",
+     "sha256": "1f34a78ec7d5ce9f1a5ded7ccffd04da806507f43503b6ba9f380d315623a6ce",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-a5-ff",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b1a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 1 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani1A_hit_v5_rr1_main.wav",
+     "sha256": "15bb72b2e9e9e5efbda55bacc0f10a2a1c9c25a903840b608d3f571d67968237",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b1a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b1b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 1 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani1B_hit_v5_rr1_main.wav",
+     "sha256": "551746dc51bbc5fbb5bfce07c71382cae579dec2ba1828ead2b656636f282100",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b1b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b1c-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 1 note C",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani1C_hit_v5_rr1_main.wav",
+     "sha256": "12d0c6d39553316f37c594b8d6358394da353184362434d78f094ddb82000c26",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b1c",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b1d-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 1 note D",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani1D_hit_v5_rr1_main.wav",
+     "sha256": "aad10865f162f661ab9418c42d3676779fe0a903a1cd53e076fd5266d5f15d49",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b1d",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b2a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 2 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani2A_hit_v5_rr1_main.wav",
+     "sha256": "9ed4595284f332bbb989e48093104cf56c33fa2de1aef41f6e2f026754dd10ae",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b2a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b2b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 2 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani2B_hit_v5_rr1_main.wav",
+     "sha256": "35a7d61fc6ad3367ca7bf33b88adba1164b906b7b4a8a07e29e3f6f02489847f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b2b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b3a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 3 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani3A_hit_v5_rr1_main.wav",
+     "sha256": "9619d502be476840f170bf75c3643eceb2ef88aa4329622c014059b3de6cbad6",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b3a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b3b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 3 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani3B_hit_v5_rr1_main.wav",
+     "sha256": "c784eff70231c7bd445e715a6acb6276896326458128777a06839e6c676f3b9c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b3b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b3c-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 3 note C",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani3C_hit_v5_rr1_main.wav",
+     "sha256": "78a6cc80b9348b87f3a843126d077534ded126de477354188efd8537dd829393",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b3c",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b4a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 4 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani4A_hit_v5_rr1_main.wav",
+     "sha256": "b0e93a017cc505fb134e7fbea9ac1df8f80b93b8a087d816a9f50a284b27ad0c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b4a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b5a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 5 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani5A_hit_v5_rr1_main.wav",
+     "sha256": "299874c83173b2ac4e92bacc403ec2f53d4c7a59392bea081ce750d876bc3d86",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b5a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b5b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 5 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani5B_hit_v5_rr1_main.wav",
+     "sha256": "ddc2ec0940f8b0e5da4a0c24b40789d36dea98d8372c46102f107e816e8c6285",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b5b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6A_hit_v5_rr1_main.wav",
+     "sha256": "1adb861a09927191ad5fc50c21c8308d61c47fa8ed30c495735f0e5270ce3c53",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6B_hit_v5_rr1_main.wav",
+     "sha256": "ff7b7d4e77342cc5c8671ea8f1a9a793a3153036178665b005845dbe4b5478ec",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6c-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note C",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6C_hit_v5_rr1_main.wav",
+     "sha256": "81a82ec989782427e3c751ff071cb9726032f6c8c3ffed2165946d62f8305cf1",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6c",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6d-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note D",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6D_hit_v5_rr1_main.wav",
+     "sha256": "2ec1058e218a70b18d39b029b4671f253845b236fd179144f17b1daab906123b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6d",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6e-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note E",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6E_hit_v5_rr1_main.wav",
+     "sha256": "8f5357bb7ca2862f0eb1a97b81243d7dce403ff027b0dce25aebe60237ef5217",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6e",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6f-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note F",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6F_hit_v5_rr1_main.wav",
+     "sha256": "18588622b607a3042f43e9efdb546c7b5d0bacb6f501cc58238f4a30e68fbc3d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6f",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6g-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note G",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6G_hit_v5_rr1_main.wav",
+     "sha256": "cca8f2bd71ceccd819888600d743e68c7f26b7833568833fa1b6757e68eda63e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6g",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6h-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note H",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6H_hit_v5_rr1_main.wav",
+     "sha256": "421f9d7d34028d2a109a8f2c8ce5700d614c688d0000e9cdfd3f1ea95f6d6646",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6h",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6i-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note I",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6I_hit_v5_rr1_main.wav",
+     "sha256": "ec70b8ff0082091f51d73bc7817e0c9c6577631c0395838728bfecb4fb408b33",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6i",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b6j-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 6 note J",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani6J_hit_v5_rr1_main.wav",
+     "sha256": "12fdd681032668dd030932094750f2f02c30f76f3f39ad6b91a96b1b108cf3db",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b6j",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7A_hit_v5_rr1_main.wav",
+     "sha256": "82ddc2f085da2f79ef6137e17703a3d5b8dde696e6590177a4d4f3610eee6eba",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7B_hit_v5_rr1_main.wav",
+     "sha256": "99ac5ec8f6c5b2d0ca444bbfc6a92e8b8f654d466fe96e03fd3102c82013c2a9",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7c-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note C",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7C_hit_v5_rr1_main.wav",
+     "sha256": "1e04b22e6d1dc6d9985d14fc5cff72a696556842489f2acd14ffd6457ae0b207",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7c",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7d-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note D",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7D_hit_v5_rr1_main.wav",
+     "sha256": "61d2635e496798ebe737dbd79825c5cecdc848c8f05bb43a13701f5ab98c1cf6",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7d",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7e-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note E",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7E_hit_v5_rr1_main.wav",
+     "sha256": "f27dff5c2b66b584901bb6429dee153adbf7567bfe23bb122c92ccd5871d7f24",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7e",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7f-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note F",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7F_hit_v5_rr1_main.wav",
+     "sha256": "8a4be80aab2dbf247d1754967a97fc5e315f298f6f0e25de78047e470992f7f2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7f",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b7g-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 7 note G",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani7G_hit_v5_rr1_main.wav",
+     "sha256": "104f787a7c275914b9c8ca0cd700c81a26da5887c6d29cc77729d401a5898130",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b7g",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b8a-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 8 note A",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani8A_hit_v5_rr1_main.wav",
+     "sha256": "a4433b1648be7c0ab578077507c3dba7fe0044ee2984d4ac7745361140a795b9",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b8a",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b8b-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 8 note B",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani8B_hit_v5_rr1_main.wav",
+     "sha256": "8f23ade883893d0900868a276154236093e373acb98d97e15d46f9bce3e2ae19",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b8b",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b8c-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 8 note C",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani8C_hit_v5_rr1_main.wav",
+     "sha256": "b71c3135144f5569a2ef576ee653fda588afd1f9e0b2edec477a15f869b3230b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b8c",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b8d-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 8 note D",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani8D_hit_v5_rr1_main.wav",
+     "sha256": "dfa368d740384a8ce6f93ace62cc0168d1d605256d8c6d612b57b411a844bfd7",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b8d",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "timpani-b8e-ff",
+   "category": "timpani",
+   "instrument": "timpani (set 2), drum 8 note E",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 2/Hit/Timpani8E_hit_v5_rr1_main.wav",
+     "sha256": "151b4a8a523c50f096eb5549cc45b4716e769a49d975876f58e975b800b11225",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "timpani",
+    "orchestral",
+    "tonal"
+   ],
+   "group": "timpani-b8e",
+   "dynamic": "ff",
+   "max_len_s": 5.0
+  },
+  {
+   "name": "roll-timpani-1-ff",
+   "category": "roll",
+   "instrument": "timpani roll, drum 1",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Roll/Timpani1_Roll_v5_rr1_Sum.wav",
+     "sha256": "9a4b61ae283d607cc77f07d99908f5f1835c4512fdfaa2a69b8b878f51a0ae60",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "timpani"
+   ],
+   "group": "roll-timpani-1",
+   "dynamic": "ff",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "roll-timpani-2-ff",
+   "category": "roll",
+   "instrument": "timpani roll, drum 2",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Roll/Timpani2_Roll_v5_rr1_Sum.wav",
+     "sha256": "f05404c85a8512f2a1503b849ed54b5c1a0e7ea7fab93f68dc2817819a137f44",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "timpani"
+   ],
+   "group": "roll-timpani-2",
+   "dynamic": "ff",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "roll-timpani-3-ff",
+   "category": "roll",
+   "instrument": "timpani roll, drum 3",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Roll/Timpani3_Roll_v5_rr1_Sum.wav",
+     "sha256": "423a57aaab07fe6e406a7e066ba78ab7c5196b3c62067e58a5718a780d22264c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "timpani"
+   ],
+   "group": "roll-timpani-3",
+   "dynamic": "ff",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "roll-timpani-4-ff",
+   "category": "roll",
+   "instrument": "timpani roll, drum 4",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Timpani 1/Roll/Timpani4_Roll_v5_rr1_Sum.wav",
+     "sha256": "1e3c6c8231c668e103fd801845c10d5fc7af2a3757110595724b37cd4a9832bd",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "timpani"
+   ],
+   "group": "roll-timpani-4",
+   "dynamic": "ff",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "tom-concert-high-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "concert tom (high), mallets",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Tom 1/Mallet/TomH_HitM_v4_rr1_Mid.wav",
+     "sha256": "a57ac74e93079d72c0cde41ac97391db757a450a167e85f115b7248a726c9b02",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "concert",
+    "mallet"
+   ],
+   "group": "tom-concert-high-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-concert-high-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "concert tom (high), mallets",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Tom 1/Mallet/TomH_HitM_v4_rr2_Mid.wav",
+     "sha256": "9264c223229aeb76b73302d3e6be15e147e6a346f0260556d9a9615b8c52ea0c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "concert",
+    "mallet"
+   ],
+   "group": "tom-concert-high-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-concert-low-mallet-ff-rr1",
+   "category": "tom",
+   "instrument": "concert tom (low), mallets",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Tom 2/Mallet/TomL_HitM_v4_rr1_Mid.wav",
+     "sha256": "8ee010beab0edb64ce7f580a433f4e4ab1d07874dcf8e74b0edad9e0fe8b4639",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "concert",
+    "mallet"
+   ],
+   "group": "tom-concert-low-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-concert-low-mallet-ff-rr2",
+   "category": "tom",
+   "instrument": "concert tom (low), mallets",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Tom 2/Mallet/TomL_HitM_v4_rr2_Mid.wav",
+     "sha256": "877ff4b4c3baf395cb8fb2530bb98dcbd385ec059c5a4b0f5c5ddc9078202112",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "concert",
+    "mallet"
+   ],
+   "group": "tom-concert-low-mallet-ff",
+   "dynamic": "ff",
+   "articulation": "mallet"
+  },
+  {
+   "name": "tom-tenor-low-fff-rr1",
+   "category": "tom",
+   "instrument": "marching tenor drum (low)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_lower/tenor_fff_rr1.wav",
+     "sha256": "d090357aa17513d2b6adc976813cef2ee1f82c3ab04acbcf129b638bb3cc7c49",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-low-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "tom-tenor-low-fff-rr2",
+   "category": "tom",
+   "instrument": "marching tenor drum (low)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_lower/tenor_fff_rr2.wav",
+     "sha256": "9c308d844e6cbefacebf9b5fe87bbecfa9cf8e1a1c7bfeb5b0bda72f7fdb4d71",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-low-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "tom-tenor-low-fff-rr3",
+   "category": "tom",
+   "instrument": "marching tenor drum (low)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_lower/tenor_fff_rr3.wav",
+     "sha256": "38465afda66f9af14e9028c408e777ee4722c2805b91db2d68ad4bd5f1a68900",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-low-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "tom-tenor-high-fff-rr1",
+   "category": "tom",
+   "instrument": "marching tenor drum (high)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_higher/tenorH_fff_rr1.wav",
+     "sha256": "058df061605662793f4d417a5cb5434e6b5ba9f46e41fcb04c0cb58978f3ae89",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-high-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "tom-tenor-high-fff-rr2",
+   "category": "tom",
+   "instrument": "marching tenor drum (high)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_higher/tenorH_fff_rr2.wav",
+     "sha256": "1d0a71e36dce1bbb86c52cec63a7fece9563d2f51bed279bf1cb191bf4880d7c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-high-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "tom-tenor-high-fff-rr3",
+   "category": "tom",
+   "instrument": "marching tenor drum (high)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Toms/tenor_higher/tenorH_fff_rr3.wav",
+     "sha256": "8ff7aa721d97fabaf461a4c42c78a028e8f79c7261f5be0e2cac93150ef3979a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "tom",
+    "marching",
+    "tenor"
+   ],
+   "group": "tom-tenor-high-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "frame-drum-large-f-rr1",
+   "category": "frame-drum",
+   "instrument": "frame drum (large)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumL_Hit_v3_rr1_Sum.wav",
+     "sha256": "e0fa5a60d459df12fa2e79080fc2db514e58a70a47d3300c5363d6ad113dfd0c",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "taiko-like"
+   ],
+   "group": "frame-drum-large-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-large-muted-f-rr1",
+   "category": "frame-drum",
+   "instrument": "frame drum (large), muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumL_HitMuted_v3_rr1_Sum.wav",
+     "sha256": "3ebcbac4dbb1ecf73af211f07f3adcbf0100f40150f4043caf574d760a7bb1d7",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "muted",
+    "tight"
+   ],
+   "group": "frame-drum-large-muted-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-large-f-rr2",
+   "category": "frame-drum",
+   "instrument": "frame drum (large)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumL_Hit_v3_rr2_Sum.wav",
+     "sha256": "908e4e5bb6bc83dc1ae8dac86a869974eb6398578d131e278eb3d025cf736ca2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "taiko-like"
+   ],
+   "group": "frame-drum-large-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-large-muted-f-rr2",
+   "category": "frame-drum",
+   "instrument": "frame drum (large), muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumL_HitMuted_v3_rr2_Sum.wav",
+     "sha256": "61782ea5fe0d9cb9fe607a70b466a67db1a6a6a6e457eaa787cc376c131a01b3",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "muted",
+    "tight"
+   ],
+   "group": "frame-drum-large-muted-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-small-f-rr1",
+   "category": "frame-drum",
+   "instrument": "frame drum (small)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumS_Hit_v3_rr1_Sum.wav",
+     "sha256": "09721cec12ab8d2336cddd60953a2505ea1c8c8324d0b4ed245b9c5ea4561c33",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "frame-drum"
+   ],
+   "group": "frame-drum-small-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-small-muted-f-rr1",
+   "category": "frame-drum",
+   "instrument": "frame drum (small), muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumS_HitMuted_v3_rr1_Sum.wav",
+     "sha256": "9ac5fae877b90f0f354766efe8dc813be87eeb31e6b52fe8750fa0528c2c16c4",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "muted",
+    "tight"
+   ],
+   "group": "frame-drum-small-muted-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-small-f-rr2",
+   "category": "frame-drum",
+   "instrument": "frame drum (small)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumS_Hit_v3_rr2_Sum.wav",
+     "sha256": "fb7dc925c96079cd14c3b88374dad46b4b31648db6799ac8ec685a983b9e7182",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "frame-drum"
+   ],
+   "group": "frame-drum-small-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "frame-drum-small-muted-f-rr2",
+   "category": "frame-drum",
+   "instrument": "frame drum (small), muted",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Frame Drum/HDrumS_HitMuted_v3_rr2_Sum.wav",
+     "sha256": "91f7adbfc782956ff39092724b97188c4c5561be9e703f015d76e9c57bec6161",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "acoustic"
+   ],
+   "tags": [
+    "frame-drum",
+    "hand-drum",
+    "muted",
+    "tight"
+   ],
+   "group": "frame-drum-small-muted-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "snare-concert-ff-rr1",
+   "category": "snare",
+   "instrument": "concert snare, snares on",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_HitSN_v9_rr1_Mid.wav",
+     "sha256": "ea0adea05227c09002fb7305613cb2877003dc3ba3467d3b2d60c20f5664d59a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "concert"
+   ],
+   "group": "snare-concert-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-concert-snares-off-ff-rr1",
+   "category": "snare",
+   "instrument": "concert snare, snares off",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_HitNS_v6_rr1_Mid.wav",
+     "sha256": "1231d6e59ea7a16c58defe6d001c0dd346e2d56a4a94000111399bb5e6652714",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "concert",
+    "snares-off",
+    "tom-like"
+   ],
+   "group": "snare-concert-snares-off-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-concert-ff-rr2",
+   "category": "snare",
+   "instrument": "concert snare, snares on",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_HitSN_v9_rr2_Mid.wav",
+     "sha256": "2a522774cab32b7c8ad6ea8d40ce5a4a36720c9735a653b4ee9c1c0c5294e61d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "concert"
+   ],
+   "group": "snare-concert-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-concert-snares-off-ff-rr2",
+   "category": "snare",
+   "instrument": "concert snare, snares off",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_HitNS_v6_rr2_Mid.wav",
+     "sha256": "22974ad3e03d6f67c5524985c0fe468b04ddada97b6cd996f76242d1d1391f9d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "concert",
+    "snares-off",
+    "tom-like"
+   ],
+   "group": "snare-concert-snares-off-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "snare-field-f-rr1",
+   "category": "snare",
+   "instrument": "field (marching) snare",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Snares/drum3_marching/snare3_fff_rr1.wav",
+     "sha256": "4d5683130519f568b1d8b338a11871a2e85c50c2c2f656022ca7068d26dab68e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "marching",
+    "field-drum"
+   ],
+   "group": "snare-field-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "snare-field-f-rr2",
+   "category": "snare",
+   "instrument": "field (marching) snare",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Snares/drum3_marching/snare3_f_rr1.wav",
+     "sha256": "d27fb463d827937e93e029d9a131a6695259790b3c883d01e5fdba6da5d52b75",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "marching",
+    "field-drum"
+   ],
+   "group": "snare-field-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "snare-field-f-rr3",
+   "category": "snare",
+   "instrument": "field (marching) snare",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Legacy Snares/drum3_marching/snare3_f_rr2.wav",
+     "sha256": "d9b27cd69f58561c7aadcb832c6d8884b7c27712ec4378997351a69757eaa6dc",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "snare",
+    "marching",
+    "field-drum"
+   ],
+   "group": "snare-field-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "roll-snare-concert-v4",
+   "category": "roll",
+   "instrument": "concert snare roll",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Snare Drum, Modern 1/Snare2_rollSN_v4_rr1_Mid.wav",
+     "sha256": "b23fb9a338ae9c419b5c33b4f8365315a518914155078d3ed354073eb27a8880",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "roll",
+    "snare"
+   ],
+   "group": "roll-snare-concert-v4",
+   "max_len_s": 10.0
+  },
+  {
+   "name": "crash-suspended-1-fff",
+   "category": "crash",
+   "instrument": "suspended cymbal 1, mallet",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_hit_fff1.wav",
+     "sha256": "993ceb041adaad19c88042e9d6e66707c30eda6e44a5a263d68bb4a3cdb2ca02",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "suspended",
+    "orchestral"
+   ],
+   "group": "crash-suspended-fff",
+   "dynamic": "fff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-suspended-1-f",
+   "category": "crash",
+   "instrument": "suspended cymbal 1, mallet",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_hit_f1.wav",
+     "sha256": "42a8ece91eccec9b7063793e6644d037a9005c01d5b76f6bec358e8d53fb92a5",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "suspended",
+    "orchestral"
+   ],
+   "group": "crash-suspended-f",
+   "dynamic": "f",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-suspended-2-fff",
+   "category": "crash",
+   "instrument": "suspended cymbal 2, mallet",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 2/susCymb2_hit_fff1.wav",
+     "sha256": "715edddcffc1e5aa7395c9ebe91b6396aa7665fa854b26d37e20953f046ac6f1",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "suspended",
+    "orchestral"
+   ],
+   "group": "crash-suspended-fff",
+   "dynamic": "fff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-suspended-2-f",
+   "category": "crash",
+   "instrument": "suspended cymbal 2, mallet",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 2/susCymb2_hit_f1.wav",
+     "sha256": "f34e43ec6f1118040096ff565fc8b15b1a9cc6f5eb3b5cd277045bacf8724c9b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "suspended",
+    "orchestral"
+   ],
+   "group": "crash-suspended-f",
+   "dynamic": "f",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "cymbal-swell-1-1-5s",
+   "category": "cymbal-swell",
+   "instrument": "suspended cymbal 1, mallet roll crescendo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_cresc_1.5s.wav",
+     "sha256": "231ba14c10cf66eca3392d5d773c0895abf0584203f07affe173092bf0962e63",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "swell",
+    "riser",
+    "cymbal",
+    "reverse-like"
+   ],
+   "group": "cymbal-swell-1-1-5s",
+   "max_len_s": 12.0
+  },
+  {
+   "name": "cymbal-swell-1-2s",
+   "category": "cymbal-swell",
+   "instrument": "suspended cymbal 1, mallet roll crescendo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_cresc_2s.wav",
+     "sha256": "a5507bf116b33ee220f4eff54506be56fd455e908c8d53903f217590341e5008",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "swell",
+    "riser",
+    "cymbal",
+    "reverse-like"
+   ],
+   "group": "cymbal-swell-1-2s",
+   "max_len_s": 12.0
+  },
+  {
+   "name": "cymbal-swell-1-4s",
+   "category": "cymbal-swell",
+   "instrument": "suspended cymbal 1, mallet roll crescendo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 1/susCymb1_cresc_4s.wav",
+     "sha256": "bb3b6b251b0b9dac23b7b0fae47aab84a70abbefa4a110b05c9f4ad733e70741",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "swell",
+    "riser",
+    "cymbal",
+    "reverse-like"
+   ],
+   "group": "cymbal-swell-1-4s",
+   "max_len_s": 12.0
+  },
+  {
+   "name": "cymbal-swell-2-2-5s",
+   "category": "cymbal-swell",
+   "instrument": "suspended cymbal 2, mallet roll crescendo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 2/susCymb2_cresc_2.5s2.wav",
+     "sha256": "cdaa916f6efb454000e1e120b170e13fa38c1313067c11ef161bb558049698b0",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "swell",
+    "riser",
+    "cymbal",
+    "reverse-like"
+   ],
+   "group": "cymbal-swell-2-2-5s",
+   "max_len_s": 12.0
+  },
+  {
+   "name": "cymbal-swell-2-4s",
+   "category": "cymbal-swell",
+   "instrument": "suspended cymbal 2, mallet roll crescendo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Suspended Cymbal 2/susCymb2_cresc_4s.wav",
+     "sha256": "50ae498d51bbc66f98c198aa7aa085c033c5fb0eb94e84b5553e0357ae107107",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "swell",
+    "riser",
+    "cymbal",
+    "reverse-like"
+   ],
+   "group": "cymbal-swell-2-4s",
+   "max_len_s": 12.0
+  },
+  {
+   "name": "crash-clash-1-ff-rr2",
+   "category": "crash",
+   "instrument": "clash (hand) cymbals 1",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 1/cymbal_crash1_ff2.wav",
+     "sha256": "6f27c36fe2a829b667fd3372e1488437671534c0c719af9ae90128e5f99629d3",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "orchestral"
+   ],
+   "group": "crash-clash-1-ff",
+   "dynamic": "ff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-clash-1-ff-rr3",
+   "category": "crash",
+   "instrument": "clash (hand) cymbals 1",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 1/cymbal_crash1_ff3.wav",
+     "sha256": "d469c985426b1cc5d282be7cc8a17cb9367072a21ee900a6344e08b2de281960",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "orchestral"
+   ],
+   "group": "crash-clash-1-ff",
+   "dynamic": "ff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-clash-2-fff-rr1",
+   "category": "crash",
+   "instrument": "clash (hand) cymbals 2",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 2/cymbal_crash2_fff1.wav",
+     "sha256": "54e030aaee7201d6b6e42f74ba6a7a699b24c3075869d28baa097332f1b4e0ba",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "orchestral"
+   ],
+   "group": "crash-clash-2-fff",
+   "dynamic": "fff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-clash-2-fff-rr2",
+   "category": "crash",
+   "instrument": "clash (hand) cymbals 2",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 2/cymbal_crash2_fff2.wav",
+     "sha256": "d3b464c27c3edd3c8b9a0d5efed31f6320ff6ee157f80e955faff2139fe7bd79",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "orchestral"
+   ],
+   "group": "crash-clash-2-fff",
+   "dynamic": "fff",
+   "max_len_s": 8.0
+  },
+  {
+   "name": "crash-clash-choked-rr1",
+   "category": "crash",
+   "instrument": "clash cymbals, choked",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 1/cymbal_crash1_short1.wav",
+     "sha256": "7ac4afb439b7c1279e3280f60b1e25fb0865fc6b7e59d09c78c6e97bc987195d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "choked",
+    "tight"
+   ],
+   "group": "crash-clash-choked",
+   "dynamic": "f"
+  },
+  {
+   "name": "crash-clash-choked-rr2",
+   "category": "crash",
+   "instrument": "clash cymbals, choked",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Clash Cymbals 1/cymbal_crash1_short2.wav",
+     "sha256": "af0d5f0eb7f2226a1c592e5cda8e2dc0588cadbc851999ed39e3f36276acc7c9",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "crash",
+    "clash",
+    "choked",
+    "tight"
+   ],
+   "group": "crash-clash-choked",
+   "dynamic": "f"
+  },
+  {
+   "name": "gong-fff",
+   "category": "gong",
+   "instrument": "tam-tam (gong)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Gong 1/gong_fff.wav",
+     "sha256": "998b27e21ee1639a73c1d71c8093e98cab4a10223640a59e8902ecfc557f74ac",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "gong",
+    "tam-tam",
+    "big"
+   ],
+   "group": "gong-fff",
+   "max_len_s": 14.0
+  },
+  {
+   "name": "gong-f",
+   "category": "gong",
+   "instrument": "tam-tam (gong)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Gong 1/gong_f.wav",
+     "sha256": "348226a7aceea02fa2d508f329283ea0329d76d21afa6f5a56af95bfaa037048",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "gong",
+    "tam-tam",
+    "big"
+   ],
+   "group": "gong-f",
+   "max_len_s": 14.0
+  },
+  {
+   "name": "gong-2-f",
+   "category": "gong",
+   "instrument": "tam-tam (gong)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Gong 1/gong_2_f.wav",
+     "sha256": "0f7538cccc7673f953fc66db0e4449d4902f2ff2ef01dc4962c748b011813942",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer"
+   ],
+   "tags": [
+    "gong",
+    "tam-tam",
+    "big"
+   ],
+   "group": "gong-2-f",
+   "max_len_s": 14.0
+  },
+  {
+   "name": "impact-anvil-1-ff",
+   "category": "impact",
+   "instrument": "anvil",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Anvil/Anvil_Hit1_v3_rr1_Mid.wav",
+     "sha256": "f832799b7cabeb06163a18ac49d373d21bc5271fc316f9f61e6d6f17ef669a18",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "impact",
+    "metal",
+    "anvil"
+   ],
+   "group": "impact-anvil-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "impact-anvil-2-ff",
+   "category": "impact",
+   "instrument": "anvil",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Anvil/Anvil_Hit2_v3_rr1_Mid.wav",
+     "sha256": "1482a60b6da77eecb02dea1710ddc9c6711db4bb6feb0b113cba5de4cf188b0b",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "impact",
+    "metal",
+    "anvil"
+   ],
+   "group": "impact-anvil-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "impact-anvil-3-ff",
+   "category": "impact",
+   "instrument": "anvil",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Anvil/Anvil_Hit3_v3_rr1_Mid.wav",
+     "sha256": "ef9127b7d0e9fa026cfaefee06d9383c349cab00a9d63dd1ebdd3c9c6841d12e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "orchestral",
+    "launch"
+   ],
+   "tags": [
+    "impact",
+    "metal",
+    "anvil"
+   ],
+   "group": "impact-anvil-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "impact-brake-drum-1-ff",
+   "category": "impact",
+   "instrument": "brake drum, hammer",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Brake Drum/BrakeDrum1_Hammer_v3_rr1_Mid.wav",
+     "sha256": "a488e7cdca983fc53c4399fa0c492d582510dd48ee35e5336113b0041f8f55b1",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "impact",
+    "metal",
+    "brake-drum"
+   ],
+   "group": "impact-brake-drum-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "impact-brake-drum-2-ff",
+   "category": "impact",
+   "instrument": "brake drum, hammer",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Brake Drum/BrakeDrum2_Hammer3_v3_rr1_Mid.wav",
+     "sha256": "3a14ce55e4b27cfaa809e41bdcaf8f588c606cbf8eaebb642d61332cd576ed12",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "trailer",
+    "cinematic",
+    "launch"
+   ],
+   "tags": [
+    "impact",
+    "metal",
+    "brake-drum"
+   ],
+   "group": "impact-brake-drum-ff",
+   "dynamic": "ff"
+  },
+  {
+   "name": "hat-closed-vcsl-f-rr1",
+   "category": "hat-closed",
+   "instrument": "hi-hat, closed",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_HitC_v4_rr1_Mid.wav",
+     "sha256": "ccaf3b3a353c22d7aac00c261229c42a1ef083285069f4c76dbafba454b46edd",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-vcsl-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-open-vcsl-f-rr1",
+   "category": "hat-open",
+   "instrument": "hi-hat, open",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_HitO_rr1_Mid.wav",
+     "sha256": "fa492ec14cc6924b43ad5fcf9e9a0f406d926998835bde2eb5847cd15ad25be7",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-vcsl-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-pedal-vcsl-rr1",
+   "category": "hat-pedal",
+   "instrument": "hi-hat, pedal close",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_Close_rr1_Mid.wav",
+     "sha256": "4e4dbb4ddbeea653f95c2c229685fd5966ed9492fb8489d89d19dbd864f1a6b4",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-vcsl"
+  },
+  {
+   "name": "hat-closed-vcsl-f-rr2",
+   "category": "hat-closed",
+   "instrument": "hi-hat, closed",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_HitC_v4_rr2_Mid.wav",
+     "sha256": "98325d2327a7165b12840951de3fd2297e59fcdd0a6a58176a5cb4a3ed1f2958",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "closed"
+   ],
+   "group": "hat-closed-vcsl-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "hat-open-vcsl-f-rr2",
+   "category": "hat-open",
+   "instrument": "hi-hat, open",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_HitO_rr2_Mid.wav",
+     "sha256": "f71f21883f6fe5466d15610ef0e9241ba3851c821858a958f8a6a75bff774760",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "open"
+   ],
+   "group": "hat-open-vcsl-f",
+   "dynamic": "f",
+   "max_len_s": 3.0
+  },
+  {
+   "name": "hat-pedal-vcsl-rr2",
+   "category": "hat-pedal",
+   "instrument": "hi-hat, pedal close",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Hi-Hat Cymbal/HiHat_Close_rr2_Mid.wav",
+     "sha256": "7a6c73b5ea831498d5c5c596b464a57e380cdc7dd2ab697bf10a2696b7f1987d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic"
+   ],
+   "tags": [
+    "hat",
+    "pedal"
+   ],
+   "group": "hat-pedal-vcsl"
+  },
+  {
+   "name": "clap-group-rr1",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr1.wav",
+     "sha256": "4c9f3fe4a34733b9be6ed9ce5e5aad48b19c1029ae9c6dd1b96294a847539e3f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "clap-group-rr2",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr2.wav",
+     "sha256": "5ae64e838b76d0658cc541f07c3c7dcfd4b08815a915f32843a8279bf2c33b9a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "clap-group-rr3",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr3.wav",
+     "sha256": "e8c13dc41f31b479f8e3ec49e9dfc49c17d299cce36eedb657fe170f0e6fcb44",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "clap-group-rr4",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr4.wav",
+     "sha256": "3415613351d0af8de674ebc3e8200784c2ffc691da60698cb81ba03704ad748a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "clap-group-rr5",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr5.wav",
+     "sha256": "7117311949d6640fb0d016bfe780fe3351924c49f48e876433893f4287f692ba",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "clap-group-rr6",
+   "category": "clap",
+   "instrument": "hand claps (group)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claps/Clap_rr6.wav",
+     "sha256": "b48d77c53e31f251b4304cf68daec2a85260becd1a93b81010b93adb7cdcfb46",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "clap",
+    "group",
+    "organic"
+   ],
+   "group": "clap-group"
+  },
+  {
+   "name": "slapstick-f-rr1",
+   "category": "clap",
+   "instrument": "slapstick (whip)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Slapstick/slapstick_rr1.wav",
+     "sha256": "e73b38bf43b385d95e2c790e7424526a91af8d1cdf484002912a4a8eabe73300",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "slapstick",
+    "whip",
+    "crack"
+   ],
+   "group": "slapstick-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "slapstick-f-rr2",
+   "category": "clap",
+   "instrument": "slapstick (whip)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Slapstick/slapstick_rr2.wav",
+     "sha256": "c1fef8439ef3e5c1db60c074255fc072807bde049026ef9e3b199deb75acc1e8",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "slapstick",
+    "whip",
+    "crack"
+   ],
+   "group": "slapstick-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "slapstick-f-rr3",
+   "category": "clap",
+   "instrument": "slapstick (whip)",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Slapstick/slapstick_rr3.wav",
+     "sha256": "ff174981835a265ad48c922d5bd5914d1a1a45c8d13e0f4ad979f8b7e1335731",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "trailer",
+    "launch"
+   ],
+   "tags": [
+    "slapstick",
+    "whip",
+    "crack"
+   ],
+   "group": "slapstick-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "woodblock-f-rr1",
+   "category": "perc",
+   "instrument": "woodblock",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Woodblock/wood_click_f_rr1.wav",
+     "sha256": "86b690a393ad62d65dc6832948adb0cc164fe22f544a8065809f000c65d615fc",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "woodblock",
+    "click",
+    "wood"
+   ],
+   "group": "woodblock-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "woodblock-f-rr2",
+   "category": "perc",
+   "instrument": "woodblock",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Woodblock/wood_click_f_rr2.wav",
+     "sha256": "661e25cc1233a9d3d85bde188762d23fbbd69ac6af68af5c8db8fdd36fe25608",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "woodblock",
+    "click",
+    "wood"
+   ],
+   "group": "woodblock-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "claves-1-f",
+   "category": "perc",
+   "instrument": "claves",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claves/Claves1_Hit_v3_rr1_Mid.wav",
+     "sha256": "12285f65ed125f4140d1e8a86b2d6a08bf3283b7bf30c10d68290b8e8230a927",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "orchestral",
+    "cinematic"
+   ],
+   "tags": [
+    "claves",
+    "click",
+    "wood"
+   ],
+   "group": "claves-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "claves-2-f",
+   "category": "perc",
+   "instrument": "claves",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Claves/Claves2_Hit_v3_rr1_Mid.wav",
+     "sha256": "04954891896d00559d4b59ef468d9f1f51a5c42cb23de6f08af8e8eaaf764a8a",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch",
+    "orchestral",
+    "cinematic"
+   ],
+   "tags": [
+    "claves",
+    "click",
+    "wood"
+   ],
+   "group": "claves-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "tambourine-1-f",
+   "category": "perc",
+   "instrument": "tambourine",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Tambourine 1/Tamb1_Hit_v2_rr1_Mid.wav",
+     "sha256": "885ebf1d70f8e888f576682e4e4112b92b69649162f392c83b3379c91a09cf41",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "tambourine",
+    "jingle"
+   ],
+   "group": "tambourine-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "tambourine-2-f",
+   "category": "perc",
+   "instrument": "tambourine",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Tambourine 2/Tamb2_Hit_v2_rr2_Mid.wav",
+     "sha256": "b9bb7020852c91add8bb12754c8e71e231e5e7d8dd6553face1fc60c689187ff",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "tambourine",
+    "jingle"
+   ],
+   "group": "tambourine-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "shaker-slap-rr1",
+   "category": "perc",
+   "instrument": "shaker, slap",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Shaker, Small/Mid_Shaker_Slap_rr1.wav",
+     "sha256": "793c21eb3afdcd68535b3b1df45a097625fc02f26fb7bc86f1dc5b1e5b28e8db",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "shaker"
+   ],
+   "group": "shaker-slap"
+  },
+  {
+   "name": "shaker-slap-rr2",
+   "category": "perc",
+   "instrument": "shaker, slap",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Shaker, Small/Mid_Shaker_Slap_rr2.wav",
+     "sha256": "a4ef756d0ac80985567f6187be3209a58955f3e10dd95f2fe2d61b49a750a13d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "shaker"
+   ],
+   "group": "shaker-slap"
+  },
+  {
+   "name": "cajon-bass-fff-rr1",
+   "category": "perc",
+   "instrument": "cajon",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Cajon/Cajon_hit1_fff_rr1.wav",
+     "sha256": "d8e232031e14e0f15ac3d1d92ca5e7c18ebe9a1120c0055a661da6d89729cc31",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cajon",
+    "hand-drum",
+    "wood"
+   ],
+   "group": "cajon-bass-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "cajon-bass-fff-rr2",
+   "category": "perc",
+   "instrument": "cajon",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Cajon/Cajon_hit1_fff_rr2.wav",
+     "sha256": "9d1fbab75425b34800a78ba87cff2cf56e1d5cb54c8d79070c064d4a4adce087",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cajon",
+    "hand-drum",
+    "wood"
+   ],
+   "group": "cajon-bass-fff",
+   "dynamic": "fff"
+  },
+  {
+   "name": "cajon-slap-f-rr1",
+   "category": "perc",
+   "instrument": "cajon",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Cajon/Cajon_hit3_f_rr1.wav",
+     "sha256": "be3abbe090a25907177796579442823e9ebb84aab4d616339fb70660eaa43800",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cajon",
+    "hand-drum",
+    "wood"
+   ],
+   "group": "cajon-slap-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "cajon-slap-f-rr2",
+   "category": "perc",
+   "instrument": "cajon",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Cajon/Cajon_hit3_f_rr2.wav",
+     "sha256": "8aa4cc736d367726e9dc09d48a5a66936a7b4b406faa40aaeeddd46cbe33c851",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "cajon",
+    "hand-drum",
+    "wood"
+   ],
+   "group": "cajon-slap-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-conga-f-rr1",
+   "category": "perc",
+   "instrument": "conga (conga), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Conga_HitN_v3_rr1_Sum.wav",
+     "sha256": "664365ac735d819c69cabbbae8a78d225fa73059e698ad8ca292c46cc03c6961",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-conga-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-conga-f-rr2",
+   "category": "perc",
+   "instrument": "conga (conga), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Conga_HitN_v3_rr2_Sum.wav",
+     "sha256": "d968cd98a8cf8238f244515a302b77adec88dae365bc9de9146ae8938225d142",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-conga-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-quinto-f-rr1",
+   "category": "perc",
+   "instrument": "conga (quinto), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Quinto_HitN_v3_rr1_Sum.wav",
+     "sha256": "07fe0922f97a57969a3cbb706126de2d09d23f42f6390a9a9adac027d7741c7e",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-quinto-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-quinto-f-rr2",
+   "category": "perc",
+   "instrument": "conga (quinto), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Quinto_HitN_v3_rr2_Sum.wav",
+     "sha256": "84b8d93a05c13ad7c04e6bd28f467ae3667e15ccaaf8aacd93928ec66504fb4d",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-quinto-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-tumba-f-rr1",
+   "category": "perc",
+   "instrument": "conga (tumba), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Tumba_HitN_v3_rr1_Sum.wav",
+     "sha256": "ac94b311b5e0f5cfbb27bda691cde3ef5bb8afb1b7c7bf5b7c736e6a1714f411",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-tumba-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "conga-tumba-f-rr2",
+   "category": "perc",
+   "instrument": "conga (tumba), open tone",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Membranophones/Struck Membranophones/Conga/Tumba_HitN_v3_rr2_Sum.wav",
+     "sha256": "30d5a78e91a6b18eb4ebd317db3006673abc82e6f9f86d813dee0f7d48a61af2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "launch"
+   ],
+   "tags": [
+    "conga",
+    "hand-drum",
+    "latin"
+   ],
+   "group": "conga-tumba-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "triangle-f-rr1",
+   "category": "perc",
+   "instrument": "triangle",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Triangles/Triangle1_Hit_v2_rr1_Mid.wav",
+     "sha256": "bec62db48c6a052bff1b54f88c11fc6cb6131b9633da2afb35636291754971af",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "triangle",
+    "metal",
+    "bright"
+   ],
+   "group": "triangle-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "triangle-f-rr2",
+   "category": "perc",
+   "instrument": "triangle",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Triangles/Triangle1_Hit_v2_rr2_Mid.wav",
+     "sha256": "d4882b06475b34e4a7b248e1ca52169d74209a4226ae4ddac5a41aaaf455cbf2",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "orchestral",
+    "cinematic",
+    "acoustic"
+   ],
+   "tags": [
+    "triangle",
+    "metal",
+    "bright"
+   ],
+   "group": "triangle-f",
+   "dynamic": "f",
+   "max_len_s": 6.0
+  },
+  {
+   "name": "log-drum-hi-f",
+   "category": "perc",
+   "instrument": "slit (log) drum, hi",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Slit Drum/LogDrumHi_MedM_v3_rr1_Sum.wav",
+     "sha256": "e56b10659b821bbf4eeb3cc371f42ea60414adcbd66ad0ead9e7a62cdd11fe3f",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "log-drum",
+    "wood",
+    "tonal"
+   ],
+   "group": "log-drum-hi-f",
+   "dynamic": "f"
+  },
+  {
+   "name": "log-drum-lo-f",
+   "category": "perc",
+   "instrument": "slit (log) drum, lo",
+   "sources": [
+    {
+     "lib": "vcsl",
+     "path": "Idiophones/Struck Idiophones/Slit Drum/LogDrumLo_MedM_v3_rr1_Sum.wav",
+     "sha256": "1428c9b05398c3b08aac4c36c5c5f57c52bca3c89627d693f3ecc00759c43fea",
+     "gain": 1.0
+    }
+   ],
+   "uses": [
+    "acoustic",
+    "trailer",
+    "cinematic"
+   ],
+   "tags": [
+    "log-drum",
+    "wood",
+    "tonal"
+   ],
+   "group": "log-drum-lo-f",
+   "dynamic": "f"
+  }
+ ]
+}

@@ -49,3 +49,15 @@ The macOS bundles are ad-hoc signed by the linker. They are not signed with a De
 | [BBC Maida Vale Impulse Response Dataset](https://zenodo.org/records/10020866) (University of York and BBC R&D) | 1 | CC-BY-3.0 | Kearney, Daffern et al. |
 
 OpenAIR licence evidence: the OpenAIR site was suspended on 2026-09-30, the day this was checked. The per-space CC BY 4.0 statement was confirmed through search-engine copies of each space's page and through audEERING's public `openair` redistribution (CC-BY-4.0, commercial). Re-check the pages when the site returns.
+
+## Recorded drums (`drums-recorded-cc0-*` releases)
+
+Built by [`.github/workflows/build-drums-recorded.yml`](.github/workflows/build-drums-recorded.yml) with the scripts in [`packs/drums-recorded/`](packs/drums-recorded/), from these CC0 recordings at the commits pinned in [`packs/drums-recorded/recipes.json`](packs/drums-recorded/recipes.json):
+
+| Library | Author | Upstream | Licence |
+|---|---|---|---|
+| Versilian Community Sample Library (VCSL) | Versilian Studios LLC (Sam Gossner) and contributors | [sgossner/VCSL](https://github.com/sgossner/VCSL) `c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e` | CC0-1.0 |
+| Big Rusty Drums | Karoryfer Samples | [sfzinstruments/karoryfer.big-rusty-drums](https://github.com/sfzinstruments/karoryfer.big-rusty-drums) `f07ce00df34a46b6b08375be56fe116cf15782bc` | CC0-1.0 |
+| Swirly Drums | Karoryfer Samples | [sfzinstruments/karoryfer.swirly-drums](https://github.com/sfzinstruments/karoryfer.swirly-drums) `c40dafe0011cb2e54c0c220ff0fa308a11fc60f5` | CC0-1.0 |
+
+The one-shots are trimmed, mixed from the upstream microphones, levelled and level-matched, and are CC0-1.0 too. No credit is required; each release's `NOTICES.md` gives it anyway, and `provenance.json` lists every upstream file behind every one-shot.
