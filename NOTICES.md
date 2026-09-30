@@ -36,3 +36,16 @@ One packaging step on macOS: DISTRHO-Ports' meson build leaves Vitalium's librar
 The macOS bundles are ad-hoc signed by the linker. They are not signed with a Developer ID or notarized. `daw pack install` checks each archive's sha256 against daw's pinned manifest, then removes the quarantine attribute from the files it unpacked.
 
 **Written offer.** For three years from each release, we will provide the same source on a physical medium for no more than the cost of performing the distribution. To ask, open an issue in this repository.
+
+## Real rooms IR pack (`real-rooms-*` releases)
+
+34 recorded impulse responses, modified by conditioning: DC removal, W channel of B-format, 48 kHz, trim, noise-floor tail cut, -1 dBFS peak. Built by [`.github/workflows/build-real-rooms.yml`](.github/workflows/build-real-rooms.yml) from the sources in [`packs/real-rooms/recipes.json`](packs/real-rooms/recipes.json). Each release's `NOTICES.md` has the full per-file attribution, the licence evidence and the MIT text. Each release's `provenance.json` has the upstream URL, licence and sha256 of every source file.
+
+| Collection | Files | Licence | Attribution |
+|---|---|---|---|
+| [OpenAIR](https://www.openair.hosted.york.ac.uk/), AudioLab, University of York | 25 | CC-BY-4.0 | "OpenAIR, AudioLab, University of York", plus the space name |
+| [Aachen Impulse Response (AIR) database](https://www.iks.rwth-aachen.de/en/research/tools-downloads/databases/aachen-impulse-response-database/) v1.4, IKS, RWTH Aachen | 5 | MIT | keep the MIT notice |
+| [Open Database of Spatial Room Impulse Responses at Detmold University of Music](https://zenodo.org/records/4116247) | 3 | CC-BY-4.0 | the record's authors |
+| [BBC Maida Vale Impulse Response Dataset](https://zenodo.org/records/10020866) (University of York and BBC R&D) | 1 | CC-BY-3.0 | Kearney, Daffern et al. |
+
+OpenAIR licence evidence: the OpenAIR site was suspended on 2026-09-30, the day this was checked. The per-space CC BY 4.0 statement was confirmed through search-engine copies of each space's page and through audEERING's public `openair` redistribution (CC-BY-4.0, commercial). Re-check the pages when the site returns.

@@ -10,6 +10,7 @@ daw fetches these files on first use (`daw library-sync`) and checks each one ag
 | OB-Xf presets (487, from 13 named authors) | OB-Xf | CC0-1.0 |
 | Spleeter 4-stem model, converted for daw's runtime | deezer/spleeter | MIT |
 | Basic Pitch model | spotify/basic-pitch | Apache-2.0 |
+| Real rooms IR pack (34 recorded impulse responses) | OpenAIR (York), Aachen AIR, Detmold SRIR, BBC Maida Vale; see `packs/real-rooms` and each release's `NOTICES.md` | CC-BY-4.0, CC-BY-3.0, MIT |
 
 Each release lists its exact upstream versions, conversion scripts and checksums. The source for every GPL binary is attached to the same release as the binary.
 
@@ -22,3 +23,7 @@ Each release lists its exact upstream versions, conversion scripts and checksums
 - Then copy the release's `artifacts.json` (file, sha256 and bytes per platform) and its URL into `packs/instruments/pack.json` in the daw repository. That manifest is compiled into daw, which uses it to verify downloads.
 
 `packs/instruments/` is a copy of the same folder in the daw repository (`build.sh`, the `recipes/`, `pack.json`). Change both together. Bump `version` in `pack.json` when a pin, recipe or preset rule changes, because published archives are never replaced under the same name.
+
+## Real rooms IR pack
+
+`daw library install real-rooms` installs recorded impulse responses of real spaces from a `real-rooms-<date>` release. Those are built by [`build-real-rooms`](.github/workflows/build-real-rooms.yml) from the upstream sources in [`packs/real-rooms/recipes.json`](packs/real-rooms/recipes.json). No audio is committed. [`packs/real-rooms/README.md`](packs/real-rooms/README.md) has the details.
