@@ -22,18 +22,18 @@ get it (the install command, or the local build while no release is published).
 
 **Founder decision (2026-09-29): ship, cautiously.** Only presets whose authorship and licence
 are clear ship (see [Preset provenance](#preset-provenance)), and the archives are hosted on a
-**public** Nullframe release, never the internal `daw` repository. That release doesn't exist
-yet: `pack.json`'s `release.base_url` is a placeholder until it does (see
-[Publishing a release](#publishing-a-release)).
+**public** Nullframe release, never the internal `daw` repository: [Nullframe/daw-content
+`instruments-2026-09-30`](https://github.com/Nullframe/daw-content/releases/tag/instruments-2026-09-30)
+(see [Publishing a release](#publishing-a-release)).
 
-**Status (2026-09-29).** The pack format, install, registration, preset index, patch-file
-loading, admission check and `doctor` are implemented and tested end to end with the in-repo
-test instrument (`crates/daw-cli/tests/pack.rs`). The build recipes below are written against
-the pinned upstreams but **have not yet been run against them**: the cloud session that wrote
-them could not fetch upstream sources. The first local run is the check; every step fails
-loudly (wrong commit, missing target or bundle, a plugin name that isn't the expected one, a
-preset the plugin ignores, a render that isn't bit-identical). No release is published yet, so
-`daw pack install instruments` without `--from` says `pack_not_published` and how to build.
+**Status (2026-09-30): published.** GitHub Actions in Nullframe/daw-content built the pack
+from the pinned upstream commits for Linux x86_64 and aarch64 and macOS universal, and published
+it with its source archive. `pack.json` pins that release's sha256 values, so `daw pack install
+instruments` downloads, verifies, clears macOS quarantine and indexes it. That was checked end to
+end on macOS (arm64) from the real release: all three plugins scan and load, and all 487 OB-Xf
+presets are taken (none rejected). Vitalium and Dexed are tier A; **OB-Xf is tier C**, see
+[Determinism](#determinism-tier-a). The Linux archives are built and hash-pinned but have not
+been installed on a Linux machine yet.
 
 ## What's in it
 
@@ -168,7 +168,16 @@ instruments` at any time) renders a four-note phrase with each instrument's init
 up to three factory presets, each twice in fresh workers with the same seed (7), and requires
 every pair to be bit-identical and finite. `build.sh` refuses to package an instrument that
 isn't tier A (`--allow-tier-c` for a local test build); the fix is a seed patch
-(`patches/README.md`). After install, `daw plugin-scan` still double-renders each plugin, and a
+(`patches/README.md`). A release built with `--skip-index` is checked on install instead,
+and install doesn't refuse: an instrument that fails is installed as tier C (usable, not
+bit-exact) and `content.json` records the differing renders.
+
+**Measured on the first release (macOS, arm64):** Vitalium and Dexed are tier A. **OB-Xf is
+tier C**: its init patch and all three presets render differently in two fresh workers with the
+same seed, so something in it (probably the per-voice "voice variation" drift) draws randomness
+the worker's shim doesn't pin. A seed patch in `patches/obxf/` is the follow-up; it would make
+OB-Xf no longer an unmodified upstream build, so it needs a new pack version and a note in
+daw-content's NOTICES. After install, `daw plugin-scan` still double-renders each plugin, and a
 pack plugin is marked tier A only when its pack's admission passed and the scan agrees
 (`plugin-list`, `plugin-info`, `doctor`).
 

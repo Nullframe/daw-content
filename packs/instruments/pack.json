@@ -5,24 +5,24 @@
   "description": "Bundled GPL instruments built from source as separate VST3 plugins: Vitalium (a renamed Vital build), Dexed and OB-Xf. They run out of process in daw's plugin worker and are never linked into daw.",
   "license": "GPL-3.0-or-later (each instrument keeps its own licence; see licenses/ in the pack)",
   "release": {
-    "base_url": "https://github.com/Nullframe/daw-content/releases/download/<tag>/",
+    "base_url": "https://github.com/Nullframe/daw-content/releases/download/instruments-2026-09-30/",
     "source_archive": "daw-instruments-2026.09.0-src.tar.gz"
   },
   "artifacts": {
     "linux-x86_64": {
       "file": "daw-instruments-2026.09.0-linux-x86_64.tar.gz",
-      "sha256": null,
-      "bytes": null
+      "sha256": "6d69eafd92bb649e7c0bbeca627319838a39206418cc1d971ead34b2808c58fe",
+      "bytes": 12915617
     },
     "linux-aarch64": {
       "file": "daw-instruments-2026.09.0-linux-aarch64.tar.gz",
-      "sha256": null,
-      "bytes": null
+      "sha256": "1546a47085c3612fe71c8158e0c4a1a80fee43e625da7838b38b81e120ff49e5",
+      "bytes": 13100297
     },
     "macos-universal": {
       "file": "daw-instruments-2026.09.0-macos-universal.tar.gz",
-      "sha256": null,
-      "bytes": null
+      "sha256": "0e3d9ea6da0dd6dc900ee532519c1e3451eb0de7f03433b88344f205bd7acd07",
+      "bytes": 19511651
     }
   },
   "instruments": [
