@@ -1,0 +1,716 @@
+{
+ "version": 1,
+ "sources": {
+  "drums-recorded-cc0": {
+   "name": "Recorded drums (CC0), daw-content release drums-recorded-cc0-2026-09-30 (built from VCSL and Karoryfer Big Rusty / Swirly Drums)",
+   "license": "CC0-1.0",
+   "page": "https://github.com/Nullframe/daw-content/releases/tag/drums-recorded-cc0-2026-09-30"
+  },
+  "vcsl": {
+   "repo": "sgossner/VCSL",
+   "commit": "c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e",
+   "name": "Versilian Community Sample Library (VCSL)",
+   "author": "Versilian Studios LLC and contributors",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sgossner/VCSL/blob/c1ea7bcc3c7309650ab0da9d15c9cd1fbc4a4c7e/LICENSE"
+  },
+  "vsco2": {
+   "repo": "sgossner/VSCO-2-CE",
+   "commit": "440300901dfe9275fd84e0b7763af1f8443ae62e",
+   "name": "Versilian Studios Chamber Orchestra 2, Community Edition",
+   "author": "Versilian Studios LLC",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sgossner/VSCO-2-CE/blob/440300901dfe9275fd84e0b7763af1f8443ae62e/LICENSE"
+  },
+  "sonic-pi": {
+   "repo": "sonic-pi-net/sonic-pi",
+   "commit": "4a9b2018c8ccaa062e69b3b75d6c40ae95452675",
+   "name": "Sonic Pi sample set",
+   "author": "Freesound uploaders credited in etc/samples/README.md; The Black Dog (tbd_*)",
+   "license": "CC0-1.0",
+   "license_url": "https://github.com/sonic-pi-net/sonic-pi/blob/4a9b2018c8ccaa062e69b3b75d6c40ae95452675/etc/samples/README.md"
+  },
+  "kenney-sci-fi-sounds": {
+   "url": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+   "name": "Kenney Sci-Fi Sounds 1.0",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "zip_sha256": "119340f351a5098ad814f78719438c0da355a9ce8a4c8a3af6a8d48aa3d49e04"
+  },
+  "kenney-interface-sounds": {
+   "url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+   "name": "Kenney Interface Sounds",
+   "author": "Kenney (www.kenney.nl)",
+   "license": "CC0-1.0",
+   "license_url": "https://kenney.nl/assets/interface-sounds",
+   "zip_sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232"
+  },
+  "fsd50k": {
+   "record": "https://zenodo.org/records/4060432",
+   "name": "FSD50K (Fonseca et al., 2020): CC0 clips only",
+   "author": "Freesound uploaders (per clip: uploader, title and Freesound id in provenance.json)",
+   "license": "CC0-1.0 (each clip); the dataset compilation is CC-BY-4.0",
+   "license_url": "https://zenodo.org/records/4060432"
+  }
+ },
+ "targets": [
+  {
+   "id": "kick-acoustic",
+   "category": "drums",
+   "kind": "kick",
+   "description": "An acoustic rock kick drum (24-inch, hit hard, close and overhead mics): a round low thump with a short felt-beater click, a little room, decaying in under a second.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/kick-24in-ff-rr1.wav",
+    "sha256": "d609d07e46ee6e78657c466bd6efd1e85747ed0f033e7f5ec2b282689740dfc8"
+   }
+  },
+  {
+   "id": "kick-808",
+   "category": "drums",
+   "kind": "kick",
+   "description": "A classic 808-style electronic kick: a deep, clean sine boom with a fast pitch drop at the start and a short, smooth decay (about half a second). Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/bd_808.flac",
+    "sha256": "f8cae3f73c93622a2ebc37fd66752ad69fcad5cdf61d82fa46ef38c104476ca8"
+   }
+  },
+  {
+   "id": "snare-acoustic",
+   "category": "drums",
+   "kind": "snare",
+   "description": "An acoustic 14-inch snare drum hit hard: a crisp stick crack, a bright rattle of snare wires and a short body ring, with a little room around it; under a second.",
+   "seconds": 1.2,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/snare-14in-ff-rr1.wav",
+    "sha256": "97e0cb60650d7f8821922d8d3d619ee2c218aa8ec304b3f5efb7649808349b50"
+   }
+  },
+  {
+   "id": "clap",
+   "category": "drums",
+   "kind": "clap",
+   "description": "A group handclap: several people clapping at once, a dense, slightly smeared crack with a very short room tail (about 0.3 s).",
+   "seconds": 1.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/clap-group-rr1.wav",
+    "sha256": "0debd1b3e523af1d415690522fa6983a5305566f744d6752770e022f0d5f6a30"
+   }
+  },
+  {
+   "id": "hat-closed",
+   "category": "drums",
+   "kind": "hat",
+   "description": "A closed hi-hat (14-inch) played with a stick: a tight, bright metallic tick with a short noisy sizzle, half a second at most.",
+   "seconds": 0.5,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/hat-closed-14in-f-rr1.wav",
+    "sha256": "b17dbde911749451cd6a0b692c14f85373afb5198b654b857cc4a600352b9866"
+   }
+  },
+  {
+   "id": "hat-open",
+   "category": "drums",
+   "kind": "hat",
+   "description": "An open hi-hat (14-inch): a bright, washy metallic sizzle that rings out for about a second and a half.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/hat-open-14in-f-rr1.wav",
+    "sha256": "03d1342a95da226215d722ebd72a90de2981be5bea2de02252997644d6b74273"
+   }
+  },
+  {
+   "id": "crash",
+   "category": "drums",
+   "kind": "cymbal",
+   "description": "A 17-inch crash cymbal hit hard: an explosive, bright, wide metallic wash that decays slowly over several seconds.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/crash-17in-ff-rr2.wav",
+    "sha256": "7194602731d3ad81b197ac697e2c8d8184e1ce6913a02b2611198615ccaf0389"
+   }
+  },
+  {
+   "id": "tom-floor",
+   "category": "drums",
+   "kind": "tom",
+   "description": "An 18-inch floor tom hit hard with a stick: a deep, pitched boom with a stick attack and a ringing low body that decays over about 1.5 seconds.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/tom-18in-stick-ff-rr1.wav",
+    "sha256": "948b7e343343b58258b8329242232b9491bceae732007724e006b27a43ebca7f"
+   }
+  },
+  {
+   "id": "drum-big-mallet",
+   "category": "drums",
+   "kind": "big-drum",
+   "description": "A huge 22-inch tom hit hard with felt mallets, taiko-like: a massive, soft-edged low boom with lots of weight and a resonant decay of about 2 seconds.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/tom-22in-mallet-ff-rr1.wav",
+    "sha256": "2226c1949fb495f265f242aedbfe0731a6f85a26cf2309c22119ec8f54ee2e32"
+   }
+  },
+  {
+   "id": "bass-drum-concert",
+   "category": "drums",
+   "kind": "orchestral-drum",
+   "description": "An orchestral concert bass drum struck very hard: a vast, deep, rumbling boom in a hall, felt more than heard, with a long decay of several seconds.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/bass-drum-concert-c-fff-rr1.wav",
+    "sha256": "4f2830b4b57b5f5a2b3264e4bd110a1c89e86ba53ae83ec6f6104865d8d878e7"
+   }
+  },
+  {
+   "id": "timpani",
+   "category": "drums",
+   "kind": "orchestral-drum",
+   "description": "An orchestral timpani hit fortissimo on a low note: a pitched, booming kettle drum with a soft mallet attack and a long resonant ring.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/timpani-a2-ff-rr1.wav",
+    "sha256": "da77d5f1a643dcd9c66db95000e184c5a1b6a14c1712e478a0cb1544c640e77f"
+   }
+  },
+  {
+   "id": "conga",
+   "category": "drums",
+   "kind": "hand-percussion",
+   "description": "A low conga (tumba) open tone played by hand: a warm, rounded, pitched drum hit with a skin slap and a short ring (under a second).",
+   "seconds": 1.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/conga-tumba-f-rr1.wav",
+    "sha256": "81e390a57a8add2a1a10a449cbf2775986b215a8ef0ce744a52244a379de1f7f"
+   }
+  },
+  {
+   "id": "tambourine",
+   "category": "drums",
+   "kind": "hand-percussion",
+   "description": "A tambourine struck once: a bright, jangly shimmer of small metal jingles with a light skin tap, decaying in under a second.",
+   "seconds": 1.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/tambourine-1-f.wav",
+    "sha256": "795d490c83182a06023ef3e1273847cebf1d70a2bcae420b8cfc23b58e248b4c"
+   }
+  },
+  {
+   "id": "impact-boom",
+   "category": "cinematic",
+   "kind": "impact",
+   "description": "A cinematic trailer boom: a huge, deep, distorted low-end explosion that blooms in over a fraction of a second and rumbles out over a few seconds. Mono.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "255111",
+    "sha256": "92483ddead12fabb93a23f64e2def5a9d1486b2dba51a843c4237b2573407184"
+   }
+  },
+  {
+   "id": "impact-big",
+   "category": "cinematic",
+   "kind": "impact",
+   "description": "A big cinematic impact: a heavy low boom with a metallic, reverberant hit layer on top, designed for trailers, with a long tail of several seconds. Mono.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "430977",
+    "sha256": "1f695290a213b6e9b681fe0161c61193acea68fb3aabb048e40dcdc680b47d37"
+   }
+  },
+  {
+   "id": "boom-sub",
+   "category": "cinematic",
+   "kind": "boom",
+   "description": "A low-frequency explosion for a sci-fi game: a soft, sub-heavy whump that swells in quickly and fades out over about 2 seconds, with little top end. Mono.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "kenney-sci-fi-sounds",
+    "member": "Audio/lowFrequency_explosion_000.ogg",
+    "sha256": "3cb48d86dab63140cfb9aaeea4d4a6846abaca5831d157d8adbec0490da26343"
+   }
+  },
+  {
+   "id": "braam",
+   "category": "cinematic",
+   "kind": "braam",
+   "description": "A cinematic braam: a very low, buzzing, rasping brass blast (a trombone growl around A2) that swells in over half a second and holds briefly before stopping.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Brass/OldTrombone/Buzz/Trombone_Buzz_A1_v2_1.wav",
+    "sha256": "6777c2ff3f1a323554b1317430d013a8191086e1acaaff4b042046cf7116ebd9"
+   }
+  },
+  {
+   "id": "riser-swell",
+   "category": "cinematic",
+   "kind": "riser",
+   "description": "A cymbal swell used as a riser: a soft mallet roll on a suspended cymbal that builds from silence into a bright, loud metallic roar over about 4 seconds, then cuts off.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/cymbal-swell-1-4s.wav",
+    "sha256": "6bba06a57c9dc74aa8d3c7ae7ddb6f349ad25e0aa948127df715a7ed8f3e8d95"
+   },
+   "onset_db": -60
+  },
+  {
+   "id": "riser-rumble",
+   "category": "cinematic",
+   "kind": "riser",
+   "description": "A short rising rumble: dark, windy low-frequency noise that grows louder over about 2 seconds and then drops away. Mono.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "431390",
+    "sha256": "e8abd112791b257ceb538aef4e4fcc8a9275edccd6cabe29d756130150fdb6e8"
+   },
+   "onset_db": -60
+  },
+  {
+   "id": "downlifter",
+   "category": "cinematic",
+   "kind": "downlifter",
+   "description": "A downlifter: a bright, airy noise sweep that falls from very high to low over about 4 seconds, fading as it descends, wide stereo.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/ambi_lunar_land.flac",
+    "sha256": "020f82384e5d55807b557901d585aff9d385ce67d9f0a66464dea0952638ce01"
+   }
+  },
+  {
+   "id": "whoosh",
+   "category": "cinematic",
+   "kind": "whoosh",
+   "description": "A slow, dark cinematic whoosh: a low, airy noise swell that rises over about a second, passes and fades out over the next two and a half.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/ambi_dark_woosh.flac",
+    "sha256": "dba2cba2a142d5d3866aefaa85b975208e1436cdd7101dac9befd4036c2be00e"
+   },
+   "onset_db": -50
+  },
+  {
+   "id": "impact-metal",
+   "category": "cinematic",
+   "kind": "impact",
+   "description": "A metal impact: a hammer striking an anvil, a hard, bright clang with high, inharmonic ringing partials that decays over about a second.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "drums-recorded-cc0",
+    "url": "https://github.com/Nullframe/daw-content/releases/download/drums-recorded-cc0-2026-09-30/impact-anvil-1-ff.wav",
+    "sha256": "512163eed4c4414c7952c4763106f7dd32c8c97099e30e654792aed5d23a3b18"
+   }
+  },
+  {
+   "id": "pluck-harp",
+   "category": "tonal",
+   "kind": "pluck",
+   "description": "A concert harp plucked at C5: a clear, round, bell-like pluck with a soft attack and a warm ringing decay of a few seconds.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Strings/Harp/KSHarp_C5_mf.wav",
+    "sha256": "7c8b862f6fd3f1442ed87537af976d84bda8c05a5b4900e8907d570b5202a517"
+   }
+  },
+  {
+   "id": "pluck-kalimba",
+   "category": "tonal",
+   "kind": "pluck",
+   "description": "A kalimba (thumb piano) note around A5: a bright, woody, bell-like pluck with a little buzz, decaying over about two seconds.",
+   "seconds": 2.5,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Plucked Idiophones/Kalimba, Kenya/Mbira6_Normal_MainSpirit_A4_k1_vl3_rr2.wav",
+    "sha256": "153c55100dc25cdbec013b1153018e78fa094e5c0ee0b9f050ee57c2b198a500"
+   }
+  },
+  {
+   "id": "pizz-violins",
+   "category": "tonal",
+   "kind": "pluck",
+   "description": "A violin section playing pizzicato at C5: a short, soft, plucked string ensemble note with a little room ambience, about half a second.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "vsco2",
+    "path": "Strings/Violin Section/Pizz/VlnEns_Pizz_C4_v2_rr1.wav",
+    "sha256": "909eb79fc2c9076909680fa3c2dabdbbd15870f674a883ddab33bbcd0dac965a"
+   }
+  },
+  {
+   "id": "bass-pizz",
+   "category": "tonal",
+   "kind": "bass",
+   "description": "A solo double bass plucked pizzicato on a low E (about 82 Hz): a round, woody, deep pluck with a thumpy attack and a ringing decay of about 2 seconds.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Strings/Solo Contrabass/Pizz/BKCtbss_Pizz_E1_v3_rr1.wav",
+    "sha256": "7628daebe4a9f8524d46e6d58eee811f437e73c77eb6c21396152af58a062506"
+   }
+  },
+  {
+   "id": "bass-synth",
+   "category": "tonal",
+   "kind": "bass",
+   "description": "A thick synth bass note on C2 (about 65 Hz): a sustained, fat, buzzy analog-style tone whose filter moves slowly, held for 2 seconds. Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/bass_thick_c.flac",
+    "sha256": "1d0034ad3a6c72aa188a72c9c17d49be2244e1201b2f23a03fac2508160dd0df"
+   }
+  },
+  {
+   "id": "pad-synth",
+   "category": "tonal",
+   "kind": "pad",
+   "description": "A warm, evolving synth pad around G2: a soft, wide, slightly detuned and grainy chord texture that fades in gently and sustains.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/tbd_pad_1.flac",
+    "sha256": "b761198a306aa7f55b588ddcbd151d1abb6f74ed39bf80bac2a6476acc37e01c"
+   },
+   "onset_db": -60
+  },
+  {
+   "id": "pad-choir",
+   "category": "tonal",
+   "kind": "pad",
+   "description": "A choir 'aah' pad: a soft, airy, high vocal ensemble tone that swells in and fades out over about a second and a half, wide stereo.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/ambi_choir.flac",
+    "sha256": "2633a5df4280fe49c58d5ced8633325d049ee03bb4b7512310cb2356d2ab1319"
+   },
+   "onset_db": -60
+  },
+  {
+   "id": "lead-sax",
+   "category": "tonal",
+   "kind": "lead",
+   "description": "A tenor saxophone playing a sustained D5 without vibrato: a reedy, breathy, bright tone with a soft tongued attack, held for 3 seconds.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Aerophones/Reed Aerophones/Tenor Saxophone/Non-Vibrato/BrettTenor_NV_Main_D4_vl3_rr1.wav",
+    "sha256": "265259cc39249a364c36ce799673f81cd0861b26ba7dfcfb07825818055b8bbd"
+   }
+  },
+  {
+   "id": "keys-piano",
+   "category": "tonal",
+   "kind": "keys",
+   "description": "An upright piano playing A4 at medium-loud: a woody hammered attack with a bright, slightly honky tone that rings and decays over several seconds.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Chordophones/Zithers/Upright Piano, Knight/Sustains/Player_vl2_rr1_A3.wav",
+    "sha256": "cc8b22d1779248f6edc88fa5d072b8ce8b51b06fbe62be3d3d19a324d1da9030"
+   }
+  },
+  {
+   "id": "keys-fm",
+   "category": "tonal",
+   "kind": "keys",
+   "description": "An FM electric piano (Yamaha TX81Z) playing C4: a glassy, bell-like tine attack with a mellow sustained tone that decays over about 3 seconds. Mono.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Electrophones/TX81Z/FM Piano/FMPiano_C4_vl3.wav",
+    "sha256": "c6c48556e88f4e153eb957efc999b7be4a7e8078f4869368b6164a65b6486d4e"
+   }
+  },
+  {
+   "id": "bell-tubular",
+   "category": "tonal",
+   "kind": "bell",
+   "description": "An orchestral tubular bell (chime) on C4 struck hard: a bright, clangorous metallic strike with inharmonic partials and a long shimmering ring of several seconds.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Struck Idiophones/Tubular Bells 1/chimes_C4_ff_rr2.wav",
+    "sha256": "50d2c2bff54396a684ce9b29346bb8d43bb55d5d9adb9d736bdd5a713adc424a"
+   }
+  },
+  {
+   "id": "mallet-marimba",
+   "category": "tonal",
+   "kind": "mallet",
+   "description": "A marimba note on G5 struck loud: a warm, woody mallet hit with a short, round resonant decay of about a second.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Struck Idiophones/Marimba/Marimba_hit_Outrigger_G4_loud_01.wav",
+    "sha256": "36f39f9f24789001add2b4c440defb7641178b0e8449c5cb7f1960bccaf0aaaf"
+   }
+  },
+  {
+   "id": "mallet-vibes",
+   "category": "tonal",
+   "kind": "mallet",
+   "description": "A vibraphone note on A5 with hard mallets: a pure, bell-like metallic tone with a soft attack and a long, smooth ring of several seconds.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Struck Idiophones/Vibraphone/Hard Mallets/Vibes_hard_A4_v3_rr1_Main.wav",
+    "sha256": "651d8210d3f83596380481c46726bbf82bd07c24c5048a815aa5db218d094ae4"
+   }
+  },
+  {
+   "id": "brass-stab",
+   "category": "tonal",
+   "kind": "brass",
+   "description": "A trumpet staccato stab on D5, played loud: a short, bright, brassy blast with a crisp tongued attack and a quick release in a room.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "vsco2",
+    "path": "Brass/Trumpet/stac/Sum_SHTrumpet_stac_D4_v3_rr1.wav",
+    "sha256": "7dcf2aec74e544c9cd139e2713c8a8bf358c26633b2fb3be254e998a0b010df9"
+   }
+  },
+  {
+   "id": "strings-stab",
+   "category": "tonal",
+   "kind": "strings",
+   "description": "A violin section spiccato stab at C5: a short, bouncy, bowed string ensemble note with a little bow noise, well under a second.",
+   "seconds": 1.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Strings/Violin Section/Spic/VlnEns_Spic_C4_v2_rr1.wav",
+    "sha256": "a14e9795677e0c418f1e18f7b640bc27b8cb3aef4cfef766e18caf38549ffe56"
+   }
+  },
+  {
+   "id": "strings-sustain",
+   "category": "tonal",
+   "kind": "strings",
+   "description": "A cello section holding a D3 with vibrato: a warm, rich, bowed ensemble tone with a gentle attack, sustaining for 4 seconds.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Strings/Cello Section/susvib/susvib_D2_v3_1.wav",
+    "sha256": "fc946615cd6550570c8f05d61c0d59b9079bf9daba8bf25be7943487fea5a7ae"
+   },
+   "onset_db": -50
+  },
+  {
+   "id": "flute",
+   "category": "tonal",
+   "kind": "woodwind",
+   "description": "A flute holding A5 with expressive vibrato: a pure, breathy, airy tone that swells in slowly and sustains.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vsco2",
+    "path": "Woodwinds/Flute/expvib/LDFlute_expvib_A4_v1_1.wav",
+    "sha256": "25f416f625f0acbf427c377f67bba01e68c514d4ea980557bc2884812f7c57f2"
+   },
+   "onset_db": -50
+  },
+  {
+   "id": "rain",
+   "category": "texture",
+   "kind": "ambience",
+   "description": "Rain falling on a garage roof and gutter: a steady, dense, crackling texture of drops, mostly mid and high frequencies. Mono.",
+   "seconds": 6.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "398738",
+    "sha256": "e2e533c73bf7fce5e620e8663693d31c3cb72ddf48bc997a957be8986fbf5ec5"
+   },
+   "start": 1.0
+  },
+  {
+   "id": "wind",
+   "category": "texture",
+   "kind": "ambience",
+   "description": "Outdoor wind: a broadband gusting noise that swells and eases, with low rumble and airy hiss. Mono.",
+   "seconds": 6.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "425044",
+    "sha256": "dcf8d0dc132748c1477367b78adcd961630ca196177e29ad8b7b6dc4972e5b4b"
+   },
+   "start": 1.0
+  },
+  {
+   "id": "vinyl-hiss",
+   "category": "texture",
+   "kind": "noise",
+   "description": "Vinyl record surface noise: a constant soft hiss with scattered crackles and pops, in stereo.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/vinyl_hiss.flac",
+    "sha256": "4e3fdaaff3399328e5a4ffc7e32292fba6ccbd3ba5353e0c8060b0ef1dc908f7"
+   }
+  },
+  {
+   "id": "drone",
+   "category": "texture",
+   "kind": "drone",
+   "description": "A dark ambient drone around C3: a sustained, slowly shifting tonal hum with a hazy, wide texture.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/ambi_drone.flac",
+    "sha256": "be0f92d168cf6da66f7b881d5ccb7d5a0f05e250a0f0ea820c02270cb33d932f"
+   },
+   "onset_db": -60
+  },
+  {
+   "id": "glass-friction",
+   "category": "texture",
+   "kind": "drone",
+   "description": "A wine glass rubbed on the rim: a pure, singing, very sustained high tone (around 950 Hz) with a slow swell and a slight beating shimmer.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Friction Idiophones/Wine Glasses/Sustains/Slow/glass3_A#4_Slow_1_Main.wav",
+    "sha256": "b35da8d5c9ea4e24b33508094e3cb3e736e7ff5ea4517335844023f82c9bb503"
+   },
+   "onset_db": -50
+  },
+  {
+   "id": "ui-click",
+   "category": "ui",
+   "kind": "click",
+   "description": "A short UI click: a tiny, dry, crisp tick for a button press, about 0.1 s. Mono.",
+   "seconds": 0.5,
+   "source": {
+    "lib": "kenney-interface-sounds",
+    "member": "Audio/click_001.ogg",
+    "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9"
+   }
+  },
+  {
+   "id": "ui-pop",
+   "category": "ui",
+   "kind": "pop",
+   "description": "A short electronic pop: a round, bubbly, synthetic blip under 0.1 s. Mono.",
+   "seconds": 0.5,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/elec_pop.flac",
+    "sha256": "c7cd99162f0aecf2cc3c18775c81f25819855b075d0a07ec9fa321e1e3cf8e19"
+   }
+  },
+  {
+   "id": "ui-swoosh",
+   "category": "ui",
+   "kind": "swoosh",
+   "description": "A short transition swoosh: a quick airy noise swipe that rises and falls in under a second. Mono.",
+   "seconds": 1.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "402238",
+    "sha256": "a067a4298bb7aa49b502c56e5f04b358a7918c843addfd06f37776ae79ab7622"
+   },
+   "onset_db": -50
+  },
+  {
+   "id": "ui-confirm",
+   "category": "ui",
+   "kind": "chime",
+   "description": "A UI confirmation chime: a short, clean, pleasant electronic tone about a third of a second long. Mono.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "kenney-interface-sounds",
+    "member": "Audio/confirmation_001.ogg",
+    "sha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a"
+   }
+  },
+  {
+   "id": "zap-laser",
+   "category": "ui",
+   "kind": "zap",
+   "description": "A small sci-fi laser zap: a quick descending electronic pew with a buzzy tone, about a quarter of a second. Mono.",
+   "seconds": 1.0,
+   "source": {
+    "lib": "kenney-sci-fi-sounds",
+    "member": "Audio/laserSmall_000.ogg",
+    "sha256": "72b589eadd41781257ac859e4f4d030222e623390e4a1a83f6d05329a6e026f1"
+   }
+  },
+  {
+   "id": "scratch",
+   "category": "oddball",
+   "kind": "scratch",
+   "description": "A vinyl record scratch: a DJ pushing the record back and forth, a short zippy, pitched noise gesture. Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "431779",
+    "sha256": "61be7e9bbb1203a61775d8c729965dab951fea4e7c4f48051d3a6eb03ff2a3db"
+   },
+   "onset_db": -12
+  },
+  {
+   "id": "crow",
+   "category": "oddball",
+   "kind": "animal",
+   "description": "A crow caw: a single harsh, raspy bird call, about half a second. Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/misc_crow.flac",
+    "sha256": "007e6ce77f6f187c76e1255702fdf5852f60a0edc1307e177d3219343abf7a28"
+   }
+  },
+  {
+   "id": "coin",
+   "category": "oddball",
+   "kind": "foley",
+   "description": "A coin (a US quarter) dropped on a desk: a bright metallic ting and a short, tinkling rattle as it settles, half a second. Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "fsd50k",
+    "set": "dev",
+    "id": "423337",
+    "sha256": "eeb252e82095ad2d07c444f6334bbeccca4b89297c05805a54614aeba613b960"
+   }
+  },
+  {
+   "id": "flexatone",
+   "category": "oddball",
+   "kind": "instrument",
+   "description": "A flexatone shaken: a wobbly, warbling, bright metallic tone that swoops in pitch like a cartoon, with rapid beater rattles, a few seconds long.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "vcsl",
+    "path": "Idiophones/Struck Idiophones/Flexatone/flexatone1.wav",
+    "sha256": "043e96282afcb2079f7460cd49dbf78b200b584292d62fae4c6ae5eb898bdac6"
+   }
+  }
+ ]
+}
