@@ -35,6 +35,8 @@ jobs:
           python-version: "3.11"
       - name: Install (pinned, so the build is byte-reproducible)
         run: pip install numpy==2.4.6 scipy==1.17.1 soundfile==0.14.0
+      - name: Rust for the synthetic renders (packs/synth-bench/render/rust-toolchain.toml)
+        run: rustup toolchain install 1.97.0 --profile minimal
       - name: Tag
         id: tag
         env:
@@ -62,8 +64,8 @@ jobs:
           TAG: ${{ steps.tag.outputs.tag }}
         run: |
           cat > notes.md <<NOTES
-          Synthesis benchmark reference sounds for daw (\`daw-bench synth\`): $(ls out/*.wav | wc -l) CC0 one-shots and short textures (drums, cinematic, tonal instruments, textures, UI/SFX, oddballs), each with a text description in targets.json.
-          Sources: daw-content's recorded CC0 drums, VCSL, VSCO 2 CE, the Sonic Pi sample set, Kenney, and FSD50K's CC0 clips. Every file is CC0-1.0 (credits in NOTICES.md; per-file upstream and sha256 in targets.json).
+          Synthesis benchmark reference sounds for daw (\`daw-bench synth\`): $(ls out/*.wav | wc -l) CC0 one-shots and short textures (drums, cinematic, tonal instruments, textures, UI/SFX, oddballs, electronic synth sounds), each with a text description in targets.json.
+          Sources: daw-content's recorded CC0 drums, VCSL, VSCO 2 CE, the Sonic Pi sample set, Kenney, and FSD50K's CC0 clips; the electronic targets marked \`synthetic\` are our own renders of hand-written patches with fundsp (MIT OR Apache-2.0) and Open303 (MIT), released as CC0. Every file is CC0-1.0 (credits in NOTICES.md; per-file upstream and sha256 in targets.json).
           Built by .github/workflows/build-synth-bench.yml from packs/synth-bench at ${GITHUB_SHA}.
           NOTES
           if gh release view "$TAG" >/dev/null 2>&1; then

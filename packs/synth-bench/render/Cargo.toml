@@ -1,0 +1,13 @@
+[package]
+name = "synth-bench-render"
+version = "0.1.0"
+edition = "2024"
+license = "CC0-1.0"
+publish = false
+description = "Renders the synth benchmark's synthetic electronic targets with fundsp (MIT OR Apache-2.0)."
+
+[dependencies]
+fundsp = "=0.23.0"
+
+[profile.release]
+opt-level = 3
