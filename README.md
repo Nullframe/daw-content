@@ -13,7 +13,7 @@ daw fetches these files on first use (`daw library-sync`) and checks each one ag
 | CLAP music model pack (optional; audio tower as ONNX + prompt embeddings), see `packs/clap-music` | LAION-AI/CLAP `music_audioset_epoch_15_esc_90.14` | CC0-1.0 |
 | Recorded drums (CC0): 264 drum and percussion one-shots and three round-robin kits, see `packs/drums-recorded` | Versilian VCSL; Karoryfer Big Rusty Drums and Swirly Drums | CC0-1.0 |
 | Orchestral (CC0): 1,624 FLAC samples (strings, brass, woodwinds, harp, mallets; 56 articulations) for daw's sampler@1, see `packs/orchestral-cc0` | Versilian VSCO 2 CE and VCSL | CC0-1.0 |
-| Synthesis benchmark reference sounds (53 one-shots and textures, each with a text description), see `packs/synth-bench` | daw-content recorded drums, VCSL, VSCO 2 CE, Sonic Pi samples, Kenney, FSD50K (CC0 clips) | CC0-1.0 |
+| Synthesis benchmark reference sounds (65 one-shots and textures, each with a text description), see `packs/synth-bench` | daw-content recorded drums, VCSL, VSCO 2 CE, Sonic Pi samples, Kenney, FSD50K (CC0 clips); 9 `synthetic` electronic targets rendered here with fundsp and Open303 | CC0-1.0 |
 | Real rooms IR pack (34 recorded impulse responses) | OpenAIR (York), Aachen AIR, Detmold SRIR, BBC Maida Vale; see `packs/real-rooms` and each release's `NOTICES.md` | CC-BY-4.0, CC-BY-3.0, MIT |
 
 Each release lists its exact upstream versions, conversion scripts and checksums. The source for every GPL binary is attached to the same release as the binary.
@@ -50,4 +50,4 @@ Short renders by daw (of CC0 material and daw's own synthesis), published so the
 
 ## Synthesis benchmark (CC0)
 
-daw's synthesis benchmark (`daw-bench synth`) fetches its 53 reference sounds from a `synth-bench-<date>` release. The workflow [`build-synth-bench`](.github/workflows/build-synth-bench.yml) builds them from CC0 sources pinned in [`packs/synth-bench/recipes.json`](packs/synth-bench/recipes.json): daw-content's recorded drums, VCSL, VSCO 2 CE, the Sonic Pi samples, Kenney and FSD50K's CC0 clips. No audio is committed. [`packs/synth-bench/README.md`](packs/synth-bench/README.md) has the details.
+daw's synthesis benchmark (`daw-bench synth`) fetches its 65 reference sounds from a `synth-bench-<date>` release. The workflow [`build-synth-bench`](.github/workflows/build-synth-bench.yml) builds them from CC0 sources pinned in [`packs/synth-bench/recipes.json`](packs/synth-bench/recipes.json): daw-content's recorded drums, VCSL, VSCO 2 CE, the Sonic Pi samples, Kenney and FSD50K's CC0 clips. Nine electronic targets are our own renders of hand-written patches, made in the same workflow with fundsp (MIT OR Apache-2.0) and Open303 (MIT) and marked `synthetic`. No audio is committed. [`packs/synth-bench/README.md`](packs/synth-bench/README.md) has the details.

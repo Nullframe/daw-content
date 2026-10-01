@@ -12,6 +12,9 @@ For every target in recipes.json it:
    - `kenney-*`: one member of the pack's zip (the zip's sha256 is pinned);
    - `fsd50k`: one clip range-read out of FSD50K's split zip on Zenodo (polite: >= 10 s
      between requests; the zip's CRC and the pinned sha256 are both checked);
+   - `fundsp`, `open303`: a render of one of our own hand-written patches (`render/`), made
+     here with that permissively licensed engine; the pinned sha256 checks that the render is
+     byte-identical to the one reviewed. These targets are marked `synthetic`;
 2. decodes it (mono stays mono, anything wider keeps its first two channels) at its own
    sample rate, removes a DC offset over 0.001;
 3. trims from 5 ms before the onset (the first sample over peak + `onset_db`, default -40 dB)
@@ -21,7 +24,8 @@ For every target in recipes.json it:
 4. scales it to a -1 dBFS sample peak and writes a 24-bit WAV.
 
 Then it writes SHA256SUMS, targets.json (the manifest daw pins: id, category, kind, seconds,
-sample rate, channels, sha256, source and licence per target) and NOTICES.md.
+sample rate, channels, sha256, source and licence per target, and `synthetic` for renders) and
+NOTICES.md.
 
 Deterministic: the same inputs and the pinned numpy/scipy/soundfile versions give the same bytes.
 """
@@ -153,10 +157,76 @@ def fsd_clip(cache, clip_id):
     return data
 
 
+# Renders (fundsp, Open303): built once per run from render/ and a pinned Open303 commit.
+RENDER = os.path.join(HERE, "render")
+_renderers = {}
+
+
+def run(cmd, **kw):
+    out = subprocess.run(cmd, capture_output=True, **kw)
+    if out.returncode != 0:
+        raise RuntimeError(f"{' '.join(cmd)}: {out.stderr.decode().strip()}")
+    return out.stdout
+
+
+def renderer(lib, info, cache):
+    if lib in _renderers:
+        return _renderers[lib]
+    if lib == "fundsp":
+        run(["cargo", "build", "--release", "--locked", "--quiet"], cwd=RENDER)
+        exe = [os.path.join(RENDER, "target", "release", "synth-bench-render")]
+    elif lib == "open303":
+        src = os.path.join(cache, "open303-" + info["commit"])
+        if not os.path.isdir(src):
+            tmp = src + ".part"
+            run(["rm", "-rf", tmp])
+            run(["git", "init", "-q", tmp])
+            run(["git", "-C", tmp, "fetch", "-q", "--depth", "1",
+                 "https://github.com/%s" % info["repo"], info["commit"]])
+            run(["git", "-C", tmp, "checkout", "-q", "FETCH_HEAD"])
+            os.replace(tmp, src)
+        head = run(["git", "-C", src, "rev-parse", "HEAD"]).decode().strip()
+        if head != info["commit"]:
+            raise RuntimeError(f"open303 at {head}, expected {info['commit']}")
+        dsp = os.path.join(src, "Source", "DSPCode")
+        exe = os.path.join(cache, "open303-acid-" + info["commit"][:12])
+        obj = exe + "-fft4g.o"
+        # Open303 is MIT; its headers miss two standard includes on current compilers.
+        flags = ["-O2", "-ffp-contract=off", "-w"]
+        run(["gcc"] + flags + ["-c", os.path.join(dsp, "fft4g.c"), "-o", obj])
+        cpp = sorted(os.path.join(dsp, f) for f in os.listdir(dsp)
+                     if f.startswith("rosic_") and f.endswith(".cpp"))
+        run(["g++", "-std=c++17"] + flags + ["-include", "climits", "-include", "cstring",
+             "-I", dsp, os.path.join(RENDER, "open303", "acid.cpp")] + cpp
+            + [os.path.join(dsp, "GlobalFunctions.cpp"), obj, "-o", exe])
+        exe = [exe]
+    else:
+        raise RuntimeError("unknown renderer " + lib)
+    _renderers[lib] = exe
+    return exe
+
+
+def render(src, sources, cache):
+    lib = src["lib"]
+    exe = renderer(lib, sources[lib], cache)
+    out = os.path.join(cache, "render-%s.wav" % src["patch"])
+    run(exe + ([src["patch"], out] if lib == "fundsp" else [out]))
+    b = open(out, "rb").read()
+    os.remove(out)
+    prov = {"engine": lib, "patch": src["patch"],
+            "recipe": "packs/synth-bench/render (Nullframe/daw-content)"}
+    for k in ("version", "repo", "commit"):
+        if k in sources[lib]:
+            prov[k] = sources[lib][k]
+    return b, prov
+
+
 def fetch(src, sources, cache):
     """The upstream file's bytes (and a provenance dict)."""
     lib = src["lib"]
     info = sources[lib]
+    if lib in ("fundsp", "open303"):
+        return render(src, sources, cache)
     if lib == "drums-recorded-cc0":
         b = cached(cache, src["url"], lambda: curl(src["url"]))
         return b, {"url": src["url"]}
@@ -248,6 +318,7 @@ def main():
         lib = t["source"]["lib"]
         manifest.append({
             "id": t["id"], "category": t["category"], "kind": t["kind"],
+            **({"synthetic": True} if t.get("synthetic") else {}),
             "description": t["description"],
             "file": name, "sha256": sha256(wav), "bytes": len(wav),
             "sample_rate": sr, "channels": int(y.shape[1]),
@@ -273,6 +344,9 @@ def main():
         for k, s in sources.items():
             f.write(f"- **{s['name']}** ({s.get('author', '')}): {s['license']}, "
                     f"{s.get('license_url', s.get('page', ''))}\n")
+        f.write("\nTargets marked `synthetic` are our own renders of hand-written patches "
+                "(packs/synth-bench/render) made with the engine named in their `source`; the "
+                "engines are permissively licensed and the renders are released as CC0-1.0.\n")
         f.write("\nPer file: see targets.json (`source`).\n")
 
 

@@ -52,6 +52,21 @@
    "author": "Freesound uploaders (per clip: uploader, title and Freesound id in provenance.json)",
    "license": "CC0-1.0 (each clip); the dataset compilation is CC-BY-4.0",
    "license_url": "https://zenodo.org/records/4060432"
+  },
+  "fundsp": {
+   "name": "fundsp 0.23.0, our own hand-written patches (packs/synth-bench/render)",
+   "version": "0.23.0",
+   "author": "Sami Perttu (fundsp); patches by Nullframe",
+   "license": "MIT OR Apache-2.0 (engine); renders CC0-1.0",
+   "license_url": "https://github.com/SamiPerttu/fundsp/blob/master/README.md"
+  },
+  "open303": {
+   "repo": "RobinSchmidt/Open303",
+   "commit": "313bf0d9ade7c1dcb6b3a74f5ea1780a29d70074",
+   "name": "Open303 (TB-303 emulation), our own hand-set patch (packs/synth-bench/render/open303)",
+   "author": "Robin Schmidt (Open303); patch by Nullframe",
+   "license": "MIT (engine); render CC0-1.0",
+   "license_url": "https://github.com/RobinSchmidt/Open303/blob/313bf0d9ade7c1dcb6b3a74f5ea1780a29d70074/License.txt"
   }
  },
  "targets": [
@@ -710,6 +725,159 @@
     "lib": "vcsl",
     "path": "Idiophones/Struck Idiophones/Flexatone/flexatone1.wav",
     "sha256": "043e96282afcb2079f7460cd49dbf78b200b584292d62fae4c6ae5eb898bdac6"
+   }
+  },
+  {
+   "id": "lead-supersaw",
+   "category": "electronic",
+   "kind": "lead",
+   "synthetic": true,
+   "description": "A trance supersaw lead holding one note (A4): seven detuned sawtooth voices beating against each other, spread wide across the stereo field, bright, with a highpass keeping it clear of the bass; a quick attack, held about 2 s, then a short release.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "lead-supersaw",
+    "sha256": "617edd25fe3570892692b37671464ab9f3da6bae8b4b1853e52be9c83444a6a0"
+   }
+  },
+  {
+   "id": "bass-reese",
+   "category": "electronic",
+   "kind": "bass",
+   "description": "A reese bass on one long low note (C2): detuned sawtooth-like voices whose phase slowly drifts, so a comb of notches sweeps up and down through the upper harmonics about every 3 s, giving a vowel-like, hollow movement; the fundamental is weak, the low end stays mono while the mids and highs are wide; 6 s, no attack or release to speak of.",
+   "seconds": 6.0,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/bass_voxy_c.flac",
+    "sha256": "8b44bf26705e4efeba223aa6be46c8c3307e73c56290bcbe8270bc4cfc7d0df4"
+   }
+  },
+  {
+   "id": "bass-808-glide",
+   "category": "electronic",
+   "kind": "bass",
+   "synthetic": true,
+   "description": "An 808 bass: a clean sine boom on F1 with a fast pitch drop at the strike and soft saturation, then at about 0.6 s it glides up a fourth to A#1 and rings on with a long, slowly fading sub tail; about 3 s. Mono.",
+   "seconds": 3.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "bass-808-glide",
+    "sha256": "2cd0d83a7be10a9fb3a3f26dae80d2f006e22f3e3ddbe2da4056e0c58b14a57e"
+   }
+  },
+  {
+   "id": "pluck-house",
+   "category": "electronic",
+   "kind": "pluck",
+   "synthetic": true,
+   "description": "A short house pluck on C4: two slightly detuned sawtooth voices and a quiet square an octave down, through a resonant lowpass whose cutoff snaps from bright to dull within about 100 ms; the note dies away in under a second. Slightly wide.",
+   "seconds": 1.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "pluck-house",
+    "sha256": "f20de65cd794f3f7f0d8d2a842a8cae8763be554bae01a7ed3cf137975e19bda"
+   }
+  },
+  {
+   "id": "pad-moving",
+   "category": "electronic",
+   "kind": "pad",
+   "synthetic": true,
+   "description": "A slowly moving synth pad: a soft, wide C major 9 chord (C3 up to D4) of pulse waves whose widths drift independently, through a lowpass that opens from dark to bright over about 2.3 s and closes again; slow attack of nearly a second, about 5 s with its release.",
+   "seconds": 5.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "pad-moving",
+    "sha256": "b727ad0f9599c3c41e6d6443bff081e08adda0dcef096f0923add4bfedd7110f"
+   }
+  },
+  {
+   "id": "bass-wobble",
+   "category": "electronic",
+   "kind": "bass",
+   "synthetic": true,
+   "description": "A dubstep wobble bass on F1: a saw and square through a driven resonant lowpass whose cutoff swings with a sine LFO at eighth notes of 140 BPM (about 4.7 wobbles a second), over a steady clean sine sub; 2 s. Mono.",
+   "seconds": 2.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "bass-wobble",
+    "sha256": "766c9043ab34ad28c39894c5aa58fcc3b440965126108ec5f6b8abf340caa71d"
+   }
+  },
+  {
+   "id": "bell-fm",
+   "category": "electronic",
+   "kind": "bell",
+   "description": "An electronic chime: a metallic, inharmonic strike with partials spread from about 1.7 kHz to 8 kHz like an FM or ring-modulated bell, the brightest ones dying first so the tone darkens and thins over about 2 s; a hard, slightly clipped attack. Mono.",
+   "seconds": 2.5,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/elec_chime.flac",
+    "sha256": "6491cb81484f9ec8da9b19eac3aa88b234d5519becc7a96172d54a1da1b21f0f"
+   }
+  },
+  {
+   "id": "bass-acid",
+   "category": "electronic",
+   "kind": "bass",
+   "synthetic": true,
+   "description": "One TB-303 style acid bass note with accent and slide: an accented C2 sawtooth through a squelchy, highly resonant lowpass whose envelope sweeps down from bright, then a 60 ms slide up to G2 at 0.3 s; released at 0.75 s, about 1 s in all. Mono.",
+   "seconds": 1.3,
+   "source": {
+    "lib": "open303",
+    "patch": "bass-acid",
+    "sha256": "136dc64d5ed411f7b8a0878369e12f6f06e49f95b210fcf42c3c371a6ca91afa"
+   }
+  },
+  {
+   "id": "lead-hoover",
+   "category": "electronic",
+   "kind": "lead",
+   "synthetic": true,
+   "description": "A rave hoover lead on C3: a thick, buzzy stack of pulse waves an octave apart with fast pulse-width movement and detune, diving down into the note from about a fifth above at the start, chorused wide, and falling an octave over the last half second; 2.5 s.",
+   "seconds": 2.5,
+   "source": {
+    "lib": "fundsp",
+    "patch": "lead-hoover",
+    "sha256": "412e859ba9b28f58c261d2849395f76c3e2dec90a7e01935629c13aaefe14549"
+   }
+  },
+  {
+   "id": "stab-chord",
+   "category": "electronic",
+   "kind": "stab",
+   "description": "A detuned synth chord stab: a bright minor-seventh chord around G4 (G, B flat, D, F) with a fast attack and a decay of about a second, wide in stereo with a mono low end.",
+   "seconds": 1.5,
+   "source": {
+    "lib": "sonic-pi",
+    "path": "etc/samples/tbd_highkey_c4.flac",
+    "sha256": "0f9a2b1d75e70a0750e1eee296332a1774fa028794e4a703b0fc5c1d91175330"
+   }
+  },
+  {
+   "id": "bass-growl",
+   "category": "electronic",
+   "kind": "bass",
+   "synthetic": true,
+   "description": "A growl bass: a two-operator FM tone on F2 whose brightness pulses about twice a second, through a formant filter swinging between \"o\" and \"a\" vowels, saturated, over a clean sine sub an octave down; 1.6 s. Mono.",
+   "seconds": 1.6,
+   "source": {
+    "lib": "fundsp",
+    "patch": "bass-growl",
+    "sha256": "7c4eec22b3f22b99841aff40f8a160012d13f10b88444584848e909891de4787"
+   }
+  },
+  {
+   "id": "riser-synth",
+   "category": "electronic",
+   "kind": "riser",
+   "synthetic": true,
+   "description": "A synth riser over 4 s: filtered white noise sweeping up from a low hiss to a bright 9 kHz band, plus three detuned saws gliding up two octaves from C3 as their lowpass opens; it swells from very quiet to full, widens in stereo as it rises, and stops dead at the top.",
+   "seconds": 4.0,
+   "source": {
+    "lib": "fundsp",
+    "patch": "riser-synth",
+    "sha256": "86a36915f573d2d2bb64e2e5df8a6d691bbc2f92b84933c84dd7dcfada88289c"
    }
   }
  ]
