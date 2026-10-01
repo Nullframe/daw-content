@@ -1,0 +1,86 @@
+# Builds the orchestral CC0 pack (packs/orchestral-cc0) for daw's sampler@1: one tar of FLAC files
+# from VSCO 2 CE and VCSL at the commits pinned in packs/orchestral-cc0/recipes.json, plus daw's
+# instrument.json (the archive's sha256, every file's sha256, the zone maps), provenance.json,
+# NOTICES.md and SHA256SUMS.
+#
+# - Pull request touching packs/orchestral-cc0/: build and check the archive against the sha256
+#   daw pins (SHA_ORCHESTRAL), no release.
+# - Manual run (workflow_dispatch) or a pushed tag `orchestral-cc0-*`: build, check, then create or
+#   update the release `orchestral-cc0-<UTC date>` (or the pushed tag / the `tag` input).
+#
+# Audio lives only in releases; the repository holds the recipe and scripts.
+name: build-orchestral
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (default: orchestral-cc0-<UTC date>)"
+        required: false
+  push:
+    tags: ["orchestral-cc0-*"]
+  pull_request:
+    paths: ["packs/orchestral-cc0/**", ".github/workflows/build-orchestral.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      # daw's pinned archive.sha256 (content/instruments/orchestral-cc0/instrument.json).
+      SHA_ORCHESTRAL: cd69cb4d1a4299bc2e4130361d9b165b9a6ec8a0c05cb38d98e5c1a9b46e8881
+      # The release the manifest's archive.url names (pull requests build for it too).
+      PINNED_TAG: orchestral-cc0-2026-10-01
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install (pinned, so the build is byte-reproducible)
+        run: pip install numpy==2.4.6 scipy==1.17.1 soundfile==0.14.0
+      - name: Tag
+        id: tag
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then tag="${GITHUB_REF_NAME}";
+          elif [ -n "$INPUT_TAG" ]; then tag="$INPUT_TAG";
+          elif [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then tag="$PINNED_TAG";
+          else tag="orchestral-cc0-$(date -u +%Y-%m-%d)"; fi
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+      - name: Build
+        env:
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          set -eu
+          cd packs/orchestral-cc0
+          python3 build.py "$GITHUB_WORKSPACE/out" --cache "$RUNNER_TEMP/cache" --tag "$TAG"
+          cd "$GITHUB_WORKSPACE/out"
+          sha256sum -c --quiet SHA256SUMS
+          ls -la && du -sh .
+          grep -q "^$SHA_ORCHESTRAL  orchestral-cc0-v1.tar$" SHA256SUMS || { echo "orchestral-cc0-v1.tar doesn't match daw's pinned sha256"; exit 1; }
+          sha256sum instrument.json
+      - name: Release
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.tag.outputs.tag }}
+        run: |
+          cat > notes.md <<NOTES
+          Recorded orchestra (CC0) for daw's sampler@1: violin, viola and cello sections, double bass and solo violin (sustain, spiccato, pizzicato, tremolo); horn, trumpet, tenor trombone and tuba (sustain, staccato; muted horn and trumpet); flute, oboe, clarinet and bassoon (sustain, staccato); concert harp; glockenspiel, xylophone, marimba, vibraphone, tubular bells; mark tree, bell tree, sleigh bells, finger cymbals, ratchets. 1,624 FLAC files at the source rate, trimmed, sustains looped.
+          Sources: VS Chamber Orchestra: Community Edition (VSCO 2 CE, Versilian Studios / Sam Gossner and Ivy Audio / Simon Dalzell, with thanks) and the Versilian Community Sample Library (VCSL), both CC0-1.0 at the commits in provenance.json. The pack is CC0-1.0 (credits in NOTICES.md; the upstream licence texts in the archive's licenses/).
+          Built by .github/workflows/build-orchestral.yml from packs/orchestral-cc0 at ${GITHUB_SHA}; the archive matches the sha256 daw pins.
+          Install in daw: \`voyager-daw library install orchestral-cc0\`.
+          NOTES
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --clobber
+            gh release edit "$TAG" --notes-file notes.md
+          else
+            gh release create "$TAG" out/* --title "Orchestral (CC0) $TAG" --notes-file notes.md --target "$GITHUB_SHA"
+          fi
+          gh release view "$TAG" --json assets -q '.assets[] | "\(.name) \(.size)"'

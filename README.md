@@ -12,6 +12,7 @@ daw fetches these files on first use (`daw library-sync`) and checks each one ag
 | Basic Pitch model | spotify/basic-pitch | Apache-2.0 |
 | CLAP music model pack (optional; audio tower as ONNX + prompt embeddings), see `packs/clap-music` | LAION-AI/CLAP `music_audioset_epoch_15_esc_90.14` | CC0-1.0 |
 | Recorded drums (CC0): 264 drum and percussion one-shots and three round-robin kits, see `packs/drums-recorded` | Versilian VCSL; Karoryfer Big Rusty Drums and Swirly Drums | CC0-1.0 |
+| Orchestral (CC0): 1,624 FLAC samples (strings, brass, woodwinds, harp, mallets; 56 articulations) for daw's sampler@1, see `packs/orchestral-cc0` | Versilian VSCO 2 CE and VCSL | CC0-1.0 |
 | Synthesis benchmark reference sounds (53 one-shots and textures, each with a text description), see `packs/synth-bench` | daw-content recorded drums, VCSL, VSCO 2 CE, Sonic Pi samples, Kenney, FSD50K (CC0 clips) | CC0-1.0 |
 | Real rooms IR pack (34 recorded impulse responses) | OpenAIR (York), Aachen AIR, Detmold SRIR, BBC Maida Vale; see `packs/real-rooms` and each release's `NOTICES.md` | CC-BY-4.0, CC-BY-3.0, MIT |
 
@@ -38,6 +39,10 @@ Each release lists its exact upstream versions, conversion scripts and checksums
 ## Recorded drums (CC0)
 
 `voyager-daw library install drums-recorded-cc0` installs recorded drum and percussion one-shots and three round-robin kits (`kit/trailer-recorded@1`, `kit/orchestral-recorded@1`, `kit/acoustic-recorded@1`) from a `drums-recorded-cc0-<date>` release. The workflow [`build-drums-recorded`](.github/workflows/build-drums-recorded.yml) builds them from CC0 recordings pinned in [`packs/drums-recorded/recipes.json`](packs/drums-recorded/recipes.json). No audio is committed. [`packs/drums-recorded/README.md`](packs/drums-recorded/README.md) has the details.
+
+## Orchestral (CC0)
+
+`voyager-daw library install orchestral-cc0` installs a recorded orchestra (`instrument/orchestral-cc0@1`, played by daw's `sampler@1/*-cc0` presets) from an `orchestral-cc0-<date>` release. The workflow [`build-orchestral`](.github/workflows/build-orchestral.yml) builds it from VSCO 2 CE and VCSL at the commits pinned in [`packs/orchestral-cc0/recipes.json`](packs/orchestral-cc0/recipes.json) and checks the archive against the sha256 daw pins. No audio is committed. [`packs/orchestral-cc0/README.md`](packs/orchestral-cc0/README.md) has the details.
 
 ## Listening reels
 
