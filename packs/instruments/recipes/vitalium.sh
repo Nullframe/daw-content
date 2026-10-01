@@ -1,7 +1,7 @@
-# Vitalium: DISTRHO-Ports' build of Vital (https://github.com/DISTRHO/DISTRHO-Ports,
-# ports-juce6.0/vitalium; Vital by Matt Tytel, GPL-3.0-or-later). "Vital" is a trademark, so we
-# ship DISTRHO's renamed build ("Vitalium", its own plugin ids) rather than renaming Vital
-# ourselves; build_index refuses a bundle whose plugin name is not "Vitalium". Its presets are
+# Vitalium (https://github.com/DISTRHO/DISTRHO-Ports, GPL-3.0-or-later): meson, ports-juce6.0/vitalium.
+# DISTRHO's port of Matt Tytel's GPL synth, under DISTRHO's own name and plugin ids (the
+# original's name is a trademark, so we never rename or label anything with it
+# ourselves); build_index refuses a bundle whose plugin name is not "Vitalium". Its presets are
 # JSON (.vital) and load with --preset FILE.vital. Vital's factory presets are not free and are
 # not shipped.
 # Needs meson and ninja (brew install meson ninja / apt-get install meson ninja-build), fftw3 and,

@@ -1,7 +1,7 @@
 # The instruments pack: bundled GPL synths
 
 Three free synths that producers keep using, built from source by us and shipped as a content
-pack (design §8.5, layer 3): **Vitalium** (a renamed build of Vital), **Dexed** and **OB-Xf**. Each is an ordinary VST3 plugin that `daw` loads in its out-of-process plugin worker
+pack (design §8.5, layer 3): **Vitalium** (DISTRHO's wavetable synth), **Dexed** and **OB-Xf**. Each is an ordinary VST3 plugin that `daw` loads in its out-of-process plugin worker
 (`host/`), so agents use them like any other device:
 
 ```sh
@@ -45,7 +45,7 @@ Linux x86_64 build of OB-Xf was).
 | Dexed 1.0.1 | [asb2m10/dexed](https://github.com/asb2m10/dexed) `v1.0.1` `bce5deee` | GPL-3.0-or-later (its `msfa` FM engine is Apache-2.0) | none: its built-in DX7 banks have no clear authorship or licence and are removed from the build (init voice only) | `dexed`, `dx7` | — |
 | OB-Xf 1.0.3 | [surge-synthesizer/OB-Xf](https://github.com/surge-synthesizer/OB-Xf) `v1.0.3` `1223e6f7` | GPL-3.0-or-later | its factory library: the 487 of 488 `.fxp` patches that declare an author and a CC0 licence (in the source tree's installer assets; the plugin doesn't embed them), converted to `.vstpreset` | `obxf`, `ob-xf` | `.fxp` |
 
-Surge XT is not in the pack: it duplicates Vital (Vitalium), so it was dropped. The pins,
+Surge XT is not in the pack: it duplicates Vitalium, so it was dropped. The pins,
 aliases and preset sources live in [`pack.json`](pack.json), which is compiled into `daw`
 (`crates/daw-plugins/src/pack.rs`).
 
@@ -275,15 +275,22 @@ Ubuntu 22.04; macOS universal on `macos-14` with Xcode 16) from a copy of this f
 (`packs/instruments/` there), with `build.sh --skip-index`, and publishes the release
 `instruments-<UTC date>`.
 
-**What a release contains** (for `version` 2026.09.1):
+**What a release contains** (for `version` 2026.09.2):
 
 | File | Built on |
 |---|---|
-| `daw-instruments-2026.09.1-linux-x86_64.tar.gz` (+ `.sha256`) | `ubuntu-22.04` |
-| `daw-instruments-2026.09.1-linux-aarch64.tar.gz` (+ `.sha256`) | `ubuntu-22.04-arm` |
-| `daw-instruments-2026.09.1-macos-universal.tar.gz` (+ `.sha256`) | `macos-14` (arm64 + x86_64, macOS 11+) |
-| `daw-instruments-2026.09.1-src.tar.gz` (+ `.sha256`) | `ubuntu-22.04`: the complete corresponding source; the workflow refuses to publish unless every platform's source digest matches it |
+| `daw-instruments-2026.09.2-linux-x86_64.tar.gz` (+ `.sha256`) | `ubuntu-22.04` |
+| `daw-instruments-2026.09.2-linux-aarch64.tar.gz` (+ `.sha256`) | `ubuntu-22.04-arm` |
+| `daw-instruments-2026.09.2-macos-universal.tar.gz` (+ `.sha256`) | `macos-14` (arm64 + x86_64, macOS 11+) |
+| `daw-instruments-2026.09.2-src.tar.gz` (+ `.sha256`) | `ubuntu-22.04`: the complete corresponding source; the workflow refuses to publish unless every platform's source digest matches it |
+| `LICENSE-vitalium.txt`, `LICENSE-dexed.txt`, `LICENSE-obxf.txt`, `licenses.tar.gz`, `SOURCE-OFFER.md` | each instrument's GPL-3 text, every licence file from the upstream trees, and the source offer (`release-licences.sh`) |
 | `SHA256SUMS`, `artifacts.json` (file, sha256, bytes per platform), `NOTICES.md` | |
+
+`release-licences.sh` writes the licence assets and fails the build (on PRs too) unless the
+source archive holds every instrument's upstream tree, our patches and the build scripts, and
+each instrument has its GPL-3 text. DISTRHO-Ports keeps only GPL-2 and LGPL-3 texts in `doc/`,
+while Vitalium's files are "version 3 or later", so `build.sh` adds the FSF's text
+(`licence-texts/GPL-3.0.txt`) as `licenses/vitalium/GPL-3.0.txt`; 2026.09.1 and earlier lacked it.
 
 **Steps.**
 

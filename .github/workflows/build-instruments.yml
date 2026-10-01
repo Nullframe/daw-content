@@ -116,6 +116,10 @@ jobs:
           find patch-files -name '*.fxp' | wc -l
           cat NOTICES.md
 
+      - name: Licences and source (GPL obligations)
+        if: matrix.source
+        run: packs/instruments/release-licences.sh packs/instruments/.build/dist
+
       - uses: actions/upload-artifact@v4
         with:
           name: dist-${{ matrix.platform }}
@@ -155,7 +159,10 @@ jobs:
         run: |
           mkdir out
           cp dl/*.tar.gz dl/*.tar.gz.sha256 out/
-          (cd out && sha256sum *.tar.gz >SHA256SUMS)
+          # Each instrument's GPL-3 text, all licence files and the source offer as assets of
+          # their own; fails unless the source archive holds every upstream tree, patch and script.
+          packs/instruments/release-licences.sh out
+          (cd out && sha256sum *.tar.gz *.txt SOURCE-OFFER.md >SHA256SUMS)
           cat out/SHA256SUMS
           python3 - dl out <<'PY'
           import glob, json, os, sys
@@ -184,7 +191,7 @@ jobs:
               echo "| \`$(basename "$f")\` | $(wc -c <"$f" | tr -d ' ') | \`$(sha256sum "$f" | cut -d' ' -f1)\` |"
             done
             echo
-            echo "The \`-src\` archive is the complete corresponding source for every binary here: each upstream tree at its commit (Dexed's cartridge zip swapped, as described), the sources the builds fetched, and the build scripts. Licence texts are in each archive's \`licenses/\`; see \`NOTICES.md\`."
+            echo "The \`-src\` archive is the complete corresponding source for every binary here: each upstream tree at its commit (Dexed's cartridge zip swapped, as described), the sources the builds fetched, and the build scripts. Each instrument's GPL-3 text is attached as \`LICENSE-<id>.txt\`, every licence file from the upstream trees as \`licenses.tar.gz\` (also in each archive's \`licenses/\`), with \`SOURCE-OFFER.md\` and \`NOTICES.md\`."
             echo
             sed -n '/^| Instrument/,/^$/p' SOURCE-OFFER.md
           } >notes.md
