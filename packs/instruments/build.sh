@@ -178,6 +178,16 @@ licenses() {
     cp "$src/$f" "$dest/$f"
   done
   [[ -n "$(ls -A "$dest")" ]] || die "$id: no licence file found in its source"
+  # GPL-3 needs its own text next to the binary, at the top of licenses/<id>/ (not a
+  # submodule's). A tree without one (DISTRHO-Ports has GPL-2 and LGPL-3 in doc/; Vitalium's
+  # files say "version 3 or later") gets the FSF's GPL-3.0 text from licence-texts/.
+  local gpl3=""
+  while IFS= read -r f; do
+    if grep -q 'Version 3, 29 June 2007' "$f"; then gpl3="$f"; break; fi
+  done < <(find "$dest" -maxdepth 1 -type f -print0 | xargs -0 grep -lE '^[[:space:]]*GNU GENERAL PUBLIC LICENSE[[:space:]]*$' || true)
+  if [[ "$(inst "$id" "['license']")" == GPL-3.0* && -z "$gpl3" ]]; then
+    cp "$here/licence-texts/GPL-3.0.txt" "$dest/GPL-3.0.txt"
+  fi
   {
     echo "$(inst "$id" "['name']") — $(inst "$id" "['license']")"
     echo "upstream: $(inst "$id" "['upstream']['repo']")"
@@ -231,7 +241,8 @@ for id in $ids; do fetch "$id"; done
 for id in $ids; do build "$id"; licenses "$id"; done
 
 # --- the build scripts themselves, the source offer and the notices ---------------------------
-cp -R "$here/build.sh" "$here/recipes" "$here/patches" "$here/pack.json" "$here/README.md" "$stage/source/"
+cp -R "$here/build.sh" "$here/release-licences.sh" "$here/recipes" "$here/patches" "$here/licence-texts" \
+  "$here/pack.json" "$here/README.md" "$stage/source/"
 scripts_commit="$(git -C "$repo" rev-parse HEAD 2>/dev/null || echo unknown)"
 scripts_repo="$(git -C "$repo" config --get remote.origin.url 2>/dev/null || echo unknown)"
 scripts_repo="${scripts_repo%.git}"
@@ -391,6 +402,7 @@ for id in $ids; do
   fi
 done
 cp -R "$stage/source" "$srcstage/daw-pack-scripts"
+cp -R "$stage/licenses" "$srcstage/licenses"
 cp "$stage/SOURCE-OFFER.md" "$stage/NOTICES.md" "$srcstage/"
 python3 - "$srcstage/upstream" >"$B/dist/source-digest-$platform.txt" <<'PY'
 import hashlib, os, sys

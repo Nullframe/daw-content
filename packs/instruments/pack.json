@@ -1,26 +1,26 @@
 {
   "schema": "daw-pack/1",
   "id": "instruments",
-  "version": "2026.09.1",
-  "description": "Bundled GPL instruments built from source as separate VST3 plugins: Vitalium (a renamed Vital build), Dexed and OB-Xf. They run out of process in daw's plugin worker and are never linked into daw.",
+  "version": "2026.09.2",
+  "description": "Bundled GPL instruments built from source as separate VST3 plugins: Vitalium, Dexed and OB-Xf. They run out of process in daw's plugin worker and are never linked into daw.",
   "license": "GPL-3.0-or-later (each instrument keeps its own licence; see licenses/ in the pack)",
   "release": {
-    "base_url": "https://github.com/Nullframe/daw-content/releases/download/instruments-2026.09.1/",
-    "source_archive": "daw-instruments-2026.09.1-src.tar.gz"
+    "base_url": "https://github.com/Nullframe/daw-content/releases/download/instruments-2026.09.2/",
+    "source_archive": "daw-instruments-2026.09.2-src.tar.gz"
   },
   "artifacts": {
     "linux-x86_64": {
-      "file": "daw-instruments-2026.09.1-linux-x86_64.tar.gz",
+      "file": "daw-instruments-2026.09.2-linux-x86_64.tar.gz",
       "sha256": "e5e4b65176c8e918fc6b85326c61edeeded5f06b3191224ed67ddd0328e64d96",
       "bytes": 12915399
     },
     "linux-aarch64": {
-      "file": "daw-instruments-2026.09.1-linux-aarch64.tar.gz",
+      "file": "daw-instruments-2026.09.2-linux-aarch64.tar.gz",
       "sha256": "25e88e4b117b03235e551b2f2318292df48b7e2b2ca988cff72cf7c86b894c8b",
       "bytes": 13101415
     },
     "macos-universal": {
-      "file": "daw-instruments-2026.09.1-macos-universal.tar.gz",
+      "file": "daw-instruments-2026.09.2-macos-universal.tar.gz",
       "sha256": "d1cacd3e1725f00b3e082a6a646dd2af2e66cfa3dfbedb17449699ab792a5b55",
       "bytes": 19513745
     }
@@ -32,8 +32,7 @@
       "vendor": "DISTRHO",
       "bundle": "vitalium.vst3",
       "aliases": [
-        "vitalium",
-        "vital"
+        "vitalium"
       ],
       "license": "GPL-3.0-or-later",
       "upstream": {
