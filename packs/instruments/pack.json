@@ -11,18 +11,18 @@
   "artifacts": {
     "linux-x86_64": {
       "file": "daw-instruments-2026.09.2-linux-x86_64.tar.gz",
-      "sha256": "e5e4b65176c8e918fc6b85326c61edeeded5f06b3191224ed67ddd0328e64d96",
-      "bytes": 12915399
+      "sha256": "1f6e8ef65db1fc4f47c2aba63aa271c9e11dc0ca1ad3e580b9bd76d2131d763a",
+      "bytes": 12947983
     },
     "linux-aarch64": {
       "file": "daw-instruments-2026.09.2-linux-aarch64.tar.gz",
-      "sha256": "25e88e4b117b03235e551b2f2318292df48b7e2b2ca988cff72cf7c86b894c8b",
-      "bytes": 13101415
+      "sha256": "1b4d0f063527ab0f305f276780a480a24280fd5d360c58467a8a3b01a1d3bfc4",
+      "bytes": 13128306
     },
     "macos-universal": {
       "file": "daw-instruments-2026.09.2-macos-universal.tar.gz",
-      "sha256": "d1cacd3e1725f00b3e082a6a646dd2af2e66cfa3dfbedb17449699ab792a5b55",
-      "bytes": 19513745
+      "sha256": "898661165776875f533043eccc51a9690859134d33be815a8552be0308983a91",
+      "bytes": 19540468
     }
   },
   "instruments": [
