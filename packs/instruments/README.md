@@ -23,7 +23,7 @@ get it (the install command, or the local build while no release is published).
 **Founder decision (2026-09-29): ship, cautiously.** Only presets whose authorship and licence
 are clear ship (see [Preset provenance](#preset-provenance)), and the archives are hosted on a
 **public** Nullframe release, never the internal `daw` repository: [Nullframe/daw-content
-`instruments-2026.09.1`](https://github.com/Nullframe/daw-content/releases/tag/instruments-2026.09.1)
+`instruments-2026.09.2`](https://github.com/Nullframe/daw-content/releases/tag/instruments-2026.09.2)
 (see [Publishing a release](#publishing-a-release)).
 
 **Status (2026-09-30): published.** GitHub Actions in Nullframe/daw-content built the pack
@@ -33,8 +33,9 @@ instruments` downloads, verifies, clears macOS quarantine and indexes it. That w
 end on macOS (arm64) from the real release: all three plugins scan and load, and all 487 OB-Xf
 presets are taken (none rejected). Vitalium and Dexed are tier A. OB-Xf was tier C in that
 first release (2026.09.0); **2026.09.1** adds a seed patch (`patches/obxf/`, daw-content only)
-and OB-Xf is tier A, see [Determinism](#determinism-tier-a). The Linux archives are built and
-hash-pinned; the published release has not been installed on a real Linux machine yet (a local
+and OB-Xf is tier A, see [Determinism](#determinism-tier-a). **2026.09.2** (same upstream commits
+and code) adds Vitalium's GPL-3 text, which DISTRHO-Ports' tree lacks, and attaches every licence
+text and the source offer to the release. The Linux archives are built and hash-pinned; the published release has not been installed on a real Linux machine yet (a local
 Linux x86_64 build of OB-Xf was).
 
 ## What's in it
